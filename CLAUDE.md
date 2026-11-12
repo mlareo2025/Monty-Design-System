@@ -21,7 +21,7 @@ Tres niveles en la raíz del JSON, cada uno solo puede apuntar al anterior:
 
 | Nivel | Colección(es) de Figma | Modos | Tokens |
 | --- | --- | --- | --- |
-| `primitive` | Primitive | Value | 92 |
+| `primitive` | Primitive | Value | 90 |
 | `semantic` | Semantic **y** Semantic Platform | Semantic: Light, Dark. Semantic Platform: Mobile, Web | 47 + 64 |
 | `component` | Component | Default | 45 |
 
@@ -47,7 +47,7 @@ Tres niveles en la raíz del JSON, cada uno solo puede apuntar al anterior:
 1. Crear sesión con `create_session` para el fileKey y cargar el skill `figma-use`.
 2. Leer con scripts **de solo lectura** de `use_figma`: colecciones, modos, nombres, alias (resueltos a nombre), descripciones, scopes y code syntax. No usar `get_variable_defs`: solo trae el valor final, sin modos ni alias. Devolver los datos colección por colección para no pasarse del tamaño de respuesta.
 3. Convertir a DTCG según las convenciones de arriba.
-4. Comprobar fidelidad: mismo número de variables que Figma (hoy 248) y, si se puede, una huella (hash) de nombre, descripción, scopes, code syntax y valores por modo calculada igual en Figma y en el JSON.
+4. Comprobar fidelidad: mismo número de variables que Figma (hoy 246) y, si se puede, una huella (hash) de nombre, descripción, scopes, code syntax y valores por modo calculada igual en Figma y en el JSON.
 5. Correr el validador (siguiente sección).
 
 No hay un conversor guardado en el repo: el que se usó era temporal.
@@ -85,8 +85,8 @@ Preguntar antes de:
 
 ## Estado conocido (snapshot al generar los tokens)
 
-- 248 tokens; validador en verde: 0 errores, 0 avisos, 86 de 86 comprobaciones de contraste (43 pares × light y dark).
+- 246 tokens; validador en verde: 0 errores, 0 avisos, 86 de 86 comprobaciones de contraste (43 pares × light y dark).
 - Margen más ajustado: `text/secondary` sobre `surface/subtle` en light (4.99:1 con mínimo 4.5).
 - Decisiones de diseño ya tomadas (cambios hechos en Figma): en dark `surface/sunken` apunta al primitivo `neutral/1000` (`#0c0c0c`, 1.11:1 contra `surface/default`, parecido al 1.12:1 de light) y `action/hover` y `action/pressed` valen lo mismo que en light (`lima/500` y `lima/600`).
-- Primitivos sin ningún uso (candidatos a limpiar en Figma, no se borran sin preguntar): `color/lima/100` y `space/48`.
+- Se borraron de Figma los primitivos sin uso `color/lima/100` y `space/48`. Quedan en las páginas de documentación dos filas de muestra sin enlace a variable (Colores · "Escala lima" → `color/lima/100`, y Espacio → `space/48`); decidir si se eliminan.
 - Colores con el mismo valor en light y dark, por diseño: `text/on-action`, `text/on-brand`, `surface/brand`, `action/default`, `border/strong` e `icon/on-action`.

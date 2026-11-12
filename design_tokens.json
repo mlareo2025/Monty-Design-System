@@ -172,20 +172,6 @@
             }
           }
         },
-        "100": {
-          "$type": "color",
-          "$value": "#effcb7",
-          "$description": "Paso 100 de la escala lima. No usar directamente: usar el token semántico que apunta a este valor.",
-          "$extensions": {
-            "com.figma": {
-              "collection": "Primitive",
-              "scopes": [],
-              "codeSyntax": {
-                "WEB": "var(--color-lima-100)"
-              }
-            }
-          }
-        },
         "400": {
           "$type": "color",
           "$value": "#def765",
@@ -1089,20 +1075,6 @@
             "scopes": [],
             "codeSyntax": {
               "WEB": "var(--space-32)"
-            }
-          }
-        }
-      },
-      "48": {
-        "$type": "dimension",
-        "$value": "48px",
-        "$description": "Paso de espacio de 48 px, múltiplo de la base de 4. No usar directamente: usar el token semántico que apunta a este valor.",
-        "$extensions": {
-          "com.figma": {
-            "collection": "Primitive",
-            "scopes": [],
-            "codeSyntax": {
-              "WEB": "var(--space-48)"
             }
           }
         }
