@@ -88,5 +88,5 @@ Preguntar antes de:
 - 246 tokens; validador en verde: 0 errores, 0 avisos, 86 de 86 comprobaciones de contraste (43 pares × light y dark).
 - Margen más ajustado: `text/secondary` sobre `surface/subtle` en light (4.99:1 con mínimo 4.5).
 - Decisiones de diseño ya tomadas (cambios hechos en Figma): en dark `surface/sunken` apunta al primitivo `neutral/1000` (`#0c0c0c`, 1.11:1 contra `surface/default`, parecido al 1.12:1 de light) y `action/hover` y `action/pressed` valen lo mismo que en light (`lima/500` y `lima/600`).
-- Se borraron de Figma los primitivos sin uso `color/lima/100` y `space/48`. Quedan en las páginas de documentación dos filas de muestra sin enlace a variable (Colores · "Escala lima" → `color/lima/100`, y Espacio → `space/48`); decidir si se eliminan.
+- Se borraron de Figma los primitivos sin uso `color/lima/100` y `space/48`, junto con sus filas de muestra en las páginas de documentación (Colores · "Escala lima" y Espacio · "Primitivos").
 - Colores con el mismo valor en light y dark, por diseño: `text/on-action`, `text/on-brand`, `surface/brand`, `action/default`, `border/strong` e `icon/on-action`.
