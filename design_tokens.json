@@ -141,6 +141,20 @@
               }
             }
           }
+        },
+        "1000": {
+          "$type": "color",
+          "$value": "#0c0c0c",
+          "$description": "Paso 1000 de la escala neutral. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-neutral-1000)"
+              }
+            }
+          }
         }
       },
       "lima": {
@@ -1497,7 +1511,7 @@
           "$description": "Zonas hundidas dentro de una tarjeta: avatares y pistas de progreso.",
           "$extensions": {
             "modes": {
-              "dark": "{primitive.color.neutral.950}"
+              "dark": "{primitive.color.neutral.1000}"
             },
             "com.figma": {
               "collection": "Semantic",
@@ -1579,7 +1593,7 @@
           "$description": "Fondo de la acción principal con el cursor encima.",
           "$extensions": {
             "modes": {
-              "dark": "{primitive.color.lima.100}"
+              "dark": "{primitive.color.lima.500}"
             },
             "com.figma": {
               "collection": "Semantic",
@@ -1599,7 +1613,7 @@
           "$description": "Fondo de la acción principal mientras se presiona.",
           "$extensions": {
             "modes": {
-              "dark": "{primitive.color.lima.50}"
+              "dark": "{primitive.color.lima.600}"
             },
             "com.figma": {
               "collection": "Semantic",
