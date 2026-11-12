@@ -1,5 +1,5 @@
 {
-  "$comment": "Configuración del validador. Ajusta niveles, modos y pares de contraste a tu sistema.",
+  "$comment": "Configuración del validador de Monty DS. Niveles primitive > semantic > component. Modos: light (defecto) y dark para color; mobile (defecto) y web para tipografía, espacios y layout. A los colores solo se les exige dark; el contraste se revisa en light y dark. Los estados disabled quedan fuera de los pares porque WCAG los exime. Texto 4.5:1, bordes e íconos 3:1.",
   "levels": [
     "primitive",
     "semantic",
@@ -16,13 +16,29 @@
   },
   "modes": [
     "light",
-    "dark"
+    "dark",
+    "mobile",
+    "web"
   ],
   "requireModes": {
     "level": "semantic",
     "types": [
       "color"
+    ],
+    "modes": [
+      "dark"
     ]
+  },
+  "contrastModes": [
+    "light",
+    "dark"
+  ],
+  "requireDescriptions": {
+    "levels": [
+      "semantic",
+      "component"
+    ],
+    "severity": "error"
   },
   "namePattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
   "contrastPairs": [
@@ -32,27 +48,32 @@
       "min": 4.5
     },
     {
-      "foreground": "semantic.color.text.secondary",
-      "background": "semantic.color.surface.default",
-      "min": 4.5
-    },
-    {
       "foreground": "semantic.color.text.primary",
       "background": "semantic.color.surface.subtle",
       "min": 4.5
     },
     {
-      "foreground": "semantic.color.text.danger",
+      "foreground": "semantic.color.text.primary",
+      "background": "semantic.color.surface.sunken",
+      "min": 4.5
+    },
+    {
+      "foreground": "semantic.color.text.primary",
+      "background": "semantic.color.surface.hover",
+      "min": 4.5
+    },
+    {
+      "foreground": "semantic.color.text.secondary",
       "background": "semantic.color.surface.default",
       "min": 4.5
     },
     {
-      "foreground": "semantic.color.text.danger",
-      "background": "semantic.color.surface.danger",
+      "foreground": "semantic.color.text.secondary",
+      "background": "semantic.color.surface.subtle",
       "min": 4.5
     },
     {
-      "foreground": "semantic.color.text.success",
+      "foreground": "semantic.color.text.link",
       "background": "semantic.color.surface.default",
       "min": 4.5
     },
@@ -72,14 +93,84 @@
       "min": 4.5
     },
     {
-      "foreground": "semantic.color.action.default",
-      "background": "semantic.color.surface.default",
+      "foreground": "semantic.color.text.on-action-subtle",
+      "background": "semantic.color.action.subtle",
       "min": 4.5
     },
     {
-      "foreground": "semantic.color.action.default",
-      "background": "semantic.color.action.subtle",
+      "foreground": "semantic.color.text.on-brand",
+      "background": "semantic.color.surface.brand",
       "min": 4.5
+    },
+    {
+      "foreground": "semantic.color.ai.text",
+      "background": "semantic.color.ai.surface",
+      "min": 4.5
+    },
+    {
+      "foreground": "semantic.color.feedback.success.text",
+      "background": "semantic.color.feedback.success.surface",
+      "min": 4.5
+    },
+    {
+      "foreground": "semantic.color.feedback.warning.text",
+      "background": "semantic.color.feedback.warning.surface",
+      "min": 4.5
+    },
+    {
+      "foreground": "semantic.color.feedback.error.text",
+      "background": "semantic.color.feedback.error.surface",
+      "min": 4.5
+    },
+    {
+      "foreground": "semantic.color.feedback.info.text",
+      "background": "semantic.color.feedback.info.surface",
+      "min": 4.5
+    },
+    {
+      "foreground": "semantic.color.icon.default",
+      "background": "semantic.color.surface.default",
+      "min": 3
+    },
+    {
+      "foreground": "semantic.color.icon.secondary",
+      "background": "semantic.color.surface.default",
+      "min": 3
+    },
+    {
+      "foreground": "semantic.color.icon.on-action",
+      "background": "semantic.color.action.default",
+      "min": 3
+    },
+    {
+      "foreground": "semantic.color.icon.ai",
+      "background": "semantic.color.ai.surface",
+      "min": 3
+    },
+    {
+      "foreground": "semantic.color.icon.success",
+      "background": "semantic.color.feedback.success.surface",
+      "min": 3
+    },
+    {
+      "foreground": "semantic.color.icon.warning",
+      "background": "semantic.color.feedback.warning.surface",
+      "min": 3
+    },
+    {
+      "foreground": "semantic.color.icon.error",
+      "background": "semantic.color.feedback.error.surface",
+      "min": 3
+    },
+    {
+      "foreground": "semantic.color.icon.info",
+      "background": "semantic.color.feedback.info.surface",
+      "min": 3
+    },
+    {
+      "foreground": "semantic.color.border.strong",
+      "background": "semantic.color.surface.default",
+      "min": 3
     },
     {
       "foreground": "semantic.color.border.focus",
@@ -87,8 +178,83 @@
       "min": 3
     },
     {
-      "foreground": "semantic.color.border.strong",
-      "background": "semantic.color.surface.default",
+      "foreground": "component.button.text.primary",
+      "background": "component.button.background.primary",
+      "min": 4.5
+    },
+    {
+      "foreground": "component.button.text.primary",
+      "background": "component.button.background.primary-hover",
+      "min": 4.5
+    },
+    {
+      "foreground": "component.button.text.default",
+      "background": "component.button.background.secondary",
+      "min": 4.5
+    },
+    {
+      "foreground": "component.button.text.default",
+      "background": "component.button.background.hover",
+      "min": 4.5
+    },
+    {
+      "foreground": "component.button.border.secondary",
+      "background": "component.button.background.secondary",
+      "min": 3
+    },
+    {
+      "foreground": "component.button.icon.primary",
+      "background": "component.button.background.primary",
+      "min": 3
+    },
+    {
+      "foreground": "component.button.icon.default",
+      "background": "component.button.background.secondary",
+      "min": 3
+    },
+    {
+      "foreground": "component.input.text",
+      "background": "component.input.background",
+      "min": 4.5
+    },
+    {
+      "foreground": "component.input.label",
+      "background": "component.input.background",
+      "min": 4.5
+    },
+    {
+      "foreground": "component.input.help",
+      "background": "component.input.background",
+      "min": 4.5
+    },
+    {
+      "foreground": "component.input.help-error",
+      "background": "component.input.background",
+      "min": 4.5
+    },
+    {
+      "foreground": "component.input.border",
+      "background": "component.input.background",
+      "min": 3
+    },
+    {
+      "foreground": "component.input.border-focus",
+      "background": "component.input.background",
+      "min": 3
+    },
+    {
+      "foreground": "component.input.border-error",
+      "background": "component.input.background",
+      "min": 3
+    },
+    {
+      "foreground": "component.input.icon",
+      "background": "component.input.background",
+      "min": 3
+    },
+    {
+      "foreground": "component.input.icon-error",
+      "background": "component.input.background",
       "min": 3
     }
   ]

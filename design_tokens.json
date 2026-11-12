@@ -1,0 +1,4271 @@
+{
+  "primitive": {
+    "color": {
+      "neutral": {
+        "0": {
+          "$type": "color",
+          "$value": "#ffffff",
+          "$description": "Paso 0 de la escala neutral. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-neutral-0)"
+              }
+            }
+          }
+        },
+        "50": {
+          "$type": "color",
+          "$value": "#f9f9f9",
+          "$description": "Paso 50 de la escala neutral. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-neutral-50)"
+              }
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#f2f2f2",
+          "$description": "Paso 100 de la escala neutral. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-neutral-100)"
+              }
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#e6e6e6",
+          "$description": "Paso 200 de la escala neutral. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-neutral-200)"
+              }
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#aeaeae",
+          "$description": "Paso 400 de la escala neutral. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-neutral-400)"
+              }
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#848484",
+          "$description": "Paso 500 de la escala neutral. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-neutral-500)"
+              }
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#6c6c6c",
+          "$description": "Paso 600 de la escala neutral. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-neutral-600)"
+              }
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#414141",
+          "$description": "Paso 800 de la escala neutral. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-neutral-800)"
+              }
+            }
+          }
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#2e2e2e",
+          "$description": "Paso 900 de la escala neutral. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-neutral-900)"
+              }
+            }
+          }
+        },
+        "950": {
+          "$type": "color",
+          "$value": "#191919",
+          "$description": "Paso 950 de la escala neutral. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-neutral-950)"
+              }
+            }
+          }
+        }
+      },
+      "lima": {
+        "50": {
+          "$type": "color",
+          "$value": "#f8ffdc",
+          "$description": "Paso 50 de la escala lima. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-lima-50)"
+              }
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#effcb7",
+          "$description": "Paso 100 de la escala lima. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-lima-100)"
+              }
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#def765",
+          "$description": "Paso 400 de la escala lima. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-lima-400)"
+              }
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#cde24e",
+          "$description": "Paso 500 de la escala lima. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-lima-500)"
+              }
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#b3c33d",
+          "$description": "Paso 600 de la escala lima. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-lima-600)"
+              }
+            }
+          }
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#4e5210",
+          "$description": "Paso 900 de la escala lima. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-lima-900)"
+              }
+            }
+          }
+        },
+        "950": {
+          "$type": "color",
+          "$value": "#2f3106",
+          "$description": "Paso 950 de la escala lima. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-lima-950)"
+              }
+            }
+          }
+        }
+      },
+      "azul": {
+        "50": {
+          "$type": "color",
+          "$value": "#f4f7fe",
+          "$description": "Paso 50 de la escala azul. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-azul-50)"
+              }
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#abc3fe",
+          "$description": "Paso 300 de la escala azul. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-azul-300)"
+              }
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#86a7fe",
+          "$description": "Paso 400 de la escala azul. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-azul-400)"
+              }
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#3d63f5",
+          "$description": "Paso 600 de la escala azul. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-azul-600)"
+              }
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#3454c5",
+          "$description": "Paso 700 de la escala azul. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-azul-700)"
+              }
+            }
+          }
+        },
+        "950": {
+          "$type": "color",
+          "$value": "#111f4f",
+          "$description": "Paso 950 de la escala azul. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-azul-950)"
+              }
+            }
+          }
+        }
+      },
+      "violeta": {
+        "50": {
+          "$type": "color",
+          "$value": "#f6f6fe",
+          "$description": "Paso 50 de la escala violeta. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-violeta-50)"
+              }
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#bfbbfe",
+          "$description": "Paso 300 de la escala violeta. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-violeta-300)"
+              }
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#a59cff",
+          "$description": "Paso 400 de la escala violeta. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-violeta-400)"
+              }
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#7a5af8",
+          "$description": "Paso 600 de la escala violeta. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-violeta-600)"
+              }
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#5e44c3",
+          "$description": "Paso 700 de la escala violeta. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-violeta-700)"
+              }
+            }
+          }
+        },
+        "950": {
+          "$type": "color",
+          "$value": "#23184e",
+          "$description": "Paso 950 de la escala violeta. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-violeta-950)"
+              }
+            }
+          }
+        }
+      },
+      "verde": {
+        "50": {
+          "$type": "color",
+          "$value": "#effaf0",
+          "$description": "Paso 50 de la escala verde. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-verde-50)"
+              }
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#92d8a0",
+          "$description": "Paso 300 de la escala verde. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-verde-300)"
+              }
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#65c27c",
+          "$description": "Paso 400 de la escala verde. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-verde-400)"
+              }
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#158f44",
+          "$description": "Paso 600 de la escala verde. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-verde-600)"
+              }
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#057434",
+          "$description": "Paso 700 de la escala verde. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-verde-700)"
+              }
+            }
+          }
+        },
+        "950": {
+          "$type": "color",
+          "$value": "#032d11",
+          "$description": "Paso 950 de la escala verde. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-verde-950)"
+              }
+            }
+          }
+        }
+      },
+      "ambar": {
+        "50": {
+          "$type": "color",
+          "$value": "#fff5ea",
+          "$description": "Paso 50 de la escala ambar. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-ambar-50)"
+              }
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#f0b877",
+          "$description": "Paso 300 de la escala ambar. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-ambar-300)"
+              }
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#e19a3d",
+          "$description": "Paso 400 de la escala ambar. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-ambar-400)"
+              }
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#a46805",
+          "$description": "Paso 600 de la escala ambar. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-ambar-600)"
+              }
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#865403",
+          "$description": "Paso 700 de la escala ambar. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-ambar-700)"
+              }
+            }
+          }
+        },
+        "950": {
+          "$type": "color",
+          "$value": "#351e01",
+          "$description": "Paso 950 de la escala ambar. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-ambar-950)"
+              }
+            }
+          }
+        }
+      },
+      "rojo": {
+        "50": {
+          "$type": "color",
+          "$value": "#fef4f3",
+          "$description": "Paso 50 de la escala rojo. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-rojo-50)"
+              }
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#feaba4",
+          "$description": "Paso 300 de la escala rojo. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-rojo-300)"
+              }
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#fd8079",
+          "$description": "Paso 400 de la escala rojo. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-rojo-400)"
+              }
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#c84341",
+          "$description": "Paso 600 de la escala rojo. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-rojo-600)"
+              }
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#a63131",
+          "$description": "Paso 700 de la escala rojo. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-rojo-700)"
+              }
+            }
+          }
+        },
+        "950": {
+          "$type": "color",
+          "$value": "#421110",
+          "$description": "Paso 950 de la escala rojo. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-rojo-950)"
+              }
+            }
+          }
+        }
+      },
+      "black-alpha": {
+        "8": {
+          "$type": "color",
+          "$value": "#00000014",
+          "$description": "Negro al 8 % de opacidad, para sombras y scrim. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-black-alpha-8)"
+              }
+            }
+          }
+        },
+        "16": {
+          "$type": "color",
+          "$value": "#00000029",
+          "$description": "Negro al 16 % de opacidad, para sombras y scrim. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-black-alpha-16)"
+              }
+            }
+          }
+        },
+        "40": {
+          "$type": "color",
+          "$value": "#00000066",
+          "$description": "Negro al 40 % de opacidad, para sombras y scrim. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-black-alpha-40)"
+              }
+            }
+          }
+        },
+        "48": {
+          "$type": "color",
+          "$value": "#0000007a",
+          "$description": "Negro al 48 % de opacidad, para sombras y scrim. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-black-alpha-48)"
+              }
+            }
+          }
+        },
+        "64": {
+          "$type": "color",
+          "$value": "#000000a3",
+          "$description": "Negro al 64 % de opacidad, para sombras y scrim. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--color-black-alpha-64)"
+              }
+            }
+          }
+        }
+      }
+    },
+    "font": {
+      "family": {
+        "plus-jakarta-sans": {
+          "$type": "fontFamily",
+          "$value": "Plus Jakarta Sans",
+          "$description": "Familia tipográfica plus jakarta sans. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--font-family-plus-jakarta-sans)"
+              }
+            }
+          }
+        },
+        "inter": {
+          "$type": "fontFamily",
+          "$value": "Inter",
+          "$description": "Familia tipográfica inter. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--font-family-inter)"
+              }
+            }
+          }
+        }
+      },
+      "weight": {
+        "regular": {
+          "$type": "fontWeight",
+          "$value": 400,
+          "$description": "Peso tipográfico regular. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--font-weight-regular)"
+              }
+            }
+          }
+        },
+        "semibold": {
+          "$type": "fontWeight",
+          "$value": 600,
+          "$description": "Peso tipográfico semibold. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--font-weight-semibold)"
+              }
+            }
+          }
+        },
+        "bold": {
+          "$type": "fontWeight",
+          "$value": 700,
+          "$description": "Peso tipográfico bold. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--font-weight-bold)"
+              }
+            }
+          }
+        }
+      },
+      "size": {
+        "14": {
+          "$type": "dimension",
+          "$value": "14px",
+          "$description": "Tamaño de texto de 14 px. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--font-size-14)"
+              }
+            }
+          }
+        },
+        "16": {
+          "$type": "dimension",
+          "$value": "16px",
+          "$description": "Tamaño de texto de 16 px. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--font-size-16)"
+              }
+            }
+          }
+        },
+        "20": {
+          "$type": "dimension",
+          "$value": "20px",
+          "$description": "Tamaño de texto de 20 px. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--font-size-20)"
+              }
+            }
+          }
+        },
+        "24": {
+          "$type": "dimension",
+          "$value": "24px",
+          "$description": "Tamaño de texto de 24 px. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--font-size-24)"
+              }
+            }
+          }
+        },
+        "32": {
+          "$type": "dimension",
+          "$value": "32px",
+          "$description": "Tamaño de texto de 32 px. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--font-size-32)"
+              }
+            }
+          }
+        },
+        "48": {
+          "$type": "dimension",
+          "$value": "48px",
+          "$description": "Tamaño de texto de 48 px. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--font-size-48)"
+              }
+            }
+          }
+        }
+      },
+      "line-height": {
+        "20": {
+          "$type": "dimension",
+          "$value": "20px",
+          "$description": "Alto de línea de 20 px. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--font-line-height-20)"
+              }
+            }
+          }
+        },
+        "24": {
+          "$type": "dimension",
+          "$value": "24px",
+          "$description": "Alto de línea de 24 px. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--font-line-height-24)"
+              }
+            }
+          }
+        },
+        "28": {
+          "$type": "dimension",
+          "$value": "28px",
+          "$description": "Alto de línea de 28 px. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--font-line-height-28)"
+              }
+            }
+          }
+        },
+        "32": {
+          "$type": "dimension",
+          "$value": "32px",
+          "$description": "Alto de línea de 32 px. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--font-line-height-32)"
+              }
+            }
+          }
+        },
+        "40": {
+          "$type": "dimension",
+          "$value": "40px",
+          "$description": "Alto de línea de 40 px. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--font-line-height-40)"
+              }
+            }
+          }
+        },
+        "56": {
+          "$type": "dimension",
+          "$value": "56px",
+          "$description": "Alto de línea de 56 px. No usar directamente: usar el token semántico que apunta a este valor.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Primitive",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--font-line-height-56)"
+              }
+            }
+          }
+        }
+      }
+    },
+    "space": {
+      "4": {
+        "$type": "dimension",
+        "$value": "4px",
+        "$description": "Paso de espacio de 4 px, múltiplo de la base de 4. No usar directamente: usar el token semántico que apunta a este valor.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitive",
+            "scopes": [],
+            "codeSyntax": {
+              "WEB": "var(--space-4)"
+            }
+          }
+        }
+      },
+      "8": {
+        "$type": "dimension",
+        "$value": "8px",
+        "$description": "Paso de espacio de 8 px, múltiplo de la base de 4. No usar directamente: usar el token semántico que apunta a este valor.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitive",
+            "scopes": [],
+            "codeSyntax": {
+              "WEB": "var(--space-8)"
+            }
+          }
+        }
+      },
+      "12": {
+        "$type": "dimension",
+        "$value": "12px",
+        "$description": "Paso de espacio de 12 px, múltiplo de la base de 4. No usar directamente: usar el token semántico que apunta a este valor.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitive",
+            "scopes": [],
+            "codeSyntax": {
+              "WEB": "var(--space-12)"
+            }
+          }
+        }
+      },
+      "16": {
+        "$type": "dimension",
+        "$value": "16px",
+        "$description": "Paso de espacio de 16 px, múltiplo de la base de 4. No usar directamente: usar el token semántico que apunta a este valor.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitive",
+            "scopes": [],
+            "codeSyntax": {
+              "WEB": "var(--space-16)"
+            }
+          }
+        }
+      },
+      "24": {
+        "$type": "dimension",
+        "$value": "24px",
+        "$description": "Paso de espacio de 24 px, múltiplo de la base de 4. No usar directamente: usar el token semántico que apunta a este valor.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitive",
+            "scopes": [],
+            "codeSyntax": {
+              "WEB": "var(--space-24)"
+            }
+          }
+        }
+      },
+      "32": {
+        "$type": "dimension",
+        "$value": "32px",
+        "$description": "Paso de espacio de 32 px, múltiplo de la base de 4. No usar directamente: usar el token semántico que apunta a este valor.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitive",
+            "scopes": [],
+            "codeSyntax": {
+              "WEB": "var(--space-32)"
+            }
+          }
+        }
+      },
+      "48": {
+        "$type": "dimension",
+        "$value": "48px",
+        "$description": "Paso de espacio de 48 px, múltiplo de la base de 4. No usar directamente: usar el token semántico que apunta a este valor.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitive",
+            "scopes": [],
+            "codeSyntax": {
+              "WEB": "var(--space-48)"
+            }
+          }
+        }
+      },
+      "64": {
+        "$type": "dimension",
+        "$value": "64px",
+        "$description": "Paso de espacio de 64 px, múltiplo de la base de 4. No usar directamente: usar el token semántico que apunta a este valor.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitive",
+            "scopes": [],
+            "codeSyntax": {
+              "WEB": "var(--space-64)"
+            }
+          }
+        }
+      }
+    },
+    "radius": {
+      "4": {
+        "$type": "dimension",
+        "$value": "4px",
+        "$description": "Radio de 4 px. No usar directamente: usar el token semántico que apunta a este valor.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitive",
+            "scopes": [],
+            "codeSyntax": {
+              "WEB": "var(--radius-4)"
+            }
+          }
+        }
+      },
+      "8": {
+        "$type": "dimension",
+        "$value": "8px",
+        "$description": "Radio de 8 px. No usar directamente: usar el token semántico que apunta a este valor.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitive",
+            "scopes": [],
+            "codeSyntax": {
+              "WEB": "var(--radius-8)"
+            }
+          }
+        }
+      },
+      "12": {
+        "$type": "dimension",
+        "$value": "12px",
+        "$description": "Radio de 12 px. No usar directamente: usar el token semántico que apunta a este valor.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitive",
+            "scopes": [],
+            "codeSyntax": {
+              "WEB": "var(--radius-12)"
+            }
+          }
+        }
+      },
+      "full": {
+        "$type": "dimension",
+        "$value": "999px",
+        "$description": "Radio completo (999 px) para formas de píldora. No usar directamente: usar el token semántico que apunta a este valor.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitive",
+            "scopes": [],
+            "codeSyntax": {
+              "WEB": "var(--radius-full)"
+            }
+          }
+        }
+      }
+    },
+    "size": {
+      "16": {
+        "$type": "dimension",
+        "$value": "16px",
+        "$description": "Tamaño de 16 px para íconos. No usar directamente: usar el token semántico que apunta a este valor.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitive",
+            "scopes": [],
+            "codeSyntax": {
+              "WEB": "var(--size-16)"
+            }
+          }
+        }
+      },
+      "20": {
+        "$type": "dimension",
+        "$value": "20px",
+        "$description": "Tamaño de 20 px para íconos. No usar directamente: usar el token semántico que apunta a este valor.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitive",
+            "scopes": [],
+            "codeSyntax": {
+              "WEB": "var(--size-20)"
+            }
+          }
+        }
+      },
+      "24": {
+        "$type": "dimension",
+        "$value": "24px",
+        "$description": "Tamaño de 24 px para íconos. No usar directamente: usar el token semántico que apunta a este valor.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitive",
+            "scopes": [],
+            "codeSyntax": {
+              "WEB": "var(--size-24)"
+            }
+          }
+        }
+      },
+      "430": {
+        "$type": "dimension",
+        "$value": "430px",
+        "$description": "Ancho de 430 px para anchos máximos de layout. No usar directamente: usar el token semántico que apunta a este valor.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitive",
+            "scopes": [],
+            "codeSyntax": {
+              "WEB": "var(--size-430)"
+            }
+          }
+        }
+      },
+      "720": {
+        "$type": "dimension",
+        "$value": "720px",
+        "$description": "Ancho de 720 px para anchos máximos de layout. No usar directamente: usar el token semántico que apunta a este valor.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitive",
+            "scopes": [],
+            "codeSyntax": {
+              "WEB": "var(--size-720)"
+            }
+          }
+        }
+      },
+      "1440": {
+        "$type": "dimension",
+        "$value": "1440px",
+        "$description": "Ancho de 1440 px para anchos máximos de layout. No usar directamente: usar el token semántico que apunta a este valor.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitive",
+            "scopes": [],
+            "codeSyntax": {
+              "WEB": "var(--size-1440)"
+            }
+          }
+        }
+      }
+    },
+    "columns": {
+      "4": {
+        "$type": "number",
+        "$value": 4,
+        "$description": "4 columnas de grilla. No usar directamente: usar el token semántico que apunta a este valor.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitive",
+            "scopes": [],
+            "codeSyntax": {
+              "WEB": "var(--columns-4)"
+            }
+          }
+        }
+      },
+      "12": {
+        "$type": "number",
+        "$value": 12,
+        "$description": "12 columnas de grilla. No usar directamente: usar el token semántico que apunta a este valor.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitive",
+            "scopes": [],
+            "codeSyntax": {
+              "WEB": "var(--columns-12)"
+            }
+          }
+        }
+      }
+    },
+    "border-width": {
+      "1": {
+        "$type": "dimension",
+        "$value": "1px",
+        "$description": "Grosor de borde de 1 px. No usar directamente: usar el token semántico que apunta a este valor.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitive",
+            "scopes": [],
+            "codeSyntax": {
+              "WEB": "var(--border-width-1)"
+            }
+          }
+        }
+      },
+      "2": {
+        "$type": "dimension",
+        "$value": "2px",
+        "$description": "Grosor de borde de 2 px. No usar directamente: usar el token semántico que apunta a este valor.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitive",
+            "scopes": [],
+            "codeSyntax": {
+              "WEB": "var(--border-width-2)"
+            }
+          }
+        }
+      }
+    }
+  },
+  "semantic": {
+    "color": {
+      "text": {
+        "primary": {
+          "$type": "color",
+          "$value": "{primitive.color.neutral.900}",
+          "$description": "Texto principal: títulos, cuerpo y datos.",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.neutral.50}"
+            },
+            "com.figma": {
+              "collection": "Semantic",
+              "scopes": [
+                "TEXT_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--color-text-primary)"
+              }
+            }
+          }
+        },
+        "secondary": {
+          "$type": "color",
+          "$value": "{primitive.color.neutral.600}",
+          "$description": "Texto de apoyo: metadatos, fechas y ayudas de campo.",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.neutral.400}"
+            },
+            "com.figma": {
+              "collection": "Semantic",
+              "scopes": [
+                "TEXT_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--color-text-secondary)"
+              }
+            }
+          }
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{primitive.color.neutral.400}",
+          "$description": "Texto de controles deshabilitados. Nunca para información que haya que leer.",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.neutral.600}"
+            },
+            "com.figma": {
+              "collection": "Semantic",
+              "scopes": [
+                "TEXT_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--color-text-disabled)"
+              }
+            }
+          }
+        },
+        "on-action": {
+          "$type": "color",
+          "$value": "{primitive.color.neutral.900}",
+          "$description": "Texto e íconos sobre la acción principal (action/default, hover y pressed).",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.neutral.900}"
+            },
+            "com.figma": {
+              "collection": "Semantic",
+              "scopes": [
+                "TEXT_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--color-text-on-action)"
+              }
+            }
+          }
+        },
+        "on-action-subtle": {
+          "$type": "color",
+          "$value": "{primitive.color.lima.900}",
+          "$description": "Texto sobre action/subtle: chip, filtro o pestaña seleccionados.",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.lima.400}"
+            },
+            "com.figma": {
+              "collection": "Semantic",
+              "scopes": [
+                "TEXT_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--color-text-on-action-subtle)"
+              }
+            }
+          }
+        },
+        "on-brand": {
+          "$type": "color",
+          "$value": "{primitive.color.neutral.900}",
+          "$description": "Texto sobre surface/brand.",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.neutral.900}"
+            },
+            "com.figma": {
+              "collection": "Semantic",
+              "scopes": [
+                "TEXT_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--color-text-on-brand)"
+              }
+            }
+          }
+        },
+        "link": {
+          "$type": "color",
+          "$value": "{primitive.color.azul.700}",
+          "$description": "Enlaces dentro de un texto. Siempre subrayados.",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.azul.300}"
+            },
+            "com.figma": {
+              "collection": "Semantic",
+              "scopes": [
+                "TEXT_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--color-text-link)"
+              }
+            }
+          }
+        }
+      },
+      "surface": {
+        "default": {
+          "$type": "color",
+          "$value": "{primitive.color.neutral.0}",
+          "$description": "Fondo de la página.",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.neutral.950}"
+            },
+            "com.figma": {
+              "collection": "Semantic",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--color-surface-default)"
+              }
+            }
+          }
+        },
+        "subtle": {
+          "$type": "color",
+          "$value": "{primitive.color.neutral.50}",
+          "$description": "Tarjetas y secciones que se separan del fondo.",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.neutral.900}"
+            },
+            "com.figma": {
+              "collection": "Semantic",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--color-surface-subtle)"
+              }
+            }
+          }
+        },
+        "sunken": {
+          "$type": "color",
+          "$value": "{primitive.color.neutral.100}",
+          "$description": "Zonas hundidas dentro de una tarjeta: avatares y pistas de progreso.",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.neutral.950}"
+            },
+            "com.figma": {
+              "collection": "Semantic",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--color-surface-sunken)"
+              }
+            }
+          }
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{primitive.color.neutral.100}",
+          "$description": "Hover de filas, botones secundarios y botones ghost.",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.neutral.800}"
+            },
+            "com.figma": {
+              "collection": "Semantic",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--color-surface-hover)"
+              }
+            }
+          }
+        },
+        "brand": {
+          "$type": "color",
+          "$value": "{primitive.color.lima.400}",
+          "$description": "Momentos de marca no clicables: bienvenida, celebraciones y mascota. Nunca una acción.",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.lima.400}"
+            },
+            "com.figma": {
+              "collection": "Semantic",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--color-surface-brand)"
+              }
+            }
+          }
+        }
+      },
+      "action": {
+        "default": {
+          "$type": "color",
+          "$value": "{primitive.color.lima.400}",
+          "$description": "Fondo de la acción principal de una pantalla. Una sola por vista. El texto encima usa text/on-action.",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.lima.400}"
+            },
+            "com.figma": {
+              "collection": "Semantic",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--color-action-default)"
+              }
+            }
+          }
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{primitive.color.lima.500}",
+          "$description": "Fondo de la acción principal con el cursor encima.",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.lima.100}"
+            },
+            "com.figma": {
+              "collection": "Semantic",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--color-action-hover)"
+              }
+            }
+          }
+        },
+        "pressed": {
+          "$type": "color",
+          "$value": "{primitive.color.lima.600}",
+          "$description": "Fondo de la acción principal mientras se presiona.",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.lima.50}"
+            },
+            "com.figma": {
+              "collection": "Semantic",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--color-action-pressed)"
+              }
+            }
+          }
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{primitive.color.neutral.200}",
+          "$description": "Fondo de una acción que todavía no se puede usar. El texto encima usa text/disabled.",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.neutral.800}"
+            },
+            "com.figma": {
+              "collection": "Semantic",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--color-action-disabled)"
+              }
+            }
+          }
+        },
+        "subtle": {
+          "$type": "color",
+          "$value": "{primitive.color.lima.50}",
+          "$description": "Fondo de un elemento seleccionado: chip, filtro o pestaña activa. El texto encima usa text/on-action-subtle.",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.lima.950}"
+            },
+            "com.figma": {
+              "collection": "Semantic",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--color-action-subtle)"
+              }
+            }
+          }
+        }
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{primitive.color.neutral.200}",
+          "$description": "Divisores y contorno de las tarjetas, que no llevan sombra. No marca el límite de un control.",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.neutral.800}"
+            },
+            "com.figma": {
+              "collection": "Semantic",
+              "scopes": [
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--color-border-default)"
+              }
+            }
+          }
+        },
+        "strong": {
+          "$type": "color",
+          "$value": "{primitive.color.neutral.500}",
+          "$description": "Borde de controles: inputs, botón secundario y casillas.",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.neutral.500}"
+            },
+            "com.figma": {
+              "collection": "Semantic",
+              "scopes": [
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--color-border-strong)"
+              }
+            }
+          }
+        },
+        "focus": {
+          "$type": "color",
+          "$value": "{primitive.color.azul.600}",
+          "$description": "Anillo de foco de cualquier control con teclado.",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.azul.400}"
+            },
+            "com.figma": {
+              "collection": "Semantic",
+              "scopes": [
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--color-border-focus)"
+              }
+            }
+          }
+        }
+      },
+      "ai": {
+        "surface": {
+          "$type": "color",
+          "$value": "{primitive.color.violeta.50}",
+          "$description": "Fondo de un bloque que escribió o decidió Monty, como el porqué de un match o el badge de match.",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.violeta.950}"
+            },
+            "com.figma": {
+              "collection": "Semantic",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--color-ai-surface)"
+              }
+            }
+          }
+        },
+        "text": {
+          "$type": "color",
+          "$value": "{primitive.color.violeta.700}",
+          "$description": "Etiqueta e ícono de un bloque de IA. Siempre con ícono y texto, nunca solo color.",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.violeta.300}"
+            },
+            "com.figma": {
+              "collection": "Semantic",
+              "scopes": [
+                "TEXT_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--color-ai-text)"
+              }
+            }
+          }
+        },
+        "border": {
+          "$type": "color",
+          "$value": "{primitive.color.violeta.600}",
+          "$description": "Borde que delimita un bloque de IA.",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.violeta.400}"
+            },
+            "com.figma": {
+              "collection": "Semantic",
+              "scopes": [
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--color-ai-border)"
+              }
+            }
+          }
+        }
+      },
+      "feedback": {
+        "success": {
+          "text": {
+            "$type": "color",
+            "$value": "{primitive.color.verde.700}",
+            "$description": "Texto e ícono de un mensaje de avances del proceso y confirmaciones.",
+            "$extensions": {
+              "modes": {
+                "dark": "{primitive.color.verde.300}"
+              },
+              "com.figma": {
+                "collection": "Semantic",
+                "scopes": [
+                  "TEXT_FILL"
+                ],
+                "codeSyntax": {
+                  "WEB": "var(--color-feedback-success-text)"
+                }
+              }
+            }
+          },
+          "surface": {
+            "$type": "color",
+            "$value": "{primitive.color.verde.50}",
+            "$description": "Fondo de un mensaje de avances del proceso y confirmaciones.",
+            "$extensions": {
+              "modes": {
+                "dark": "{primitive.color.verde.950}"
+              },
+              "com.figma": {
+                "collection": "Semantic",
+                "scopes": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL"
+                ],
+                "codeSyntax": {
+                  "WEB": "var(--color-feedback-success-surface)"
+                }
+              }
+            }
+          },
+          "border": {
+            "$type": "color",
+            "$value": "{primitive.color.verde.600}",
+            "$description": "Borde de un mensaje de avances del proceso y confirmaciones.",
+            "$extensions": {
+              "modes": {
+                "dark": "{primitive.color.verde.400}"
+              },
+              "com.figma": {
+                "collection": "Semantic",
+                "scopes": [
+                  "STROKE_COLOR"
+                ],
+                "codeSyntax": {
+                  "WEB": "var(--color-feedback-success-border)"
+                }
+              }
+            }
+          }
+        },
+        "warning": {
+          "text": {
+            "$type": "color",
+            "$value": "{primitive.color.ambar.700}",
+            "$description": "Texto e ícono de un mensaje de algo que requiere atención pero no bloquea.",
+            "$extensions": {
+              "modes": {
+                "dark": "{primitive.color.ambar.300}"
+              },
+              "com.figma": {
+                "collection": "Semantic",
+                "scopes": [
+                  "TEXT_FILL"
+                ],
+                "codeSyntax": {
+                  "WEB": "var(--color-feedback-warning-text)"
+                }
+              }
+            }
+          },
+          "surface": {
+            "$type": "color",
+            "$value": "{primitive.color.ambar.50}",
+            "$description": "Fondo de un mensaje de algo que requiere atención pero no bloquea.",
+            "$extensions": {
+              "modes": {
+                "dark": "{primitive.color.ambar.950}"
+              },
+              "com.figma": {
+                "collection": "Semantic",
+                "scopes": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL"
+                ],
+                "codeSyntax": {
+                  "WEB": "var(--color-feedback-warning-surface)"
+                }
+              }
+            }
+          },
+          "border": {
+            "$type": "color",
+            "$value": "{primitive.color.ambar.600}",
+            "$description": "Borde de un mensaje de algo que requiere atención pero no bloquea.",
+            "$extensions": {
+              "modes": {
+                "dark": "{primitive.color.ambar.400}"
+              },
+              "com.figma": {
+                "collection": "Semantic",
+                "scopes": [
+                  "STROKE_COLOR"
+                ],
+                "codeSyntax": {
+                  "WEB": "var(--color-feedback-warning-border)"
+                }
+              }
+            }
+          }
+        },
+        "error": {
+          "text": {
+            "$type": "color",
+            "$value": "{primitive.color.rojo.700}",
+            "$description": "Texto e ícono de un mensaje de errores del sistema o de un campo (un rechazo no es un error).",
+            "$extensions": {
+              "modes": {
+                "dark": "{primitive.color.rojo.300}"
+              },
+              "com.figma": {
+                "collection": "Semantic",
+                "scopes": [
+                  "TEXT_FILL"
+                ],
+                "codeSyntax": {
+                  "WEB": "var(--color-feedback-error-text)"
+                }
+              }
+            }
+          },
+          "surface": {
+            "$type": "color",
+            "$value": "{primitive.color.rojo.50}",
+            "$description": "Fondo de un mensaje de errores del sistema o de un campo (un rechazo no es un error).",
+            "$extensions": {
+              "modes": {
+                "dark": "{primitive.color.rojo.950}"
+              },
+              "com.figma": {
+                "collection": "Semantic",
+                "scopes": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL"
+                ],
+                "codeSyntax": {
+                  "WEB": "var(--color-feedback-error-surface)"
+                }
+              }
+            }
+          },
+          "border": {
+            "$type": "color",
+            "$value": "{primitive.color.rojo.600}",
+            "$description": "Borde de un mensaje de errores del sistema o de un campo (un rechazo no es un error).",
+            "$extensions": {
+              "modes": {
+                "dark": "{primitive.color.rojo.400}"
+              },
+              "com.figma": {
+                "collection": "Semantic",
+                "scopes": [
+                  "STROKE_COLOR"
+                ],
+                "codeSyntax": {
+                  "WEB": "var(--color-feedback-error-border)"
+                }
+              }
+            }
+          }
+        },
+        "info": {
+          "text": {
+            "$type": "color",
+            "$value": "{primitive.color.azul.700}",
+            "$description": "Texto e ícono de un mensaje de información neutra del sistema.",
+            "$extensions": {
+              "modes": {
+                "dark": "{primitive.color.azul.300}"
+              },
+              "com.figma": {
+                "collection": "Semantic",
+                "scopes": [
+                  "TEXT_FILL"
+                ],
+                "codeSyntax": {
+                  "WEB": "var(--color-feedback-info-text)"
+                }
+              }
+            }
+          },
+          "surface": {
+            "$type": "color",
+            "$value": "{primitive.color.azul.50}",
+            "$description": "Fondo de un mensaje de información neutra del sistema.",
+            "$extensions": {
+              "modes": {
+                "dark": "{primitive.color.azul.950}"
+              },
+              "com.figma": {
+                "collection": "Semantic",
+                "scopes": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL"
+                ],
+                "codeSyntax": {
+                  "WEB": "var(--color-feedback-info-surface)"
+                }
+              }
+            }
+          },
+          "border": {
+            "$type": "color",
+            "$value": "{primitive.color.azul.600}",
+            "$description": "Borde de un mensaje de información neutra del sistema.",
+            "$extensions": {
+              "modes": {
+                "dark": "{primitive.color.azul.400}"
+              },
+              "com.figma": {
+                "collection": "Semantic",
+                "scopes": [
+                  "STROKE_COLOR"
+                ],
+                "codeSyntax": {
+                  "WEB": "var(--color-feedback-info-border)"
+                }
+              }
+            }
+          }
+        }
+      },
+      "shadow": {
+        "soft": {
+          "$type": "color",
+          "$value": "{primitive.color.black-alpha.8}",
+          "$description": "Sombra de contacto y difusa de los niveles raised y overlay. Solo en estilos de efecto.",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.black-alpha.40}"
+            },
+            "com.figma": {
+              "collection": "Semantic",
+              "scopes": [
+                "EFFECT_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--color-shadow-soft)"
+              }
+            }
+          }
+        },
+        "strong": {
+          "$type": "color",
+          "$value": "{primitive.color.black-alpha.16}",
+          "$description": "Sombra principal del nivel modal. Solo en estilos de efecto.",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.black-alpha.64}"
+            },
+            "com.figma": {
+              "collection": "Semantic",
+              "scopes": [
+                "EFFECT_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--color-shadow-strong)"
+              }
+            }
+          }
+        }
+      },
+      "overlay": {
+        "scrim": {
+          "$type": "color",
+          "$value": "{primitive.color.black-alpha.48}",
+          "$description": "Fondo que oscurece la pantalla detrás de un modal u hoja inferior.",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.black-alpha.64}"
+            },
+            "com.figma": {
+              "collection": "Semantic",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--color-overlay-scrim)"
+              }
+            }
+          }
+        }
+      },
+      "icon": {
+        "default": {
+          "$type": "color",
+          "$value": "{primitive.color.neutral.900}",
+          "$description": "Íconos junto a texto principal y en la navegación.",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.neutral.50}"
+            },
+            "com.figma": {
+              "collection": "Semantic",
+              "scopes": [
+                "SHAPE_FILL",
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--color-icon-default)"
+              }
+            }
+          }
+        },
+        "secondary": {
+          "$type": "color",
+          "$value": "{primitive.color.neutral.600}",
+          "$description": "Íconos de metadatos: ubicación, fecha, modalidad, y el ícono dentro de un campo.",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.neutral.400}"
+            },
+            "com.figma": {
+              "collection": "Semantic",
+              "scopes": [
+                "SHAPE_FILL",
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--color-icon-secondary)"
+              }
+            }
+          }
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{primitive.color.neutral.400}",
+          "$description": "Íconos de controles deshabilitados.",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.neutral.600}"
+            },
+            "com.figma": {
+              "collection": "Semantic",
+              "scopes": [
+                "SHAPE_FILL",
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--color-icon-disabled)"
+              }
+            }
+          }
+        },
+        "on-action": {
+          "$type": "color",
+          "$value": "{primitive.color.neutral.900}",
+          "$description": "Íconos sobre la acción principal (action/default, hover y pressed).",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.neutral.900}"
+            },
+            "com.figma": {
+              "collection": "Semantic",
+              "scopes": [
+                "SHAPE_FILL",
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--color-icon-on-action)"
+              }
+            }
+          }
+        },
+        "ai": {
+          "$type": "color",
+          "$value": "{primitive.color.violeta.700}",
+          "$description": "Ícono que marca lo que hizo Monty. Siempre junto a una etiqueta de texto.",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.violeta.300}"
+            },
+            "com.figma": {
+              "collection": "Semantic",
+              "scopes": [
+                "SHAPE_FILL",
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--color-icon-ai)"
+              }
+            }
+          }
+        },
+        "success": {
+          "$type": "color",
+          "$value": "{primitive.color.verde.700}",
+          "$description": "Ícono de un mensaje de éxito. Acompaña al texto, nunca lo reemplaza.",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.verde.300}"
+            },
+            "com.figma": {
+              "collection": "Semantic",
+              "scopes": [
+                "SHAPE_FILL",
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--color-icon-success)"
+              }
+            }
+          }
+        },
+        "warning": {
+          "$type": "color",
+          "$value": "{primitive.color.ambar.700}",
+          "$description": "Ícono de un aviso. Acompaña al texto, nunca lo reemplaza.",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.ambar.300}"
+            },
+            "com.figma": {
+              "collection": "Semantic",
+              "scopes": [
+                "SHAPE_FILL",
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--color-icon-warning)"
+              }
+            }
+          }
+        },
+        "error": {
+          "$type": "color",
+          "$value": "{primitive.color.rojo.700}",
+          "$description": "Ícono de un error. Acompaña al mensaje, nunca lo reemplaza.",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.rojo.300}"
+            },
+            "com.figma": {
+              "collection": "Semantic",
+              "scopes": [
+                "SHAPE_FILL",
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--color-icon-error)"
+              }
+            }
+          }
+        },
+        "info": {
+          "$type": "color",
+          "$value": "{primitive.color.azul.700}",
+          "$description": "Ícono de información del sistema. Acompaña al texto, nunca lo reemplaza.",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.azul.300}"
+            },
+            "com.figma": {
+              "collection": "Semantic",
+              "scopes": [
+                "SHAPE_FILL",
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--color-icon-info)"
+              }
+            }
+          }
+        }
+      }
+    },
+    "type": {
+      "display": {
+        "family": {
+          "$type": "fontFamily",
+          "$value": "{primitive.font.family.plus-jakarta-sans}",
+          "$description": "Momentos grandes y escasos: bienvenida, celebrar un avance, pantalla vacía con Monty. Uno por pantalla como máximo.",
+          "$extensions": {
+            "modes": {
+              "web": "{primitive.font.family.plus-jakarta-sans}"
+            },
+            "com.figma": {
+              "collection": "Semantic Platform",
+              "scopes": [
+                "FONT_FAMILY"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--type-display-family)"
+              }
+            }
+          }
+        },
+        "weight": {
+          "$type": "fontWeight",
+          "$value": "{primitive.font.weight.bold}",
+          "$description": "Momentos grandes y escasos: bienvenida, celebrar un avance, pantalla vacía con Monty. Uno por pantalla como máximo.",
+          "$extensions": {
+            "modes": {
+              "web": "{primitive.font.weight.bold}"
+            },
+            "com.figma": {
+              "collection": "Semantic Platform",
+              "scopes": [
+                "FONT_WEIGHT"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--type-display-weight)"
+              }
+            }
+          }
+        },
+        "size": {
+          "$type": "dimension",
+          "$value": "{primitive.font.size.32}",
+          "$description": "Momentos grandes y escasos: bienvenida, celebrar un avance, pantalla vacía con Monty. Uno por pantalla como máximo.",
+          "$extensions": {
+            "modes": {
+              "web": "{primitive.font.size.48}"
+            },
+            "com.figma": {
+              "collection": "Semantic Platform",
+              "scopes": [
+                "FONT_SIZE"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--type-display-size)"
+              }
+            }
+          }
+        },
+        "line-height": {
+          "$type": "dimension",
+          "$value": "{primitive.font.line-height.40}",
+          "$description": "Momentos grandes y escasos: bienvenida, celebrar un avance, pantalla vacía con Monty. Uno por pantalla como máximo.",
+          "$extensions": {
+            "modes": {
+              "web": "{primitive.font.line-height.56}"
+            },
+            "com.figma": {
+              "collection": "Semantic Platform",
+              "scopes": [
+                "LINE_HEIGHT"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--type-display-line-height)"
+              }
+            }
+          }
+        }
+      },
+      "heading": {
+        "lg": {
+          "family": {
+            "$type": "fontFamily",
+            "$value": "{primitive.font.family.plus-jakarta-sans}",
+            "$description": "Título de la pantalla. Uno por vista.",
+            "$extensions": {
+              "modes": {
+                "web": "{primitive.font.family.plus-jakarta-sans}"
+              },
+              "com.figma": {
+                "collection": "Semantic Platform",
+                "scopes": [
+                  "FONT_FAMILY"
+                ],
+                "codeSyntax": {
+                  "WEB": "var(--type-heading-lg-family)"
+                }
+              }
+            }
+          },
+          "weight": {
+            "$type": "fontWeight",
+            "$value": "{primitive.font.weight.bold}",
+            "$description": "Título de la pantalla. Uno por vista.",
+            "$extensions": {
+              "modes": {
+                "web": "{primitive.font.weight.bold}"
+              },
+              "com.figma": {
+                "collection": "Semantic Platform",
+                "scopes": [
+                  "FONT_WEIGHT"
+                ],
+                "codeSyntax": {
+                  "WEB": "var(--type-heading-lg-weight)"
+                }
+              }
+            }
+          },
+          "size": {
+            "$type": "dimension",
+            "$value": "{primitive.font.size.24}",
+            "$description": "Título de la pantalla. Uno por vista.",
+            "$extensions": {
+              "modes": {
+                "web": "{primitive.font.size.32}"
+              },
+              "com.figma": {
+                "collection": "Semantic Platform",
+                "scopes": [
+                  "FONT_SIZE"
+                ],
+                "codeSyntax": {
+                  "WEB": "var(--type-heading-lg-size)"
+                }
+              }
+            }
+          },
+          "line-height": {
+            "$type": "dimension",
+            "$value": "{primitive.font.line-height.32}",
+            "$description": "Título de la pantalla. Uno por vista.",
+            "$extensions": {
+              "modes": {
+                "web": "{primitive.font.line-height.40}"
+              },
+              "com.figma": {
+                "collection": "Semantic Platform",
+                "scopes": [
+                  "LINE_HEIGHT"
+                ],
+                "codeSyntax": {
+                  "WEB": "var(--type-heading-lg-line-height)"
+                }
+              }
+            }
+          }
+        },
+        "md": {
+          "family": {
+            "$type": "fontFamily",
+            "$value": "{primitive.font.family.plus-jakarta-sans}",
+            "$description": "Título de sección dentro de una pantalla o del panel.",
+            "$extensions": {
+              "modes": {
+                "web": "{primitive.font.family.plus-jakarta-sans}"
+              },
+              "com.figma": {
+                "collection": "Semantic Platform",
+                "scopes": [
+                  "FONT_FAMILY"
+                ],
+                "codeSyntax": {
+                  "WEB": "var(--type-heading-md-family)"
+                }
+              }
+            }
+          },
+          "weight": {
+            "$type": "fontWeight",
+            "$value": "{primitive.font.weight.bold}",
+            "$description": "Título de sección dentro de una pantalla o del panel.",
+            "$extensions": {
+              "modes": {
+                "web": "{primitive.font.weight.bold}"
+              },
+              "com.figma": {
+                "collection": "Semantic Platform",
+                "scopes": [
+                  "FONT_WEIGHT"
+                ],
+                "codeSyntax": {
+                  "WEB": "var(--type-heading-md-weight)"
+                }
+              }
+            }
+          },
+          "size": {
+            "$type": "dimension",
+            "$value": "{primitive.font.size.20}",
+            "$description": "Título de sección dentro de una pantalla o del panel.",
+            "$extensions": {
+              "modes": {
+                "web": "{primitive.font.size.24}"
+              },
+              "com.figma": {
+                "collection": "Semantic Platform",
+                "scopes": [
+                  "FONT_SIZE"
+                ],
+                "codeSyntax": {
+                  "WEB": "var(--type-heading-md-size)"
+                }
+              }
+            }
+          },
+          "line-height": {
+            "$type": "dimension",
+            "$value": "{primitive.font.line-height.28}",
+            "$description": "Título de sección dentro de una pantalla o del panel.",
+            "$extensions": {
+              "modes": {
+                "web": "{primitive.font.line-height.32}"
+              },
+              "com.figma": {
+                "collection": "Semantic Platform",
+                "scopes": [
+                  "LINE_HEIGHT"
+                ],
+                "codeSyntax": {
+                  "WEB": "var(--type-heading-md-line-height)"
+                }
+              }
+            }
+          }
+        },
+        "sm": {
+          "family": {
+            "$type": "fontFamily",
+            "$value": "{primitive.font.family.plus-jakarta-sans}",
+            "$description": "Título de tarjeta o fila: empresa, puesto, nombre de candidato.",
+            "$extensions": {
+              "modes": {
+                "web": "{primitive.font.family.plus-jakarta-sans}"
+              },
+              "com.figma": {
+                "collection": "Semantic Platform",
+                "scopes": [
+                  "FONT_FAMILY"
+                ],
+                "codeSyntax": {
+                  "WEB": "var(--type-heading-sm-family)"
+                }
+              }
+            }
+          },
+          "weight": {
+            "$type": "fontWeight",
+            "$value": "{primitive.font.weight.bold}",
+            "$description": "Título de tarjeta o fila: empresa, puesto, nombre de candidato.",
+            "$extensions": {
+              "modes": {
+                "web": "{primitive.font.weight.bold}"
+              },
+              "com.figma": {
+                "collection": "Semantic Platform",
+                "scopes": [
+                  "FONT_WEIGHT"
+                ],
+                "codeSyntax": {
+                  "WEB": "var(--type-heading-sm-weight)"
+                }
+              }
+            }
+          },
+          "size": {
+            "$type": "dimension",
+            "$value": "{primitive.font.size.16}",
+            "$description": "Título de tarjeta o fila: empresa, puesto, nombre de candidato.",
+            "$extensions": {
+              "modes": {
+                "web": "{primitive.font.size.16}"
+              },
+              "com.figma": {
+                "collection": "Semantic Platform",
+                "scopes": [
+                  "FONT_SIZE"
+                ],
+                "codeSyntax": {
+                  "WEB": "var(--type-heading-sm-size)"
+                }
+              }
+            }
+          },
+          "line-height": {
+            "$type": "dimension",
+            "$value": "{primitive.font.line-height.24}",
+            "$description": "Título de tarjeta o fila: empresa, puesto, nombre de candidato.",
+            "$extensions": {
+              "modes": {
+                "web": "{primitive.font.line-height.24}"
+              },
+              "com.figma": {
+                "collection": "Semantic Platform",
+                "scopes": [
+                  "LINE_HEIGHT"
+                ],
+                "codeSyntax": {
+                  "WEB": "var(--type-heading-sm-line-height)"
+                }
+              }
+            }
+          }
+        }
+      },
+      "body": {
+        "default": {
+          "family": {
+            "$type": "fontFamily",
+            "$value": "{primitive.font.family.inter}",
+            "$description": "Texto de lectura en la app y la web de candidatos: descripciones, el porqué del match, mensajes.",
+            "$extensions": {
+              "modes": {
+                "web": "{primitive.font.family.inter}"
+              },
+              "com.figma": {
+                "collection": "Semantic Platform",
+                "scopes": [
+                  "FONT_FAMILY"
+                ],
+                "codeSyntax": {
+                  "WEB": "var(--type-body-default-family)"
+                }
+              }
+            }
+          },
+          "weight": {
+            "$type": "fontWeight",
+            "$value": "{primitive.font.weight.regular}",
+            "$description": "Texto de lectura en la app y la web de candidatos: descripciones, el porqué del match, mensajes.",
+            "$extensions": {
+              "modes": {
+                "web": "{primitive.font.weight.regular}"
+              },
+              "com.figma": {
+                "collection": "Semantic Platform",
+                "scopes": [
+                  "FONT_WEIGHT"
+                ],
+                "codeSyntax": {
+                  "WEB": "var(--type-body-default-weight)"
+                }
+              }
+            }
+          },
+          "size": {
+            "$type": "dimension",
+            "$value": "{primitive.font.size.16}",
+            "$description": "Texto de lectura en la app y la web de candidatos: descripciones, el porqué del match, mensajes.",
+            "$extensions": {
+              "modes": {
+                "web": "{primitive.font.size.16}"
+              },
+              "com.figma": {
+                "collection": "Semantic Platform",
+                "scopes": [
+                  "FONT_SIZE"
+                ],
+                "codeSyntax": {
+                  "WEB": "var(--type-body-default-size)"
+                }
+              }
+            }
+          },
+          "line-height": {
+            "$type": "dimension",
+            "$value": "{primitive.font.line-height.24}",
+            "$description": "Texto de lectura en la app y la web de candidatos: descripciones, el porqué del match, mensajes.",
+            "$extensions": {
+              "modes": {
+                "web": "{primitive.font.line-height.24}"
+              },
+              "com.figma": {
+                "collection": "Semantic Platform",
+                "scopes": [
+                  "LINE_HEIGHT"
+                ],
+                "codeSyntax": {
+                  "WEB": "var(--type-body-default-line-height)"
+                }
+              }
+            }
+          }
+        },
+        "compact": {
+          "family": {
+            "$type": "fontFamily",
+            "$value": "{primitive.font.family.inter}",
+            "$description": "Lectura en el panel de empresas y en tablas. En móvil, solo metadatos de una línea, nunca párrafos.",
+            "$extensions": {
+              "modes": {
+                "web": "{primitive.font.family.inter}"
+              },
+              "com.figma": {
+                "collection": "Semantic Platform",
+                "scopes": [
+                  "FONT_FAMILY"
+                ],
+                "codeSyntax": {
+                  "WEB": "var(--type-body-compact-family)"
+                }
+              }
+            }
+          },
+          "weight": {
+            "$type": "fontWeight",
+            "$value": "{primitive.font.weight.regular}",
+            "$description": "Lectura en el panel de empresas y en tablas. En móvil, solo metadatos de una línea, nunca párrafos.",
+            "$extensions": {
+              "modes": {
+                "web": "{primitive.font.weight.regular}"
+              },
+              "com.figma": {
+                "collection": "Semantic Platform",
+                "scopes": [
+                  "FONT_WEIGHT"
+                ],
+                "codeSyntax": {
+                  "WEB": "var(--type-body-compact-weight)"
+                }
+              }
+            }
+          },
+          "size": {
+            "$type": "dimension",
+            "$value": "{primitive.font.size.14}",
+            "$description": "Lectura en el panel de empresas y en tablas. En móvil, solo metadatos de una línea, nunca párrafos.",
+            "$extensions": {
+              "modes": {
+                "web": "{primitive.font.size.14}"
+              },
+              "com.figma": {
+                "collection": "Semantic Platform",
+                "scopes": [
+                  "FONT_SIZE"
+                ],
+                "codeSyntax": {
+                  "WEB": "var(--type-body-compact-size)"
+                }
+              }
+            }
+          },
+          "line-height": {
+            "$type": "dimension",
+            "$value": "{primitive.font.line-height.20}",
+            "$description": "Lectura en el panel de empresas y en tablas. En móvil, solo metadatos de una línea, nunca párrafos.",
+            "$extensions": {
+              "modes": {
+                "web": "{primitive.font.line-height.20}"
+              },
+              "com.figma": {
+                "collection": "Semantic Platform",
+                "scopes": [
+                  "LINE_HEIGHT"
+                ],
+                "codeSyntax": {
+                  "WEB": "var(--type-body-compact-line-height)"
+                }
+              }
+            }
+          }
+        }
+      },
+      "label": {
+        "default": {
+          "family": {
+            "$type": "fontFamily",
+            "$value": "{primitive.font.family.inter}",
+            "$description": "Texto de botones y controles principales. Una línea.",
+            "$extensions": {
+              "modes": {
+                "web": "{primitive.font.family.inter}"
+              },
+              "com.figma": {
+                "collection": "Semantic Platform",
+                "scopes": [
+                  "FONT_FAMILY"
+                ],
+                "codeSyntax": {
+                  "WEB": "var(--type-label-default-family)"
+                }
+              }
+            }
+          },
+          "weight": {
+            "$type": "fontWeight",
+            "$value": "{primitive.font.weight.semibold}",
+            "$description": "Texto de botones y controles principales. Una línea.",
+            "$extensions": {
+              "modes": {
+                "web": "{primitive.font.weight.semibold}"
+              },
+              "com.figma": {
+                "collection": "Semantic Platform",
+                "scopes": [
+                  "FONT_WEIGHT"
+                ],
+                "codeSyntax": {
+                  "WEB": "var(--type-label-default-weight)"
+                }
+              }
+            }
+          },
+          "size": {
+            "$type": "dimension",
+            "$value": "{primitive.font.size.16}",
+            "$description": "Texto de botones y controles principales. Una línea.",
+            "$extensions": {
+              "modes": {
+                "web": "{primitive.font.size.16}"
+              },
+              "com.figma": {
+                "collection": "Semantic Platform",
+                "scopes": [
+                  "FONT_SIZE"
+                ],
+                "codeSyntax": {
+                  "WEB": "var(--type-label-default-size)"
+                }
+              }
+            }
+          },
+          "line-height": {
+            "$type": "dimension",
+            "$value": "{primitive.font.line-height.20}",
+            "$description": "Texto de botones y controles principales. Una línea.",
+            "$extensions": {
+              "modes": {
+                "web": "{primitive.font.line-height.20}"
+              },
+              "com.figma": {
+                "collection": "Semantic Platform",
+                "scopes": [
+                  "LINE_HEIGHT"
+                ],
+                "codeSyntax": {
+                  "WEB": "var(--type-label-default-line-height)"
+                }
+              }
+            }
+          }
+        },
+        "sm": {
+          "family": {
+            "$type": "fontFamily",
+            "$value": "{primitive.font.family.inter}",
+            "$description": "Chips, badges, pestañas, estados de proceso y encabezados de tabla. Una línea.",
+            "$extensions": {
+              "modes": {
+                "web": "{primitive.font.family.inter}"
+              },
+              "com.figma": {
+                "collection": "Semantic Platform",
+                "scopes": [
+                  "FONT_FAMILY"
+                ],
+                "codeSyntax": {
+                  "WEB": "var(--type-label-sm-family)"
+                }
+              }
+            }
+          },
+          "weight": {
+            "$type": "fontWeight",
+            "$value": "{primitive.font.weight.semibold}",
+            "$description": "Chips, badges, pestañas, estados de proceso y encabezados de tabla. Una línea.",
+            "$extensions": {
+              "modes": {
+                "web": "{primitive.font.weight.semibold}"
+              },
+              "com.figma": {
+                "collection": "Semantic Platform",
+                "scopes": [
+                  "FONT_WEIGHT"
+                ],
+                "codeSyntax": {
+                  "WEB": "var(--type-label-sm-weight)"
+                }
+              }
+            }
+          },
+          "size": {
+            "$type": "dimension",
+            "$value": "{primitive.font.size.14}",
+            "$description": "Chips, badges, pestañas, estados de proceso y encabezados de tabla. Una línea.",
+            "$extensions": {
+              "modes": {
+                "web": "{primitive.font.size.14}"
+              },
+              "com.figma": {
+                "collection": "Semantic Platform",
+                "scopes": [
+                  "FONT_SIZE"
+                ],
+                "codeSyntax": {
+                  "WEB": "var(--type-label-sm-size)"
+                }
+              }
+            }
+          },
+          "line-height": {
+            "$type": "dimension",
+            "$value": "{primitive.font.line-height.20}",
+            "$description": "Chips, badges, pestañas, estados de proceso y encabezados de tabla. Una línea.",
+            "$extensions": {
+              "modes": {
+                "web": "{primitive.font.line-height.20}"
+              },
+              "com.figma": {
+                "collection": "Semantic Platform",
+                "scopes": [
+                  "LINE_HEIGHT"
+                ],
+                "codeSyntax": {
+                  "WEB": "var(--type-label-sm-line-height)"
+                }
+              }
+            }
+          }
+        }
+      },
+      "data": {
+        "family": {
+          "$type": "fontFamily",
+          "$value": "{primitive.font.family.inter}",
+          "$description": "Cifras protagonistas: salario, porcentaje de match, fechas clave. Con cifras tabulares.",
+          "$extensions": {
+            "modes": {
+              "web": "{primitive.font.family.inter}"
+            },
+            "com.figma": {
+              "collection": "Semantic Platform",
+              "scopes": [
+                "FONT_FAMILY"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--type-data-family)"
+              }
+            }
+          }
+        },
+        "weight": {
+          "$type": "fontWeight",
+          "$value": "{primitive.font.weight.semibold}",
+          "$description": "Cifras protagonistas: salario, porcentaje de match, fechas clave. Con cifras tabulares.",
+          "$extensions": {
+            "modes": {
+              "web": "{primitive.font.weight.semibold}"
+            },
+            "com.figma": {
+              "collection": "Semantic Platform",
+              "scopes": [
+                "FONT_WEIGHT"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--type-data-weight)"
+              }
+            }
+          }
+        },
+        "size": {
+          "$type": "dimension",
+          "$value": "{primitive.font.size.20}",
+          "$description": "Cifras protagonistas: salario, porcentaje de match, fechas clave. Con cifras tabulares.",
+          "$extensions": {
+            "modes": {
+              "web": "{primitive.font.size.20}"
+            },
+            "com.figma": {
+              "collection": "Semantic Platform",
+              "scopes": [
+                "FONT_SIZE"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--type-data-size)"
+              }
+            }
+          }
+        },
+        "line-height": {
+          "$type": "dimension",
+          "$value": "{primitive.font.line-height.28}",
+          "$description": "Cifras protagonistas: salario, porcentaje de match, fechas clave. Con cifras tabulares.",
+          "$extensions": {
+            "modes": {
+              "web": "{primitive.font.line-height.28}"
+            },
+            "com.figma": {
+              "collection": "Semantic Platform",
+              "scopes": [
+                "LINE_HEIGHT"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--type-data-line-height)"
+              }
+            }
+          }
+        }
+      }
+    },
+    "space": {
+      "inset": {
+        "xs": {
+          "$type": "dimension",
+          "$value": "{primitive.space.4}",
+          "$description": "Relleno de badges y chips pequeños.",
+          "$extensions": {
+            "modes": {
+              "web": "{primitive.space.4}"
+            },
+            "com.figma": {
+              "collection": "Semantic Platform",
+              "scopes": [
+                "GAP"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--space-inset-xs)"
+              }
+            }
+          }
+        },
+        "sm": {
+          "$type": "dimension",
+          "$value": "{primitive.space.8}",
+          "$description": "Relleno de chips y de celdas de tabla en el panel de empresas.",
+          "$extensions": {
+            "modes": {
+              "web": "{primitive.space.8}"
+            },
+            "com.figma": {
+              "collection": "Semantic Platform",
+              "scopes": [
+                "GAP"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--space-inset-sm)"
+              }
+            }
+          }
+        },
+        "md": {
+          "$type": "dimension",
+          "$value": "{primitive.space.12}",
+          "$description": "Relleno vertical de botones e inputs (12 + 20 + 12 = 44 px) y relleno del bloque de IA.",
+          "$extensions": {
+            "modes": {
+              "web": "{primitive.space.12}"
+            },
+            "com.figma": {
+              "collection": "Semantic Platform",
+              "scopes": [
+                "GAP"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--space-inset-md)"
+              }
+            }
+          }
+        },
+        "lg": {
+          "$type": "dimension",
+          "$value": "{primitive.space.16}",
+          "$description": "Relleno de tarjetas y bloques de contenido.",
+          "$extensions": {
+            "modes": {
+              "web": "{primitive.space.16}"
+            },
+            "com.figma": {
+              "collection": "Semantic Platform",
+              "scopes": [
+                "GAP"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--space-inset-lg)"
+              }
+            }
+          }
+        },
+        "xl": {
+          "$type": "dimension",
+          "$value": "{primitive.space.24}",
+          "$description": "Relleno de modales, hojas inferiores y paneles laterales.",
+          "$extensions": {
+            "modes": {
+              "web": "{primitive.space.24}"
+            },
+            "com.figma": {
+              "collection": "Semantic Platform",
+              "scopes": [
+                "GAP"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--space-inset-xl)"
+              }
+            }
+          }
+        }
+      },
+      "stack": {
+        "xs": {
+          "$type": "dimension",
+          "$value": "{primitive.space.4}",
+          "$description": "Entre líneas de una misma pieza: empresa y puesto, label y ayuda.",
+          "$extensions": {
+            "modes": {
+              "web": "{primitive.space.4}"
+            },
+            "com.figma": {
+              "collection": "Semantic Platform",
+              "scopes": [
+                "GAP"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--space-stack-xs)"
+              }
+            }
+          }
+        },
+        "sm": {
+          "$type": "dimension",
+          "$value": "{primitive.space.8}",
+          "$description": "Entre elementos relacionados: label y campo, título y párrafo. En el panel de empresas, también entre filas de una lista.",
+          "$extensions": {
+            "modes": {
+              "web": "{primitive.space.8}"
+            },
+            "com.figma": {
+              "collection": "Semantic Platform",
+              "scopes": [
+                "GAP"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--space-stack-sm)"
+              }
+            }
+          }
+        },
+        "md": {
+          "$type": "dimension",
+          "$value": "{primitive.space.16}",
+          "$description": "Entre bloques dentro de una tarjeta y entre campos de un formulario.",
+          "$extensions": {
+            "modes": {
+              "web": "{primitive.space.16}"
+            },
+            "com.figma": {
+              "collection": "Semantic Platform",
+              "scopes": [
+                "GAP"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--space-stack-md)"
+              }
+            }
+          }
+        },
+        "lg": {
+          "$type": "dimension",
+          "$value": "{primitive.space.24}",
+          "$description": "Entre tarjetas de una lista.",
+          "$extensions": {
+            "modes": {
+              "web": "{primitive.space.24}"
+            },
+            "com.figma": {
+              "collection": "Semantic Platform",
+              "scopes": [
+                "GAP"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--space-stack-lg)"
+              }
+            }
+          }
+        }
+      },
+      "inline": {
+        "xs": {
+          "$type": "dimension",
+          "$value": "{primitive.space.4}",
+          "$description": "Entre un ícono y su texto.",
+          "$extensions": {
+            "modes": {
+              "web": "{primitive.space.4}"
+            },
+            "com.figma": {
+              "collection": "Semantic Platform",
+              "scopes": [
+                "GAP"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--space-inline-xs)"
+              }
+            }
+          }
+        },
+        "sm": {
+          "$type": "dimension",
+          "$value": "{primitive.space.8}",
+          "$description": "Entre chips y entre botones de un grupo.",
+          "$extensions": {
+            "modes": {
+              "web": "{primitive.space.8}"
+            },
+            "com.figma": {
+              "collection": "Semantic Platform",
+              "scopes": [
+                "GAP"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--space-inline-sm)"
+              }
+            }
+          }
+        },
+        "md": {
+          "$type": "dimension",
+          "$value": "{primitive.space.16}",
+          "$description": "Entre columnas de contenido o grupos de controles en una fila.",
+          "$extensions": {
+            "modes": {
+              "web": "{primitive.space.16}"
+            },
+            "com.figma": {
+              "collection": "Semantic Platform",
+              "scopes": [
+                "GAP"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--space-inline-md)"
+              }
+            }
+          }
+        }
+      },
+      "section": {
+        "$type": "dimension",
+        "$value": "{primitive.space.32}",
+        "$description": "Entre secciones de una pantalla. Mobile 32, Web 64.",
+        "$extensions": {
+          "modes": {
+            "web": "{primitive.space.64}"
+          },
+          "com.figma": {
+            "collection": "Semantic Platform",
+            "scopes": [
+              "GAP"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--space-section)"
+            }
+          }
+        }
+      }
+    },
+    "radius": {
+      "control": {
+        "$type": "dimension",
+        "$value": "{primitive.radius.4}",
+        "$description": "Botones, inputs, selectores y casillas.",
+        "$extensions": {
+          "modes": {
+            "web": "{primitive.radius.4}"
+          },
+          "com.figma": {
+            "collection": "Semantic Platform",
+            "scopes": [
+              "CORNER_RADIUS"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--radius-control)"
+            }
+          }
+        }
+      },
+      "nested": {
+        "$type": "dimension",
+        "$value": "{primitive.radius.4}",
+        "$description": "Bloques dentro de una tarjeta: el porqué de Monty, miniaturas, alertas internas.",
+        "$extensions": {
+          "modes": {
+            "web": "{primitive.radius.4}"
+          },
+          "com.figma": {
+            "collection": "Semantic Platform",
+            "scopes": [
+              "CORNER_RADIUS"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--radius-nested)"
+            }
+          }
+        }
+      },
+      "card": {
+        "$type": "dimension",
+        "$value": "{primitive.radius.8}",
+        "$description": "Tarjetas de match, de proceso y de candidato.",
+        "$extensions": {
+          "modes": {
+            "web": "{primitive.radius.8}"
+          },
+          "com.figma": {
+            "collection": "Semantic Platform",
+            "scopes": [
+              "CORNER_RADIUS"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--radius-card)"
+            }
+          }
+        }
+      },
+      "surface": {
+        "$type": "dimension",
+        "$value": "{primitive.radius.12}",
+        "$description": "Modales, hojas inferiores y paneles laterales.",
+        "$extensions": {
+          "modes": {
+            "web": "{primitive.radius.12}"
+          },
+          "com.figma": {
+            "collection": "Semantic Platform",
+            "scopes": [
+              "CORNER_RADIUS"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--radius-surface)"
+            }
+          }
+        }
+      },
+      "pill": {
+        "$type": "dimension",
+        "$value": "{primitive.radius.full}",
+        "$description": "Chips, badges de match, estados de proceso y avatares.",
+        "$extensions": {
+          "modes": {
+            "web": "{primitive.radius.full}"
+          },
+          "com.figma": {
+            "collection": "Semantic Platform",
+            "scopes": [
+              "CORNER_RADIUS"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--radius-pill)"
+            }
+          }
+        }
+      }
+    },
+    "layout": {
+      "page": {
+        "margin": {
+          "$type": "dimension",
+          "$value": "{primitive.space.16}",
+          "$description": "Margen lateral de cualquier pantalla.",
+          "$extensions": {
+            "modes": {
+              "web": "{primitive.space.32}"
+            },
+            "com.figma": {
+              "collection": "Semantic Platform",
+              "scopes": [
+                "GAP"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--layout-page-margin)"
+              }
+            }
+          }
+        }
+      },
+      "grid": {
+        "columns": {
+          "$type": "number",
+          "$value": "{primitive.columns.4}",
+          "$description": "Columnas de la grilla de la pantalla. Lo usa el estilo de grilla layout/page.",
+          "$extensions": {
+            "modes": {
+              "web": "{primitive.columns.12}"
+            },
+            "com.figma": {
+              "collection": "Semantic Platform",
+              "scopes": [],
+              "codeSyntax": {
+                "WEB": "var(--layout-grid-columns)"
+              }
+            }
+          }
+        },
+        "gutter": {
+          "$type": "dimension",
+          "$value": "{primitive.space.16}",
+          "$description": "Separación entre columnas de la grilla.",
+          "$extensions": {
+            "modes": {
+              "web": "{primitive.space.24}"
+            },
+            "com.figma": {
+              "collection": "Semantic Platform",
+              "scopes": [
+                "GAP"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--layout-grid-gutter)"
+              }
+            }
+          }
+        }
+      },
+      "content": {
+        "max-width": {
+          "$type": "dimension",
+          "$value": "{primitive.size.430}",
+          "$description": "Ancho máximo del contenido de lectura: detalle de oferta, perfil, conversación con Monty. Se centra en la pantalla.",
+          "$extensions": {
+            "modes": {
+              "web": "{primitive.size.720}"
+            },
+            "com.figma": {
+              "collection": "Semantic Platform",
+              "scopes": [
+                "WIDTH_HEIGHT"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--layout-content-max-width)"
+              }
+            }
+          }
+        },
+        "max-width-wide": {
+          "$type": "dimension",
+          "$value": "{primitive.size.430}",
+          "$description": "Ancho máximo de listas, comparaciones y del panel de empresas. Se centra en pantallas más grandes.",
+          "$extensions": {
+            "modes": {
+              "web": "{primitive.size.1440}"
+            },
+            "com.figma": {
+              "collection": "Semantic Platform",
+              "scopes": [
+                "WIDTH_HEIGHT"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--layout-content-max-width-wide)"
+              }
+            }
+          }
+        }
+      }
+    },
+    "border-width": {
+      "default": {
+        "$type": "dimension",
+        "$value": "{primitive.border-width.1}",
+        "$description": "Grosor de borde en reposo: controles, tarjetas y divisores.",
+        "$extensions": {
+          "modes": {
+            "web": "{primitive.border-width.1}"
+          },
+          "com.figma": {
+            "collection": "Semantic Platform",
+            "scopes": [
+              "STROKE_FLOAT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--border-width-default)"
+            }
+          }
+        }
+      },
+      "strong": {
+        "$type": "dimension",
+        "$value": "{primitive.border-width.2}",
+        "$description": "Grosor de borde que marca un estado: foco y error.",
+        "$extensions": {
+          "modes": {
+            "web": "{primitive.border-width.2}"
+          },
+          "com.figma": {
+            "collection": "Semantic Platform",
+            "scopes": [
+              "STROKE_FLOAT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--border-width-strong)"
+            }
+          }
+        }
+      }
+    },
+    "icon": {
+      "size": {
+        "sm": {
+          "$type": "dimension",
+          "$value": "{primitive.size.16}",
+          "$description": "Íconos junto a label/sm y body/compact: chips, badges, metadatos, etiqueta del bloque de IA.",
+          "$extensions": {
+            "modes": {
+              "web": "{primitive.size.16}"
+            },
+            "com.figma": {
+              "collection": "Semantic Platform",
+              "scopes": [
+                "WIDTH_HEIGHT"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--icon-size-sm)"
+              }
+            }
+          }
+        },
+        "md": {
+          "$type": "dimension",
+          "$value": "{primitive.size.20}",
+          "$description": "Íconos dentro de botones e inputs, junto a label/default y body/default.",
+          "$extensions": {
+            "modes": {
+              "web": "{primitive.size.20}"
+            },
+            "com.figma": {
+              "collection": "Semantic Platform",
+              "scopes": [
+                "WIDTH_HEIGHT"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--icon-size-md)"
+              }
+            }
+          }
+        },
+        "lg": {
+          "$type": "dimension",
+          "$value": "{primitive.size.24}",
+          "$description": "Íconos sueltos: navegación, barra inferior, botones de solo ícono dentro de un área táctil de 44 px.",
+          "$extensions": {
+            "modes": {
+              "web": "{primitive.size.24}"
+            },
+            "com.figma": {
+              "collection": "Semantic Platform",
+              "scopes": [
+                "WIDTH_HEIGHT"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--icon-size-lg)"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "component": {
+    "button": {
+      "background": {
+        "primary": {
+          "$type": "color",
+          "$value": "{semantic.color.action.default}",
+          "$description": "Fondo del botón principal. Uno por vista.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Component",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--button-background-primary)"
+              }
+            }
+          }
+        },
+        "primary-hover": {
+          "$type": "color",
+          "$value": "{semantic.color.action.hover}",
+          "$description": "Fondo del botón principal con el cursor encima.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Component",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--button-background-primary-hover)"
+              }
+            }
+          }
+        },
+        "secondary": {
+          "$type": "color",
+          "$value": "{semantic.color.surface.default}",
+          "$description": "Fondo del botón secundario.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Component",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--button-background-secondary)"
+              }
+            }
+          }
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{semantic.color.surface.hover}",
+          "$description": "Fondo de los botones secundario y ghost con el cursor encima.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Component",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--button-background-hover)"
+              }
+            }
+          }
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{semantic.color.action.disabled}",
+          "$description": "Fondo de los botones primario y secundario deshabilitados.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Component",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--button-background-disabled)"
+              }
+            }
+          }
+        }
+      },
+      "border": {
+        "secondary": {
+          "$type": "color",
+          "$value": "{semantic.color.border.strong}",
+          "$description": "Borde del botón secundario.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Component",
+              "scopes": [
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--button-border-secondary)"
+              }
+            }
+          }
+        }
+      },
+      "text": {
+        "primary": {
+          "$type": "color",
+          "$value": "{semantic.color.text.on-action}",
+          "$description": "Texto del botón principal.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Component",
+              "scopes": [
+                "TEXT_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--button-text-primary)"
+              }
+            }
+          }
+        },
+        "default": {
+          "$type": "color",
+          "$value": "{semantic.color.text.primary}",
+          "$description": "Texto de los botones secundario y ghost.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Component",
+              "scopes": [
+                "TEXT_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--button-text-default)"
+              }
+            }
+          }
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{semantic.color.text.disabled}",
+          "$description": "Texto de cualquier botón deshabilitado.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Component",
+              "scopes": [
+                "TEXT_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--button-text-disabled)"
+              }
+            }
+          }
+        }
+      },
+      "radius": {
+        "$type": "dimension",
+        "$value": "{semantic.radius.control}",
+        "$description": "Esquinas del botón.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "CORNER_RADIUS"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--button-radius)"
+            }
+          }
+        }
+      },
+      "padding-x": {
+        "$type": "dimension",
+        "$value": "{semantic.space.inset.lg}",
+        "$description": "Relleno lateral del botón.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "GAP"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--button-padding-x)"
+            }
+          }
+        }
+      },
+      "padding-y": {
+        "$type": "dimension",
+        "$value": "{semantic.space.inset.md}",
+        "$description": "Relleno vertical del botón: con label/default da 44 px de alto.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "GAP"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--button-padding-y)"
+            }
+          }
+        }
+      },
+      "gap": {
+        "$type": "dimension",
+        "$value": "{semantic.space.inline.xs}",
+        "$description": "Separación entre un ícono y el texto del botón.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "GAP"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--button-gap)"
+            }
+          }
+        }
+      },
+      "border-width": {
+        "$type": "dimension",
+        "$value": "{semantic.border-width.default}",
+        "$description": "Grosor del borde del botón secundario.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "STROKE_FLOAT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--button-border-width)"
+            }
+          }
+        }
+      },
+      "icon": {
+        "primary": {
+          "$type": "color",
+          "$value": "{semantic.color.icon.on-action}",
+          "$description": "Ícono dentro del botón principal.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Component",
+              "scopes": [
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--button-icon-primary)"
+              }
+            }
+          }
+        },
+        "default": {
+          "$type": "color",
+          "$value": "{semantic.color.icon.default}",
+          "$description": "Ícono dentro de los botones secundario y ghost.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Component",
+              "scopes": [
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--button-icon-default)"
+              }
+            }
+          }
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{semantic.color.icon.disabled}",
+          "$description": "Ícono dentro de un botón deshabilitado.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Component",
+              "scopes": [
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--button-icon-disabled)"
+              }
+            }
+          }
+        }
+      },
+      "icon-size": {
+        "$type": "dimension",
+        "$value": "{semantic.icon.size.md}",
+        "$description": "Tamaño del ícono dentro del botón.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "WIDTH_HEIGHT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--button-icon-size)"
+            }
+          }
+        }
+      }
+    },
+    "input": {
+      "background": {
+        "$type": "color",
+        "$value": "{semantic.color.surface.default}",
+        "$description": "Fondo del campo de texto.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--input-background)"
+            }
+          }
+        }
+      },
+      "background-disabled": {
+        "$type": "color",
+        "$value": "{semantic.color.surface.sunken}",
+        "$description": "Fondo del campo deshabilitado.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--input-background-disabled)"
+            }
+          }
+        }
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{semantic.color.border.strong}",
+        "$description": "Borde del campo en reposo.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "STROKE_COLOR"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--input-border)"
+            }
+          }
+        }
+      },
+      "border-focus": {
+        "$type": "color",
+        "$value": "{semantic.color.border.focus}",
+        "$description": "Borde del campo con foco, de 2 px.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "STROKE_COLOR"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--input-border-focus)"
+            }
+          }
+        }
+      },
+      "border-error": {
+        "$type": "color",
+        "$value": "{semantic.color.feedback.error.border}",
+        "$description": "Borde del campo con error, de 2 px.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "STROKE_COLOR"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--input-border-error)"
+            }
+          }
+        }
+      },
+      "border-disabled": {
+        "$type": "color",
+        "$value": "{semantic.color.border.default}",
+        "$description": "Borde del campo deshabilitado.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "STROKE_COLOR"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--input-border-disabled)"
+            }
+          }
+        }
+      },
+      "label": {
+        "$type": "color",
+        "$value": "{semantic.color.text.primary}",
+        "$description": "Texto del label del campo (estilo label/sm).",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "TEXT_FILL"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--input-label)"
+            }
+          }
+        }
+      },
+      "text": {
+        "$type": "color",
+        "$value": "{semantic.color.text.primary}",
+        "$description": "Valor escrito en el campo (estilo body/default).",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "TEXT_FILL"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--input-text)"
+            }
+          }
+        }
+      },
+      "text-disabled": {
+        "$type": "color",
+        "$value": "{semantic.color.text.disabled}",
+        "$description": "Label, valor y ayuda de un input deshabilitado.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "TEXT_FILL"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--input-text-disabled)"
+            }
+          }
+        }
+      },
+      "help": {
+        "$type": "color",
+        "$value": "{semantic.color.text.secondary}",
+        "$description": "Texto de ayuda debajo del campo (estilo body/default).",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "TEXT_FILL"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--input-help)"
+            }
+          }
+        }
+      },
+      "help-error": {
+        "$type": "color",
+        "$value": "{semantic.color.feedback.error.text}",
+        "$description": "Mensaje de error: qué pasó y cómo arreglarlo, con un ejemplo.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "TEXT_FILL"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--input-help-error)"
+            }
+          }
+        }
+      },
+      "radius": {
+        "$type": "dimension",
+        "$value": "{semantic.radius.control}",
+        "$description": "Esquinas del campo.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "CORNER_RADIUS"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--input-radius)"
+            }
+          }
+        }
+      },
+      "padding-x": {
+        "$type": "dimension",
+        "$value": "{semantic.space.inset.md}",
+        "$description": "Relleno lateral del campo.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "GAP"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--input-padding-x)"
+            }
+          }
+        }
+      },
+      "padding-y": {
+        "$type": "dimension",
+        "$value": "{semantic.space.inset.md}",
+        "$description": "Relleno vertical del campo: con body/default da 48 px de alto.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "GAP"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--input-padding-y)"
+            }
+          }
+        }
+      },
+      "gap": {
+        "$type": "dimension",
+        "$value": "{semantic.space.stack.sm}",
+        "$description": "Separación entre label, campo y ayuda.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "GAP"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--input-gap)"
+            }
+          }
+        }
+      },
+      "border-width": {
+        "$type": "dimension",
+        "$value": "{semantic.border-width.default}",
+        "$description": "Grosor del borde del campo en reposo y deshabilitado.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "STROKE_FLOAT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--input-border-width)"
+            }
+          }
+        }
+      },
+      "border-width-focus": {
+        "$type": "dimension",
+        "$value": "{semantic.border-width.strong}",
+        "$description": "Grosor del borde del campo con foco o con error.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "STROKE_FLOAT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--input-border-width-focus)"
+            }
+          }
+        }
+      },
+      "icon": {
+        "$type": "color",
+        "$value": "{semantic.color.icon.secondary}",
+        "$description": "Ícono dentro del campo, a la izquierda del valor.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "STROKE_COLOR"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--input-icon)"
+            }
+          }
+        }
+      },
+      "icon-disabled": {
+        "$type": "color",
+        "$value": "{semantic.color.icon.disabled}",
+        "$description": "Ícono dentro de un campo deshabilitado.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "STROKE_COLOR"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--input-icon-disabled)"
+            }
+          }
+        }
+      },
+      "icon-error": {
+        "$type": "color",
+        "$value": "{semantic.color.icon.error}",
+        "$description": "Ícono de alerta junto al mensaje de error.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "STROKE_COLOR"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--input-icon-error)"
+            }
+          }
+        }
+      },
+      "icon-size": {
+        "$type": "dimension",
+        "$value": "{semantic.icon.size.md}",
+        "$description": "Tamaño del ícono del campo y del mensaje de error.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "WIDTH_HEIGHT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--input-icon-size)"
+            }
+          }
+        }
+      },
+      "icon-gap": {
+        "$type": "dimension",
+        "$value": "{semantic.space.inline.sm}",
+        "$description": "Separación entre el ícono y el valor dentro del campo.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "GAP"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--input-icon-gap)"
+            }
+          }
+        }
+      },
+      "message-gap": {
+        "$type": "dimension",
+        "$value": "{semantic.space.inline.xs}",
+        "$description": "Separación entre el ícono de alerta y el mensaje de error.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "GAP"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--input-message-gap)"
+            }
+          }
+        }
+      }
+    },
+    "icon": {
+      "color": {
+        "$type": "color",
+        "$value": "{semantic.color.icon.default}",
+        "$description": "Color por defecto del trazo de un ícono. Quien usa el ícono puede reemplazarlo por su propio token de ícono.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "STROKE_COLOR"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--icon-color)"
+            }
+          }
+        }
+      },
+      "size-sm": {
+        "$type": "dimension",
+        "$value": "{semantic.icon.size.sm}",
+        "$description": "Ancho y alto de un ícono pequeño (16 px).",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "WIDTH_HEIGHT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--icon-size-sm)"
+            }
+          }
+        }
+      },
+      "size-md": {
+        "$type": "dimension",
+        "$value": "{semantic.icon.size.md}",
+        "$description": "Ancho y alto de un ícono mediano (20 px).",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "WIDTH_HEIGHT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--icon-size-md)"
+            }
+          }
+        }
+      },
+      "size-lg": {
+        "$type": "dimension",
+        "$value": "{semantic.icon.size.lg}",
+        "$description": "Ancho y alto de un ícono grande (24 px).",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "WIDTH_HEIGHT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--icon-size-lg)"
+            }
+          }
+        }
+      }
+    }
+  }
+}
