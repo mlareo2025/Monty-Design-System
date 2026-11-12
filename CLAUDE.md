@@ -21,9 +21,9 @@ Tres niveles en la raíz del JSON, cada uno solo puede apuntar al anterior:
 
 | Nivel | Colección(es) de Figma | Modos | Tokens |
 | --- | --- | --- | --- |
-| `primitive` | Primitive | Value | 90 |
-| `semantic` | Semantic **y** Semantic Platform | Semantic: Light, Dark. Semantic Platform: Mobile, Web | 47 + 64 |
-| `component` | Component | Default | 45 |
+| `primitive` | Primitive | Value | 93 |
+| `semantic` | Semantic **y** Semantic Platform | Semantic: Light, Dark. Semantic Platform: Mobile, Web | 48 + 67 |
+| `component` | Component | Default | 93 |
 
 - `semantic` junta dos colecciones de Figma con modos distintos. La colección de origen queda en `$extensions["com.figma"].collection`.
 - Colores: Light en `$value`, Dark en `$extensions.modes.dark`.
@@ -47,7 +47,7 @@ Tres niveles en la raíz del JSON, cada uno solo puede apuntar al anterior:
 1. Crear sesión con `create_session` para el fileKey y cargar el skill `figma-use`.
 2. Leer con scripts **de solo lectura** de `use_figma`: colecciones, modos, nombres, alias (resueltos a nombre), descripciones, scopes y code syntax. No usar `get_variable_defs`: solo trae el valor final, sin modos ni alias. Devolver los datos colección por colección para no pasarse del tamaño de respuesta.
 3. Convertir a DTCG según las convenciones de arriba.
-4. Comprobar fidelidad: mismo número de variables que Figma (hoy 246) y, si se puede, una huella (hash) de nombre, descripción, scopes, code syntax y valores por modo calculada igual en Figma y en el JSON.
+4. Comprobar fidelidad: mismo número de variables que Figma (hoy 301) y, si se puede, una huella (hash) de nombre, descripción, scopes, code syntax y valores por modo calculada igual en Figma y en el JSON.
 5. Correr el validador (siguiente sección).
 
 No hay un conversor guardado en el repo: el que se usó era temporal.
@@ -85,7 +85,8 @@ Preguntar antes de:
 
 ## Estado conocido (snapshot al generar los tokens)
 
-- 246 tokens; validador en verde: 0 errores, 0 avisos, 86 de 86 comprobaciones de contraste (43 pares × light y dark).
+- 301 tokens; validador en verde: 0 errores, 0 avisos, 138 de 138 comprobaciones de contraste (69 pares × light y dark).
+- Componentes con tokens: button, input, icon, chip, avatar y banner (los tres últimos se añadieron después del primer export, junto con `size/avatar/*` y `color/icon/on-action-subtle`).
 - Margen más ajustado: `text/secondary` sobre `surface/subtle` en light (4.99:1 con mínimo 4.5).
 - Decisiones de diseño ya tomadas (cambios hechos en Figma): en dark `surface/sunken` apunta al primitivo `neutral/1000` (`#0c0c0c`, 1.11:1 contra `surface/default`, parecido al 1.12:1 de light) y `action/hover` y `action/pressed` valen lo mismo que en light (`lima/500` y `lima/600`).
 - Se borraron de Figma los primitivos sin uso `color/lima/100` y `space/48`, junto con sus filas de muestra en las páginas de documentación (Colores · "Escala lima" y Espacio · "Primitivos").

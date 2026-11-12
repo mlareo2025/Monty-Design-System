@@ -1195,6 +1195,48 @@
           }
         }
       },
+      "32": {
+        "$type": "dimension",
+        "$value": "32px",
+        "$description": "Tamaño de 32 px para avatares. No usar directamente: usar el token semántico que apunta a este valor.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitive",
+            "scopes": [],
+            "codeSyntax": {
+              "WEB": "var(--size-32)"
+            }
+          }
+        }
+      },
+      "40": {
+        "$type": "dimension",
+        "$value": "40px",
+        "$description": "Tamaño de 40 px para avatares. No usar directamente: usar el token semántico que apunta a este valor.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitive",
+            "scopes": [],
+            "codeSyntax": {
+              "WEB": "var(--size-40)"
+            }
+          }
+        }
+      },
+      "64": {
+        "$type": "dimension",
+        "$value": "64px",
+        "$description": "Tamaño de 64 px para avatares. No usar directamente: usar el token semántico que apunta a este valor.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Primitive",
+            "scopes": [],
+            "codeSyntax": {
+              "WEB": "var(--size-64)"
+            }
+          }
+        }
+      },
       "430": {
         "$type": "dimension",
         "$value": "430px",
@@ -2140,6 +2182,26 @@
               ],
               "codeSyntax": {
                 "WEB": "var(--color-icon-on-action)"
+              }
+            }
+          }
+        },
+        "on-action-subtle": {
+          "$type": "color",
+          "$value": "{primitive.color.lima.900}",
+          "$description": "Íconos sobre action/subtle: chip, filtro o pestaña seleccionados.",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.lima.400}"
+            },
+            "com.figma": {
+              "collection": "Semantic",
+              "scopes": [
+                "SHAPE_FILL",
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--color-icon-on-action-subtle)"
               }
             }
           }
@@ -3509,6 +3571,67 @@
           }
         }
       }
+    },
+    "size": {
+      "avatar": {
+        "sm": {
+          "$type": "dimension",
+          "$value": "{primitive.size.32}",
+          "$description": "Avatar pequeño: listas y tablas densas del panel.",
+          "$extensions": {
+            "modes": {
+              "web": "{primitive.size.32}"
+            },
+            "com.figma": {
+              "collection": "Semantic Platform",
+              "scopes": [
+                "WIDTH_HEIGHT"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--size-avatar-sm)"
+              }
+            }
+          }
+        },
+        "md": {
+          "$type": "dimension",
+          "$value": "{primitive.size.40}",
+          "$description": "Avatar mediano: tarjetas de match y de candidato.",
+          "$extensions": {
+            "modes": {
+              "web": "{primitive.size.40}"
+            },
+            "com.figma": {
+              "collection": "Semantic Platform",
+              "scopes": [
+                "WIDTH_HEIGHT"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--size-avatar-md)"
+              }
+            }
+          }
+        },
+        "lg": {
+          "$type": "dimension",
+          "$value": "{primitive.size.64}",
+          "$description": "Avatar grande: cabecera del perfil y detalle de empresa.",
+          "$extensions": {
+            "modes": {
+              "web": "{primitive.size.64}"
+            },
+            "com.figma": {
+              "collection": "Semantic Platform",
+              "scopes": [
+                "WIDTH_HEIGHT"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--size-avatar-lg)"
+              }
+            }
+          }
+        }
+      }
     }
   },
   "component": {
@@ -4248,6 +4371,810 @@
             ],
             "codeSyntax": {
               "WEB": "var(--icon-size-lg)"
+            }
+          }
+        }
+      }
+    },
+    "chip": {
+      "background": {
+        "tag": {
+          "$type": "color",
+          "$value": "{semantic.color.surface.sunken}",
+          "$description": "Fondo del chip tag (no interactivo): modalidad, seniority, habilidades.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Component",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--chip-background-tag)"
+              }
+            }
+          }
+        },
+        "filter": {
+          "$type": "color",
+          "$value": "{semantic.color.surface.default}",
+          "$description": "Fondo del chip filtro sin seleccionar.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Component",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--chip-background-filter)"
+              }
+            }
+          }
+        },
+        "filter-hover": {
+          "$type": "color",
+          "$value": "{semantic.color.surface.hover}",
+          "$description": "Fondo del chip filtro con el cursor encima.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Component",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--chip-background-filter-hover)"
+              }
+            }
+          }
+        },
+        "selected": {
+          "$type": "color",
+          "$value": "{semantic.color.action.subtle}",
+          "$description": "Fondo del chip filtro seleccionado.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Component",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--chip-background-selected)"
+              }
+            }
+          }
+        }
+      },
+      "border": {
+        "filter": {
+          "$type": "color",
+          "$value": "{semantic.color.border.strong}",
+          "$description": "Borde del chip filtro sin seleccionar.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Component",
+              "scopes": [
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--chip-border-filter)"
+              }
+            }
+          }
+        }
+      },
+      "text": {
+        "default": {
+          "$type": "color",
+          "$value": "{semantic.color.text.primary}",
+          "$description": "Texto del chip tag y del filtro sin seleccionar.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Component",
+              "scopes": [
+                "TEXT_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--chip-text-default)"
+              }
+            }
+          }
+        },
+        "selected": {
+          "$type": "color",
+          "$value": "{semantic.color.text.on-action-subtle}",
+          "$description": "Texto del chip filtro seleccionado.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Component",
+              "scopes": [
+                "TEXT_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--chip-text-selected)"
+              }
+            }
+          }
+        }
+      },
+      "icon": {
+        "default": {
+          "$type": "color",
+          "$value": "{semantic.color.icon.secondary}",
+          "$description": "Ícono del chip tag y del filtro sin seleccionar.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Component",
+              "scopes": [
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--chip-icon-default)"
+              }
+            }
+          }
+        },
+        "selected": {
+          "$type": "color",
+          "$value": "{semantic.color.icon.on-action-subtle}",
+          "$description": "Check del chip filtro seleccionado.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Component",
+              "scopes": [
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--chip-icon-selected)"
+              }
+            }
+          }
+        }
+      },
+      "radius": {
+        "$type": "dimension",
+        "$value": "{semantic.radius.pill}",
+        "$description": "Esquinas del chip.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "CORNER_RADIUS"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--chip-radius)"
+            }
+          }
+        }
+      },
+      "padding-x": {
+        "$type": "dimension",
+        "$value": "{semantic.space.inset.md}",
+        "$description": "Relleno lateral del chip.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "GAP"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--chip-padding-x)"
+            }
+          }
+        }
+      },
+      "padding-y-tag": {
+        "$type": "dimension",
+        "$value": "{semantic.space.inset.xs}",
+        "$description": "Relleno vertical del chip tag: 28 px de alto.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "GAP"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--chip-padding-y-tag)"
+            }
+          }
+        }
+      },
+      "padding-y-filter": {
+        "$type": "dimension",
+        "$value": "{semantic.space.inset.md}",
+        "$description": "Relleno vertical del chip filtro: 44 px de alto, el área táctil mínima.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "GAP"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--chip-padding-y-filter)"
+            }
+          }
+        }
+      },
+      "gap": {
+        "$type": "dimension",
+        "$value": "{semantic.space.inline.xs}",
+        "$description": "Separación entre el ícono y el texto del chip.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "GAP"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--chip-gap)"
+            }
+          }
+        }
+      },
+      "icon-size": {
+        "$type": "dimension",
+        "$value": "{semantic.icon.size.sm}",
+        "$description": "Tamaño del ícono del chip.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "WIDTH_HEIGHT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--chip-icon-size)"
+            }
+          }
+        }
+      },
+      "border-width": {
+        "$type": "dimension",
+        "$value": "{semantic.border-width.default}",
+        "$description": "Grosor del borde del chip filtro.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "STROKE_FLOAT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--chip-border-width)"
+            }
+          }
+        }
+      }
+    },
+    "avatar": {
+      "background": {
+        "person": {
+          "$type": "color",
+          "$value": "{semantic.color.action.subtle}",
+          "$description": "Fondo del avatar de una persona con inicial.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Component",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--avatar-background-person)"
+              }
+            }
+          }
+        },
+        "company": {
+          "$type": "color",
+          "$value": "{semantic.color.surface.sunken}",
+          "$description": "Fondo del avatar de una empresa con inicial o logo.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Component",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--avatar-background-company)"
+              }
+            }
+          }
+        }
+      },
+      "text": {
+        "person": {
+          "$type": "color",
+          "$value": "{semantic.color.text.on-action-subtle}",
+          "$description": "Inicial de una persona.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Component",
+              "scopes": [
+                "TEXT_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--avatar-text-person)"
+              }
+            }
+          }
+        },
+        "company": {
+          "$type": "color",
+          "$value": "{semantic.color.text.primary}",
+          "$description": "Inicial de una empresa.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Component",
+              "scopes": [
+                "TEXT_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--avatar-text-company)"
+              }
+            }
+          }
+        }
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{semantic.color.border.default}",
+        "$description": "Borde del avatar de empresa, para que el logo no se pierda en fondos claros.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "STROKE_COLOR"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--avatar-border)"
+            }
+          }
+        }
+      },
+      "radius": {
+        "person": {
+          "$type": "dimension",
+          "$value": "{semantic.radius.pill}",
+          "$description": "Forma circular: siempre es una persona.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Component",
+              "scopes": [
+                "CORNER_RADIUS"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--avatar-radius-person)"
+              }
+            }
+          }
+        },
+        "company": {
+          "$type": "dimension",
+          "$value": "{semantic.radius.control}",
+          "$description": "Forma cuadrada: siempre es una empresa.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Component",
+              "scopes": [
+                "CORNER_RADIUS"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--avatar-radius-company)"
+              }
+            }
+          }
+        }
+      },
+      "size-sm": {
+        "$type": "dimension",
+        "$value": "{semantic.size.avatar.sm}",
+        "$description": "Avatar de 32 px: listas y tablas del panel.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "WIDTH_HEIGHT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--avatar-size-sm)"
+            }
+          }
+        }
+      },
+      "size-md": {
+        "$type": "dimension",
+        "$value": "{semantic.size.avatar.md}",
+        "$description": "Avatar de 40 px: tarjetas.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "WIDTH_HEIGHT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--avatar-size-md)"
+            }
+          }
+        }
+      },
+      "size-lg": {
+        "$type": "dimension",
+        "$value": "{semantic.size.avatar.lg}",
+        "$description": "Avatar de 64 px: cabecera de perfil.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "WIDTH_HEIGHT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--avatar-size-lg)"
+            }
+          }
+        }
+      },
+      "border-width": {
+        "$type": "dimension",
+        "$value": "{semantic.border-width.default}",
+        "$description": "Grosor del borde del avatar de empresa.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "STROKE_FLOAT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--avatar-border-width)"
+            }
+          }
+        }
+      }
+    },
+    "banner": {
+      "background": {
+        "success": {
+          "$type": "color",
+          "$value": "{semantic.color.feedback.success.surface}",
+          "$description": "Fondo del banner de éxito.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Component",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--banner-background-success)"
+              }
+            }
+          }
+        },
+        "warning": {
+          "$type": "color",
+          "$value": "{semantic.color.feedback.warning.surface}",
+          "$description": "Fondo del banner de aviso.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Component",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--banner-background-warning)"
+              }
+            }
+          }
+        },
+        "error": {
+          "$type": "color",
+          "$value": "{semantic.color.feedback.error.surface}",
+          "$description": "Fondo del banner de error.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Component",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--banner-background-error)"
+              }
+            }
+          }
+        },
+        "info": {
+          "$type": "color",
+          "$value": "{semantic.color.feedback.info.surface}",
+          "$description": "Fondo del banner de información.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Component",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--banner-background-info)"
+              }
+            }
+          }
+        }
+      },
+      "border": {
+        "success": {
+          "$type": "color",
+          "$value": "{semantic.color.feedback.success.border}",
+          "$description": "Borde del banner de éxito.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Component",
+              "scopes": [
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--banner-border-success)"
+              }
+            }
+          }
+        },
+        "warning": {
+          "$type": "color",
+          "$value": "{semantic.color.feedback.warning.border}",
+          "$description": "Borde del banner de aviso.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Component",
+              "scopes": [
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--banner-border-warning)"
+              }
+            }
+          }
+        },
+        "error": {
+          "$type": "color",
+          "$value": "{semantic.color.feedback.error.border}",
+          "$description": "Borde del banner de error.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Component",
+              "scopes": [
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--banner-border-error)"
+              }
+            }
+          }
+        },
+        "info": {
+          "$type": "color",
+          "$value": "{semantic.color.feedback.info.border}",
+          "$description": "Borde del banner de información.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Component",
+              "scopes": [
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--banner-border-info)"
+              }
+            }
+          }
+        }
+      },
+      "icon": {
+        "success": {
+          "$type": "color",
+          "$value": "{semantic.color.icon.success}",
+          "$description": "Ícono del banner de éxito.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Component",
+              "scopes": [
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--banner-icon-success)"
+              }
+            }
+          }
+        },
+        "warning": {
+          "$type": "color",
+          "$value": "{semantic.color.icon.warning}",
+          "$description": "Ícono del banner de aviso.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Component",
+              "scopes": [
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--banner-icon-warning)"
+              }
+            }
+          }
+        },
+        "error": {
+          "$type": "color",
+          "$value": "{semantic.color.icon.error}",
+          "$description": "Ícono del banner de error.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Component",
+              "scopes": [
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--banner-icon-error)"
+              }
+            }
+          }
+        },
+        "info": {
+          "$type": "color",
+          "$value": "{semantic.color.icon.info}",
+          "$description": "Ícono del banner de información.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Component",
+              "scopes": [
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--banner-icon-info)"
+              }
+            }
+          }
+        }
+      },
+      "text": {
+        "$type": "color",
+        "$value": "{semantic.color.text.primary}",
+        "$description": "Título y mensaje del banner, en cualquier tipo.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "TEXT_FILL"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--banner-text)"
+            }
+          }
+        }
+      },
+      "link": {
+        "$type": "color",
+        "$value": "{semantic.color.text.link}",
+        "$description": "Enlace de acción del banner. Siempre subrayado.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "TEXT_FILL"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--banner-link)"
+            }
+          }
+        }
+      },
+      "close": {
+        "$type": "color",
+        "$value": "{semantic.color.icon.secondary}",
+        "$description": "Ícono de cerrar del banner.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "STROKE_COLOR"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--banner-close)"
+            }
+          }
+        }
+      },
+      "radius": {
+        "$type": "dimension",
+        "$value": "{semantic.radius.card}",
+        "$description": "Esquinas del banner.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "CORNER_RADIUS"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--banner-radius)"
+            }
+          }
+        }
+      },
+      "border-width": {
+        "$type": "dimension",
+        "$value": "{semantic.border-width.default}",
+        "$description": "Grosor del borde del banner.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "STROKE_FLOAT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--banner-border-width)"
+            }
+          }
+        }
+      },
+      "padding": {
+        "$type": "dimension",
+        "$value": "{semantic.space.inset.lg}",
+        "$description": "Relleno del banner.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "GAP"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--banner-padding)"
+            }
+          }
+        }
+      },
+      "gap": {
+        "$type": "dimension",
+        "$value": "{semantic.space.inline.sm}",
+        "$description": "Separación entre ícono, contenido y botón de cerrar.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "GAP"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--banner-gap)"
+            }
+          }
+        }
+      },
+      "text-gap": {
+        "$type": "dimension",
+        "$value": "{semantic.space.stack.xs}",
+        "$description": "Separación entre título y mensaje.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "GAP"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--banner-text-gap)"
+            }
+          }
+        }
+      },
+      "icon-size": {
+        "$type": "dimension",
+        "$value": "{semantic.icon.size.md}",
+        "$description": "Tamaño del ícono y del botón de cerrar del banner.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "WIDTH_HEIGHT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--banner-icon-size)"
             }
           }
         }
