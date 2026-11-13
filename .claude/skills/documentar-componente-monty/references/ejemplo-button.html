@@ -1,0 +1,830 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ficha · Button</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Plus+Jakarta+Sans:wght@700&display=swap" rel="stylesheet">
+<!--
+  PLANTILLA DE FICHA · Monty DS
+  Lo fijo (no se toca nunca): las fuentes, el bloque de estilos "sistema", el sprite de íconos y el script del final.
+  Lo que cambia en cada ficha: el título de la pestaña, el bloque de estilos "componente" y el contenido de main.
+  En el bloque "componente" solo van estilos del dibujo del componente y solo con var(--…):
+  ningún hex, ninguna medida en píxeles, ninguna fuente.
+-->
+<style id="sistema">
+/* TOKENS:INICIO — generado con scripts/tokens-css.mjs desde design_tokens.json. No editar a mano. */
+:root, [data-theme] {
+  --color-text-primary: #2e2e2e;
+  --color-text-secondary: #6c6c6c;
+  --color-text-disabled: #aeaeae;
+  --color-text-on-action: #2e2e2e;
+  --color-text-on-action-subtle: #4e5210;
+  --color-text-on-brand: #2e2e2e;
+  --color-text-link: #3454c5;
+  --color-surface-default: #ffffff;
+  --color-surface-subtle: #f9f9f9;
+  --color-surface-muted: #f9f9f9;
+  --color-surface-sunken: #f2f2f2;
+  --color-surface-hover: #f2f2f2;
+  --color-surface-brand: #def765;
+  --color-action-default: #def765;
+  --color-action-hover: #cde24e;
+  --color-action-pressed: #b3c33d;
+  --color-action-disabled: #e6e6e6;
+  --color-action-subtle: #f8ffdc;
+  --color-border-default: #e6e6e6;
+  --color-border-strong: #848484;
+  --color-border-focus: #3d63f5;
+  --color-ai-surface: #f6f6fe;
+  --color-ai-text: #5e44c3;
+  --color-ai-border: #7a5af8;
+  --color-feedback-success-text: #057434;
+  --color-feedback-success-surface: #effaf0;
+  --color-feedback-success-border: #158f44;
+  --color-feedback-warning-text: #865403;
+  --color-feedback-warning-surface: #fff5ea;
+  --color-feedback-warning-border: #a46805;
+  --color-feedback-error-text: #a63131;
+  --color-feedback-error-surface: #fef4f3;
+  --color-feedback-error-border: #c84341;
+  --color-feedback-info-text: #3454c5;
+  --color-feedback-info-surface: #f4f7fe;
+  --color-feedback-info-border: #3d63f5;
+  --color-shadow-soft: #00000014;
+  --color-shadow-strong: #00000029;
+  --color-overlay-scrim: #0000007a;
+  --color-icon-default: #2e2e2e;
+  --color-icon-secondary: #6c6c6c;
+  --color-icon-disabled: #aeaeae;
+  --color-icon-on-action: #2e2e2e;
+  --color-icon-on-action-subtle: #4e5210;
+  --color-icon-ai: #5e44c3;
+  --color-icon-success: #057434;
+  --color-icon-warning: #865403;
+  --color-icon-error: #a63131;
+  --color-icon-info: #3454c5;
+  --button-background-primary: var(--color-action-default);
+  --button-background-primary-hover: var(--color-action-hover);
+  --button-background-secondary: var(--color-surface-default);
+  --button-background-hover: var(--color-surface-hover);
+  --button-background-disabled: var(--color-action-disabled);
+  --button-border-secondary: var(--color-border-strong);
+  --button-text-primary: var(--color-text-on-action);
+  --button-text-default: var(--color-text-primary);
+  --button-text-disabled: var(--color-text-disabled);
+  --button-icon-primary: var(--color-icon-on-action);
+  --button-icon-default: var(--color-icon-default);
+  --button-icon-disabled: var(--color-icon-disabled);
+  --input-background: var(--color-surface-default);
+  --input-background-disabled: var(--color-surface-sunken);
+  --input-border: var(--color-border-strong);
+  --input-border-focus: var(--color-border-focus);
+  --input-border-error: var(--color-feedback-error-border);
+  --input-border-disabled: var(--color-border-default);
+  --input-label: var(--color-text-primary);
+  --input-text: var(--color-text-primary);
+  --input-text-disabled: var(--color-text-disabled);
+  --input-help: var(--color-text-secondary);
+  --input-help-error: var(--color-feedback-error-text);
+  --input-icon: var(--color-icon-secondary);
+  --input-icon-disabled: var(--color-icon-disabled);
+  --input-icon-error: var(--color-icon-error);
+  --icon-color: var(--color-icon-default);
+  --chip-background-tag: var(--color-surface-sunken);
+  --chip-background-filter: var(--color-surface-default);
+  --chip-background-filter-hover: var(--color-surface-hover);
+  --chip-background-selected: var(--color-action-subtle);
+  --chip-background-match: var(--color-ai-surface);
+  --chip-border-filter: var(--color-border-strong);
+  --chip-text-default: var(--color-text-primary);
+  --chip-text-selected: var(--color-text-on-action-subtle);
+  --chip-text-match: var(--color-ai-text);
+  --chip-icon-default: var(--color-icon-secondary);
+  --chip-icon-selected: var(--color-icon-on-action-subtle);
+  --chip-icon-match: var(--color-icon-ai);
+  --avatar-background-person: var(--color-action-subtle);
+  --avatar-background-company: var(--color-surface-sunken);
+  --avatar-text-person: var(--color-text-on-action-subtle);
+  --avatar-text-company: var(--color-text-primary);
+  --avatar-border: var(--color-border-default);
+  --banner-background-success: var(--color-feedback-success-surface);
+  --banner-background-warning: var(--color-feedback-warning-surface);
+  --banner-background-error: var(--color-feedback-error-surface);
+  --banner-background-info: var(--color-feedback-info-surface);
+  --banner-border-success: var(--color-feedback-success-border);
+  --banner-border-warning: var(--color-feedback-warning-border);
+  --banner-border-error: var(--color-feedback-error-border);
+  --banner-border-info: var(--color-feedback-info-border);
+  --banner-icon-success: var(--color-icon-success);
+  --banner-icon-warning: var(--color-icon-warning);
+  --banner-icon-error: var(--color-icon-error);
+  --banner-icon-info: var(--color-icon-info);
+  --banner-text: var(--color-text-primary);
+  --banner-link: var(--color-text-link);
+  --banner-close: var(--color-icon-secondary);
+  --card-background: var(--color-surface-default);
+  --card-border: var(--color-border-default);
+  --card-text-primary: var(--color-text-primary);
+  --card-text-secondary: var(--color-text-secondary);
+  --card-icon: var(--color-icon-secondary);
+  --ai-block-background: var(--color-ai-surface);
+  --ai-block-border: var(--color-ai-border);
+  --ai-block-label: var(--color-ai-text);
+  --ai-block-text: var(--color-text-primary);
+  --ai-block-icon: var(--color-icon-ai);
+}
+:root, [data-platform] {
+  --type-display-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  --type-display-weight: 700;
+  --type-display-size: 32px;
+  --type-display-line-height: 40px;
+  --type-heading-lg-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  --type-heading-lg-weight: 700;
+  --type-heading-lg-size: 24px;
+  --type-heading-lg-line-height: 32px;
+  --type-heading-md-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  --type-heading-md-weight: 700;
+  --type-heading-md-size: 20px;
+  --type-heading-md-line-height: 28px;
+  --type-heading-sm-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  --type-heading-sm-weight: 700;
+  --type-heading-sm-size: 16px;
+  --type-heading-sm-line-height: 24px;
+  --type-body-default-family: "Inter", system-ui, sans-serif;
+  --type-body-default-weight: 400;
+  --type-body-default-size: 16px;
+  --type-body-default-line-height: 24px;
+  --type-body-compact-family: "Inter", system-ui, sans-serif;
+  --type-body-compact-weight: 400;
+  --type-body-compact-size: 14px;
+  --type-body-compact-line-height: 20px;
+  --type-label-default-family: "Inter", system-ui, sans-serif;
+  --type-label-default-weight: 600;
+  --type-label-default-size: 16px;
+  --type-label-default-line-height: 20px;
+  --type-label-sm-family: "Inter", system-ui, sans-serif;
+  --type-label-sm-weight: 600;
+  --type-label-sm-size: 14px;
+  --type-label-sm-line-height: 20px;
+  --type-data-family: "Inter", system-ui, sans-serif;
+  --type-data-weight: 600;
+  --type-data-size: 20px;
+  --type-data-line-height: 28px;
+  --space-inset-xs: 4px;
+  --space-inset-sm: 8px;
+  --space-inset-md: 12px;
+  --space-inset-lg: 16px;
+  --space-inset-xl: 24px;
+  --space-stack-xs: 4px;
+  --space-stack-sm: 8px;
+  --space-stack-md: 16px;
+  --space-stack-lg: 24px;
+  --space-inline-xs: 4px;
+  --space-inline-sm: 8px;
+  --space-inline-md: 16px;
+  --space-section: 32px;
+  --radius-control: 4px;
+  --radius-nested: 4px;
+  --radius-card: 8px;
+  --radius-surface: 12px;
+  --radius-pill: 999px;
+  --layout-page-margin: 16px;
+  --layout-grid-columns: 4;
+  --layout-grid-gutter: 16px;
+  --layout-content-max-width: 430px;
+  --layout-content-max-width-wide: 430px;
+  --border-width-default: 1px;
+  --border-width-strong: 2px;
+  --icon-size-sm: 16px;
+  --icon-size-md: 20px;
+  --icon-size-lg: 24px;
+  --size-avatar-sm: 32px;
+  --size-avatar-md: 40px;
+  --size-avatar-lg: 64px;
+  --button-radius: var(--radius-control);
+  --button-padding-x: var(--space-inset-lg);
+  --button-padding-y: var(--space-inset-md);
+  --button-gap: var(--space-inline-xs);
+  --button-border-width: var(--border-width-default);
+  --button-icon-size: var(--icon-size-md);
+  --input-radius: var(--radius-control);
+  --input-padding-x: var(--space-inset-md);
+  --input-padding-y: var(--space-inset-md);
+  --input-gap: var(--space-stack-sm);
+  --input-border-width: var(--border-width-default);
+  --input-border-width-focus: var(--border-width-strong);
+  --input-icon-size: var(--icon-size-md);
+  --input-icon-gap: var(--space-inline-sm);
+  --input-message-gap: var(--space-inline-xs);
+  --icon-size-sm-component: var(--icon-size-sm);
+  --icon-size-md-component: var(--icon-size-md);
+  --icon-size-lg-component: var(--icon-size-lg);
+  --chip-radius: var(--radius-pill);
+  --chip-padding-x: var(--space-inset-md);
+  --chip-padding-y-tag: var(--space-inset-xs);
+  --chip-padding-y-filter: var(--space-inset-md);
+  --chip-gap: var(--space-inline-xs);
+  --chip-icon-size: var(--icon-size-sm);
+  --chip-border-width: var(--border-width-default);
+  --avatar-radius-person: var(--radius-pill);
+  --avatar-radius-company: var(--radius-control);
+  --avatar-size-sm: var(--size-avatar-sm);
+  --avatar-size-md: var(--size-avatar-md);
+  --avatar-size-lg: var(--size-avatar-lg);
+  --avatar-border-width: var(--border-width-default);
+  --banner-radius: var(--radius-card);
+  --banner-border-width: var(--border-width-default);
+  --banner-padding: var(--space-inset-lg);
+  --banner-gap: var(--space-inline-sm);
+  --banner-text-gap: var(--space-stack-xs);
+  --banner-icon-size: var(--icon-size-md);
+  --card-border-width: var(--border-width-default);
+  --card-radius: var(--radius-card);
+  --card-padding: var(--space-inset-lg);
+  --card-gap: var(--space-stack-md);
+  --card-header-gap: var(--space-stack-xs);
+  --card-avatar-gap: var(--space-inline-sm);
+  --card-facts-gap: var(--space-stack-sm);
+  --card-meta-gap: var(--space-inline-md);
+  --card-meta-icon-gap: var(--space-inline-xs);
+  --card-chips-gap: var(--space-inline-sm);
+  --card-actions-gap: var(--space-stack-sm);
+  --card-icon-size: var(--icon-size-sm);
+  --ai-block-border-width: var(--border-width-default);
+  --ai-block-icon-size: var(--icon-size-sm);
+  --ai-block-icon-gap: var(--space-inline-sm);
+  --ai-block-radius: var(--radius-nested);
+  --ai-block-padding: var(--space-inset-md);
+  --ai-block-gap: var(--space-stack-sm);
+}
+[data-theme="dark"] {
+  --color-text-primary: #f9f9f9;
+  --color-text-secondary: #aeaeae;
+  --color-text-disabled: #6c6c6c;
+  --color-text-on-action-subtle: #def765;
+  --color-text-link: #abc3fe;
+  --color-surface-default: #191919;
+  --color-surface-subtle: #2e2e2e;
+  --color-surface-muted: #2e2e2e;
+  --color-surface-sunken: #0c0c0c;
+  --color-surface-hover: #414141;
+  --color-action-disabled: #414141;
+  --color-action-subtle: #2f3106;
+  --color-border-default: #414141;
+  --color-border-focus: #86a7fe;
+  --color-ai-surface: #23184e;
+  --color-ai-text: #bfbbfe;
+  --color-ai-border: #a59cff;
+  --color-feedback-success-text: #92d8a0;
+  --color-feedback-success-surface: #032d11;
+  --color-feedback-success-border: #65c27c;
+  --color-feedback-warning-text: #f0b877;
+  --color-feedback-warning-surface: #351e01;
+  --color-feedback-warning-border: #e19a3d;
+  --color-feedback-error-text: #feaba4;
+  --color-feedback-error-surface: #421110;
+  --color-feedback-error-border: #fd8079;
+  --color-feedback-info-text: #abc3fe;
+  --color-feedback-info-surface: #111f4f;
+  --color-feedback-info-border: #86a7fe;
+  --color-shadow-soft: #00000066;
+  --color-shadow-strong: #000000a3;
+  --color-overlay-scrim: #000000a3;
+  --color-icon-default: #f9f9f9;
+  --color-icon-secondary: #aeaeae;
+  --color-icon-disabled: #6c6c6c;
+  --color-icon-on-action-subtle: #def765;
+  --color-icon-ai: #bfbbfe;
+  --color-icon-success: #92d8a0;
+  --color-icon-warning: #f0b877;
+  --color-icon-error: #feaba4;
+  --color-icon-info: #abc3fe;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-text-primary: #f9f9f9;
+    --color-text-secondary: #aeaeae;
+    --color-text-disabled: #6c6c6c;
+    --color-text-on-action-subtle: #def765;
+    --color-text-link: #abc3fe;
+    --color-surface-default: #191919;
+    --color-surface-subtle: #2e2e2e;
+    --color-surface-muted: #2e2e2e;
+    --color-surface-sunken: #0c0c0c;
+    --color-surface-hover: #414141;
+    --color-action-disabled: #414141;
+    --color-action-subtle: #2f3106;
+    --color-border-default: #414141;
+    --color-border-focus: #86a7fe;
+    --color-ai-surface: #23184e;
+    --color-ai-text: #bfbbfe;
+    --color-ai-border: #a59cff;
+    --color-feedback-success-text: #92d8a0;
+    --color-feedback-success-surface: #032d11;
+    --color-feedback-success-border: #65c27c;
+    --color-feedback-warning-text: #f0b877;
+    --color-feedback-warning-surface: #351e01;
+    --color-feedback-warning-border: #e19a3d;
+    --color-feedback-error-text: #feaba4;
+    --color-feedback-error-surface: #421110;
+    --color-feedback-error-border: #fd8079;
+    --color-feedback-info-text: #abc3fe;
+    --color-feedback-info-surface: #111f4f;
+    --color-feedback-info-border: #86a7fe;
+    --color-shadow-soft: #00000066;
+    --color-shadow-strong: #000000a3;
+    --color-overlay-scrim: #000000a3;
+    --color-icon-default: #f9f9f9;
+    --color-icon-secondary: #aeaeae;
+    --color-icon-disabled: #6c6c6c;
+    --color-icon-on-action-subtle: #def765;
+    --color-icon-ai: #bfbbfe;
+    --color-icon-success: #92d8a0;
+    --color-icon-warning: #f0b877;
+    --color-icon-error: #feaba4;
+    --color-icon-info: #abc3fe;
+  }
+}
+[data-platform="web"] {
+  --type-display-size: 48px;
+  --type-display-line-height: 56px;
+  --type-heading-lg-size: 32px;
+  --type-heading-lg-line-height: 40px;
+  --type-heading-md-size: 24px;
+  --type-heading-md-line-height: 32px;
+  --space-section: 64px;
+  --layout-page-margin: 32px;
+  --layout-grid-columns: 12;
+  --layout-grid-gutter: 24px;
+  --layout-content-max-width: 720px;
+  --layout-content-max-width-wide: 1440px;
+}
+/* TOKENS:FIN */
+
+/* ---------- Ficha: estilos fijos. Solo tokens. ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { background: var(--color-surface-subtle); }
+body {
+  margin: 0;
+  color: var(--color-text-primary);
+  font-family: var(--type-body-default-family);
+  font-weight: var(--type-body-default-weight);
+  font-size: var(--type-body-default-size);
+  line-height: var(--type-body-default-line-height);
+}
+.ficha {
+  max-width: var(--layout-content-max-width-wide);
+  margin: 0 auto;
+  padding: var(--space-section) var(--layout-page-margin);
+  display: flex; flex-direction: column; gap: var(--space-stack-lg);
+}
+h1, h2, h3 { margin: 0; text-wrap: balance; }
+h1 { font-family: var(--type-heading-lg-family); font-weight: var(--type-heading-lg-weight); font-size: var(--type-heading-lg-size); line-height: var(--type-heading-lg-line-height); }
+h2 { font-family: var(--type-heading-md-family); font-weight: var(--type-heading-md-weight); font-size: var(--type-heading-md-size); line-height: var(--type-heading-md-line-height); }
+h3 { font-family: var(--type-heading-sm-family); font-weight: var(--type-heading-sm-weight); font-size: var(--type-heading-sm-size); line-height: var(--type-heading-sm-line-height); }
+p, li { margin: 0; text-wrap: pretty; max-width: var(--layout-content-max-width); }
+ul, ol { margin: 0; padding-left: var(--space-inset-lg); display: flex; flex-direction: column; gap: var(--space-stack-xs); }
+a { color: var(--color-text-link); text-decoration: underline; }
+code {
+  font-family: inherit; font-size: var(--type-body-compact-size); line-height: var(--type-body-compact-line-height);
+  background: var(--color-surface-sunken); border-radius: var(--radius-nested); padding: 0 var(--space-inset-xs);
+  white-space: nowrap;
+}
+
+/* Cabecera */
+.cabecera { display: flex; flex-direction: column; gap: var(--space-stack-sm); }
+.cabecera .bajada { color: var(--color-text-secondary); }
+.meta { display: flex; flex-wrap: wrap; gap: var(--space-inline-sm) var(--space-inline-md); font-size: var(--type-body-compact-size); line-height: var(--type-body-compact-line-height); color: var(--color-text-secondary); }
+.barra { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-stack-sm); }
+.estado-ficha {
+  display: inline-flex; align-items: center;
+  font-family: var(--type-label-sm-family); font-weight: var(--type-label-sm-weight); font-size: var(--type-label-sm-size); line-height: var(--type-label-sm-line-height);
+  background: var(--chip-background-tag); color: var(--chip-text-default);
+  border-radius: var(--chip-radius); padding: var(--chip-padding-y-tag) var(--chip-padding-x);
+}
+.selector-tema { display: inline-flex; gap: var(--chip-gap); }
+.selector-tema button {
+  display: inline-flex; align-items: center; gap: var(--chip-gap); cursor: pointer;
+  font-family: var(--type-label-sm-family); font-weight: var(--type-label-sm-weight); font-size: var(--type-label-sm-size); line-height: var(--type-label-sm-line-height);
+  color: var(--chip-text-default); background: var(--chip-background-filter);
+  border: 0; box-shadow: inset 0 0 0 var(--chip-border-width) var(--chip-border-filter);
+  border-radius: var(--chip-radius); padding: var(--chip-padding-y-filter) var(--chip-padding-x);
+}
+.selector-tema button:hover { background: var(--chip-background-filter-hover); }
+.selector-tema button:focus-visible { outline: var(--border-width-strong) solid var(--color-border-focus); outline-offset: var(--border-width-strong); }
+.selector-tema button[aria-pressed="true"] { background: var(--chip-background-selected); color: var(--chip-text-selected); }
+.selector-tema button svg { width: var(--chip-icon-size); height: var(--chip-icon-size); display: none; color: var(--chip-icon-selected); }
+.selector-tema button[aria-pressed="true"] svg { display: block; }
+
+/* Secciones */
+.seccion {
+  background: var(--color-surface-default);
+  border: var(--border-width-default) solid var(--color-border-default);
+  border-radius: var(--radius-card);
+  padding: var(--space-inset-xl);
+  display: flex; flex-direction: column; gap: var(--space-stack-md);
+}
+.seccion > h2 { display: flex; gap: var(--space-inline-sm); align-items: baseline; }
+.seccion > h2 .num { color: var(--color-text-secondary); font-variant-numeric: tabular-nums; }
+
+/* Por confirmar */
+.pendiente {
+  display: block;
+  background: var(--color-feedback-warning-surface);
+  border-left: var(--border-width-strong) solid var(--color-feedback-warning-border);
+  border-radius: var(--radius-nested);
+  padding: var(--space-inset-sm) var(--space-inset-md);
+  max-width: var(--layout-content-max-width);
+}
+.pendiente strong { color: var(--color-feedback-warning-text); font-weight: var(--type-label-sm-weight); }
+li .pendiente, td .pendiente { margin-top: var(--space-stack-xs); }
+
+/* Tablas */
+.tabla { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: var(--type-body-compact-size); line-height: var(--type-body-compact-line-height); }
+th {
+  text-align: left; color: var(--color-text-secondary);
+  font-family: var(--type-label-sm-family); font-weight: var(--type-label-sm-weight); font-size: var(--type-label-sm-size); line-height: var(--type-label-sm-line-height);
+  padding: var(--space-inset-sm); border-bottom: var(--border-width-default) solid var(--color-border-strong);
+}
+td { padding: var(--space-inset-sm); border-bottom: var(--border-width-default) solid var(--color-border-default); vertical-align: top; }
+td .apilado { display: flex; flex-direction: column; gap: var(--space-stack-xs); }
+
+/* Lienzos: el componente dibujado */
+.lienzo { display: grid; grid-template-columns: repeat(var(--columnas, 3), minmax(0, 1fr)); gap: var(--space-stack-md); }
+.celda { display: flex; flex-direction: column; gap: var(--space-stack-sm); min-width: 0; }
+.escenario {
+  position: relative;
+  background: var(--color-surface-default);
+  border: var(--border-width-default) solid var(--color-border-default);
+  border-radius: var(--radius-nested);
+  padding: var(--space-inset-xl);
+  display: flex; align-items: center; justify-content: center;
+}
+.leyenda { font-family: var(--type-label-sm-family); font-weight: var(--type-label-sm-weight); font-size: var(--type-label-sm-size); line-height: var(--type-label-sm-line-height); color: var(--color-text-secondary); }
+.matriz { display: grid; grid-template-columns: auto repeat(var(--columnas, 3), minmax(0, 1fr)); gap: var(--space-stack-sm) var(--space-inline-md); align-items: center; }
+.matriz .eje { font-family: var(--type-label-sm-family); font-weight: var(--type-label-sm-weight); font-size: var(--type-label-sm-size); line-height: var(--type-label-sm-line-height); color: var(--color-text-secondary); }
+
+/* Anatomía */
+.anatomia .escenario { padding: var(--space-section); }
+.marca {
+  position: absolute; z-index: 1;
+  width: var(--icon-size-lg); height: var(--icon-size-lg);
+  display: flex; align-items: center; justify-content: center;
+  background: var(--color-surface-default); color: var(--color-text-primary);
+  border: var(--border-width-strong) solid var(--color-border-strong); border-radius: var(--radius-pill);
+  font-family: var(--type-label-sm-family); font-weight: var(--type-label-sm-weight); font-size: var(--type-label-sm-size); line-height: var(--type-label-sm-line-height);
+  font-variant-numeric: tabular-nums;
+}
+.guia { position: absolute; background: var(--color-border-strong); }
+.num-parte {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: var(--icon-size-lg); height: var(--icon-size-lg);
+  border: var(--border-width-strong) solid var(--color-border-strong); border-radius: var(--radius-pill);
+  font-family: var(--type-label-sm-family); font-weight: var(--type-label-sm-weight); font-size: var(--type-label-sm-size); line-height: var(--type-label-sm-line-height);
+}
+
+/* Tokens de color con su muestra (los arma el script a partir de data-token) */
+.token { display: inline-flex; flex-wrap: wrap; align-items: center; gap: var(--space-inline-xs) var(--space-inline-sm); }
+.token .muestra { display: inline-flex; border: var(--border-width-default) solid var(--color-border-default); border-radius: var(--radius-nested); overflow: hidden; flex: none; }
+.token .muestra i { display: block; width: var(--icon-size-md); height: var(--icon-size-md); }
+.token .ref, .token .hex { color: var(--color-text-secondary); }
+.token .hex { font-variant-numeric: tabular-nums; }
+.token.falta code { box-shadow: inset 0 0 0 var(--border-width-strong) var(--color-feedback-error-border); }
+
+.icono { width: var(--icon-size-md); height: var(--icon-size-md); fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+
+@media (max-width: 720px) {
+  .lienzo, .matriz { grid-template-columns: minmax(0, 1fr); }
+  .matriz .eje:empty { display: none; }
+  .seccion { padding: var(--space-inset-lg); }
+}
+</style>
+<style id="componente">
+/* Dibujo de Button. Solo var(--…). */
+.m-button {
+  display: inline-flex; align-items: center; justify-content: center;
+  gap: var(--button-gap);
+  padding: var(--button-padding-y) var(--button-padding-x);
+  border: 0; border-radius: var(--button-radius);
+  background: transparent; color: var(--button-text-default);
+  font-family: var(--type-label-default-family); font-weight: var(--type-label-default-weight);
+  font-size: var(--type-label-default-size); line-height: var(--type-label-default-line-height);
+  white-space: nowrap;
+}
+.m-button .icono { width: var(--button-icon-size); height: var(--button-icon-size); color: var(--button-icon-default); }
+.m-button.primary { background: var(--button-background-primary); color: var(--button-text-primary); }
+.m-button.primary .icono { color: var(--button-icon-primary); }
+.m-button.primary.hover { background: var(--button-background-primary-hover); }
+.m-button.secondary { background: var(--button-background-secondary); box-shadow: inset 0 0 0 var(--button-border-width) var(--button-border-secondary); }
+.m-button.secondary.hover, .m-button.ghost.hover { background: var(--button-background-hover); }
+.m-button.disabled { color: var(--button-text-disabled); box-shadow: none; }
+.m-button.disabled .icono { color: var(--button-icon-disabled); }
+.m-button.primary.disabled, .m-button.secondary.disabled { background: var(--button-background-disabled); }
+.m-button.ghost.disabled { background: transparent; }
+</style>
+</head>
+<body data-platform="web">
+<!-- Sprite de íconos: los 21 de Icon, exportados de Figma (página Componentes, set Icon). Fijo. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-sparkles" viewBox="0 0 24 24"><path d="M16 18C16.5304 18 17.0391 18.2107 17.4142 18.5858C17.7893 18.9609 18 19.4696 18 20C18 19.4696 18.2107 18.9609 18.5858 18.5858C18.9609 18.2107 19.4696 18 20 18C19.4696 18 18.9609 17.7893 18.5858 17.4142C18.2107 17.0391 18 16.5304 18 16C18 16.5304 17.7893 17.0391 17.4142 17.4142C17.0391 17.7893 16.5304 18 16 18ZM16 6C16.5304 6 17.0391 6.21071 17.4142 6.58579C17.7893 6.96086 18 7.46957 18 8C18 7.46957 18.2107 6.96086 18.5858 6.58579C18.9609 6.21071 19.4696 6 20 6C19.4696 6 18.9609 5.78929 18.5858 5.41421C18.2107 5.03914 18 4.53043 18 4C18 4.53043 17.7893 5.03914 17.4142 5.41421C17.0391 5.78929 16.5304 6 16 6ZM9 18C9 16.4087 9.63214 14.8826 10.7574 13.7574C11.8826 12.6321 13.4087 12 15 12C13.4087 12 11.8826 11.3679 10.7574 10.2426C9.63214 9.11742 9 7.5913 9 6C9 7.5913 8.36786 9.11742 7.24264 10.2426C6.11742 11.3679 4.5913 12 3 12C4.5913 12 6.11742 12.6321 7.24264 13.7574C8.36786 14.8826 9 16.4087 9 18Z"/></symbol>
+  <symbol id="i-circle-check" viewBox="0 0 24 24"><path d="M9 12L11 14L15 10M3 12C3 13.1819 3.23279 14.3522 3.68508 15.4442C4.13738 16.5361 4.80031 17.5282 5.63604 18.364C6.47177 19.1997 7.46392 19.8626 8.55585 20.3149C9.64778 20.7672 10.8181 21 12 21C13.1819 21 14.3522 20.7672 15.4442 20.3149C16.5361 19.8626 17.5282 19.1997 18.364 18.364C19.1997 17.5282 19.8626 16.5361 20.3149 15.4442C20.7672 14.3522 21 13.1819 21 12C21 10.8181 20.7672 9.64778 20.3149 8.55585C19.8626 7.46392 19.1997 6.47177 18.364 5.63604C17.5282 4.80031 16.5361 4.13738 15.4442 3.68508C14.3522 3.23279 13.1819 3 12 3C10.8181 3 9.64778 3.23279 8.55585 3.68508C7.46392 4.13738 6.47177 4.80031 5.63604 5.63604C4.80031 6.47177 4.13738 7.46392 3.68508 8.55585C3.23279 9.64778 3 10.8181 3 12Z"/></symbol>
+  <symbol id="i-alert-triangle" viewBox="0 0 24 24"><path d="M12 9V13M12 16H12.01M10.363 3.591L2.25699 17.125C2.08988 17.4144 2.00145 17.7425 2.0005 18.0766C1.99954 18.4108 2.08609 18.7394 2.25153 19.0297C2.41698 19.3201 2.65555 19.562 2.94353 19.7316C3.2315 19.9011 3.55884 19.9922 3.89299 19.996H20.107C20.441 19.9921 20.7682 19.901 21.056 19.7315C21.3438 19.562 21.5823 19.3202 21.7477 19.03C21.9131 18.7398 21.9997 18.4114 21.9989 18.0774C21.9981 17.7433 21.9098 17.4154 21.743 17.126L13.637 3.59C13.4664 3.3085 13.2262 3.07574 12.9394 2.9142C12.6527 2.75265 12.3291 2.66778 12 2.66778C11.6709 2.66778 11.3473 2.75265 11.0605 2.9142C10.7738 3.07574 10.5335 3.3085 10.363 3.59V3.591Z"/></symbol>
+  <symbol id="i-info-circle" viewBox="0 0 24 24"><path d="M12 9H12.01M11 12H12V16H13M3 12C3 13.1819 3.23279 14.3522 3.68508 15.4442C4.13738 16.5361 4.80031 17.5282 5.63604 18.364C6.47177 19.1997 7.46392 19.8626 8.55585 20.3149C9.64778 20.7672 10.8181 21 12 21C13.1819 21 14.3522 20.7672 15.4442 20.3149C16.5361 19.8626 17.5282 19.1997 18.364 18.364C19.1997 17.5282 19.8626 16.5361 20.3149 15.4442C20.7672 14.3522 21 13.1819 21 12C21 9.61305 20.0518 7.32387 18.364 5.63604C16.6761 3.94821 14.3869 3 12 3C9.61305 3 7.32387 3.94821 5.63604 5.63604C3.94821 7.32387 3 9.61305 3 12Z"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6L18 18"/></symbol>
+  <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="M9 6L15 12L9 18"/></symbol>
+  <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="M6 9L12 15L18 9"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><path d="M21 21L15 15M3 10C3 10.9193 3.18106 11.8295 3.53284 12.6788C3.88463 13.5281 4.40024 14.2997 5.05025 14.9497C5.70026 15.5998 6.47194 16.1154 7.32122 16.4672C8.1705 16.8189 9.08075 17 10 17C10.9193 17 11.8295 16.8189 12.6788 16.4672C13.5281 16.1154 14.2997 15.5998 14.9497 14.9497C15.5998 14.2997 16.1154 13.5281 16.4672 12.6788C16.8189 11.8295 17 10.9193 17 10C17 9.08075 16.8189 8.1705 16.4672 7.32122C16.1154 6.47194 15.5998 5.70026 14.9497 5.05025C14.2997 4.40024 13.5281 3.88463 12.6788 3.53284C11.8295 3.18106 10.9193 3 10 3C9.08075 3 8.1705 3.18106 7.32122 3.53284C6.47194 3.88463 5.70026 4.40024 5.05025 5.05025C4.40024 5.70026 3.88463 6.47194 3.53284 7.32122C3.18106 8.1705 3 9.08075 3 10Z"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><path d="M6 21V19C6 17.9391 6.42143 16.9217 7.17157 16.1716C7.92172 15.4214 8.93913 15 10 15H14C15.0609 15 16.0783 15.4214 16.8284 16.1716C17.5786 16.9217 18 17.9391 18 19V21M8 7C8 8.06087 8.42143 9.07828 9.17157 9.82843C9.92172 10.5786 10.9391 11 12 11C13.0609 11 14.0783 10.5786 14.8284 9.82843C15.5786 9.07828 16 8.06087 16 7C16 5.93913 15.5786 4.92172 14.8284 4.17157C14.0783 3.42143 13.0609 3 12 3C10.9391 3 9.92172 3.42143 9.17157 4.17157C8.42143 4.92172 8 5.93913 8 7Z"/></symbol>
+  <symbol id="i-briefcase" viewBox="0 0 24 24"><path d="M8 7V5C8 4.46957 8.21071 3.96086 8.58579 3.58579C8.96086 3.21071 9.46957 3 10 3H14C14.5304 3 15.0391 3.21071 15.4142 3.58579C15.7893 3.96086 16 4.46957 16 5V7M12 12V12.01M3 13C5.79158 14.4067 8.87403 15.1394 12 15.1394C15.126 15.1394 18.2084 14.4067 21 13M3 9C3 8.46957 3.21071 7.96086 3.58579 7.58579C3.96086 7.21071 4.46957 7 5 7H19C19.5304 7 20.0391 7.21071 20.4142 7.58579C20.7893 7.96086 21 8.46957 21 9V18C21 18.5304 20.7893 19.0391 20.4142 19.4142C20.0391 19.7893 19.5304 20 19 20H5C4.46957 20 3.96086 19.7893 3.58579 19.4142C3.21071 19.0391 3 18.5304 3 18V9Z"/></symbol>
+  <symbol id="i-map-pin" viewBox="0 0 24 24"><path d="M9 11C9 11.7956 9.31607 12.5587 9.87868 13.1213C10.4413 13.6839 11.2044 14 12 14C12.7957 14 13.5587 13.6839 14.1213 13.1213C14.6839 12.5587 15 11.7956 15 11C15 10.2043 14.6839 9.44129 14.1213 8.87868C13.5587 8.31607 12.7957 8 12 8C11.2044 8 10.4413 8.31607 9.87868 8.87868C9.31607 9.44129 9 10.2043 9 11ZM17.657 16.657L13.414 20.9C13.039 21.2746 12.5306 21.4851 12.0005 21.4851C11.4704 21.4851 10.962 21.2746 10.587 20.9L6.343 16.657C5.22422 15.5382 4.46234 14.1127 4.15369 12.5609C3.84504 11.009 4.00349 9.40051 4.60901 7.93873C5.21452 6.47694 6.2399 5.22754 7.55548 4.3485C8.87107 3.46947 10.4178 3.00029 12 3.00029C13.5822 3.00029 15.1289 3.46947 16.4445 4.3485C17.7601 5.22754 18.7855 6.47694 19.391 7.93873C19.9965 9.40051 20.155 11.009 19.8463 12.5609C19.5377 14.1127 18.7758 15.5382 17.657 16.657Z"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><path d="M16 3V7M8 3V7M4 11H20M11 15H12V18M4 7C4 6.46957 4.21071 5.96086 4.58579 5.58579C4.96086 5.21071 5.46957 5 6 5H18C18.5304 5 19.0391 5.21071 19.4142 5.58579C19.7893 5.96086 20 6.46957 20 7V19C20 19.5304 19.7893 20.0391 19.4142 20.4142C19.0391 20.7893 18.5304 21 18 21H6C5.46957 21 4.96086 20.7893 4.58579 20.4142C4.21071 20.0391 4 19.5304 4 19V7Z"/></symbol>
+  <symbol id="i-bell" viewBox="0 0 24 24"><path d="M9 17V18C9 18.7956 9.31607 19.5587 9.87868 20.1213C10.4413 20.6839 11.2044 21 12 21C12.7956 21 13.5587 20.6839 14.1213 20.1213C14.6839 19.5587 15 18.7956 15 18V17M10 5C10 4.46957 10.2107 3.96086 10.5858 3.58579C10.9609 3.21071 11.4696 3 12 3C12.5304 3 13.0391 3.21071 13.4142 3.58579C13.7893 3.96086 14 4.46957 14 5C15.1484 5.54303 16.1274 6.38833 16.8321 7.4453C17.5367 8.50227 17.9404 9.73107 18 11V14C18.0753 14.6217 18.2954 15.2171 18.6428 15.7381C18.9902 16.2592 19.4551 16.6914 20 17H4C4.54494 16.6914 5.00981 16.2592 5.35719 15.7381C5.70457 15.2171 5.92474 14.6217 6 14V11C6.05956 9.73107 6.4633 8.50227 7.16795 7.4453C7.8726 6.38833 8.85159 5.54303 10 5Z"/></symbol>
+  <symbol id="i-message-circle" viewBox="0 0 24 24"><path d="M4.3 16.1L3 20L7.7 19C11.659 20.922 16.608 19.942 19.274 16.707C21.94 13.472 21.5 8.983 18.245 6.206C14.99 3.43 9.926 3.225 6.4 5.726C2.874 8.228 1.976 12.663 4.3 16.1Z"/></symbol>
+  <symbol id="i-bookmark" viewBox="0 0 24 24"><path d="M18 7V21L12 17L6 21V7C6 5.93913 6.42143 4.92172 7.17157 4.17157C7.92172 3.42143 8.93913 3 10 3H14C15.0609 3 16.0783 3.42143 16.8284 4.17157C17.5786 4.92172 18 5.93913 18 7Z"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M10 12C10 12.5304 10.2107 13.0391 10.5858 13.4142C10.9609 13.7893 11.4696 14 12 14C12.5304 14 13.0391 13.7893 13.4142 13.4142C13.7893 13.0391 14 12.5304 14 12C14 11.4696 13.7893 10.9609 13.4142 10.5858C13.0391 10.2107 12.5304 10 12 10C11.4696 10 10.9609 10.2107 10.5858 10.5858C10.2107 10.9609 10 11.4696 10 12ZM21 12C18.6 16 15.6 18 12 18C8.4 18 5.4 16 3 12C5.4 8 8.4 6 12 6C15.6 6 18.6 8 21 12Z"/></symbol>
+  <symbol id="i-eye-off" viewBox="0 0 24 24"><path d="M10.585 10.587C10.21 10.9621 9.99936 11.4709 9.99945 12.0014C9.99954 12.5318 10.2104 13.0405 10.5855 13.4155C10.9606 13.7905 11.4694 14.0011 11.9999 14.0011C12.5303 14.001 13.039 13.7901 13.414 13.415M16.681 16.673C15.2782 17.5506 13.6547 18.0109 12 18C8.4 18 5.4 16 3 12C4.272 9.88 5.712 8.322 7.32 7.326M10.18 6.18C10.779 6.05873 11.3888 5.99842 12 6C15.6 6 18.6 8 21 12C20.334 13.11 19.621 14.067 18.862 14.87M3 3L21 21"/></symbol>
+  <symbol id="i-arrow-left" viewBox="0 0 24 24"><path d="M5 12H19M11 6L5 12L11 18"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5V19M5 12H19"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path d="M3 7C3 6.46957 3.21071 5.96086 3.58579 5.58579C3.96086 5.21071 4.46957 5 5 5H19C19.5304 5 20.0391 5.21071 20.4142 5.58579C20.7893 5.96086 21 6.46957 21 7M3 7V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19H19C19.5304 19 20.0391 18.7893 20.4142 18.4142C20.7893 18.0391 21 17.5304 21 17V7M3 7L12 13L21 7"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12L10 17L20 7"/></symbol>
+</svg>
+<main class="ficha">
+
+  <header class="cabecera">
+    <div class="barra">
+      <span class="estado-ficha">Aprobada el 2026-11-13 · ficha de referencia</span>
+      <div class="selector-tema" role="group" aria-label="Modo de color">
+        <button type="button" data-poner-tema="light" aria-pressed="false"><svg class="icono" aria-hidden="true"><use href="#i-check"/></svg>Light</button>
+        <button type="button" data-poner-tema="dark" aria-pressed="false"><svg class="icono" aria-hidden="true"><use href="#i-check"/></svg>Dark</button>
+      </div>
+    </div>
+    <h1>Button</h1>
+    <p class="bajada">Acción que la persona ejecuta. Siempre lleva texto.</p>
+    <div class="meta">
+      <span>Figma: <a href="https://www.figma.com/design/tjoqkswERatCimnCp827TF/Monty-DS?node-id=17-21">Button · nodo 17:21</a> · página Componentes</span>
+      <span>Leído el 2026-11-13</span>
+      <span>Tokens: <code>button/*</code></span>
+    </div>
+  </header>
+
+  <section class="seccion" id="que-es">
+    <h2><span class="num">01</span>Qué es</h2>
+    <p>El botón es la forma de ejecutar una acción: postular, guardar, preparar una entrevista. Tiene tres variantes según el peso de la acción y mide 44&nbsp;px de alto (12&nbsp;+&nbsp;20&nbsp;+&nbsp;12), que es el área táctil mínima.</p>
+  </section>
+
+  <section class="seccion" id="cuando-usarlo">
+    <h2><span class="num">02</span>Cuándo usarlo</h2>
+    <ul>
+      <li>Para la acción principal de una vista, con <code>primary</code>: “Me interesa”, “Preparar entrevista”.</li>
+      <li>Para acciones alternativas a la principal, con <code>secondary</code>.</li>
+      <li>Para acciones de poco peso, con <code>ghost</code>: “Guardar” (con <code>bookmark</code>) en una Card <code>featured</code>, “Ahora no” en una Card <code>list</code>.</li>
+    </ul>
+  </section>
+
+  <section class="seccion" id="cuando-no-usarlo">
+    <h2><span class="num">03</span>Cuándo no usarlo</h2>
+    <ul>
+      <li>Para una acción de solo ícono → no existe. Todo botón lleva texto. La única acción de solo ícono es el cierre <code>x</code> del Banner, que es parte del Banner.</li>
+      <li>Para un enlace dentro de un texto → texto con <code>color/text/link</code>, siempre subrayado.</li>
+      <li>Para filtrar una lista → Chip <code>kind: filter</code>.</li>
+      <li>Para varias acciones principales en una lista de matches → Card <code>context: list</code>, que usa <code>secondary</code> y no trae <code>primary</code>.</li>
+      <li>Para navegar (pestañas, barra inferior) → no existen todavía; se proponen antes de usarlas.</li>
+    </ul>
+    <span class="pendiente"><strong>⚠️ Por confirmar</strong> · Si “Volver” es un Button <code>ghost</code> con <code>arrow-left</code> o es otra pieza.</span>
+  </section>
+
+  <section class="seccion" id="variantes">
+    <h2><span class="num">04</span>Variantes</h2>
+    <div class="lienzo" style="--columnas: 3">
+      <div class="celda"><div class="escenario"><button type="button" class="m-button primary">Me interesa</button></div><span class="leyenda">variant=primary</span></div>
+      <div class="celda"><div class="escenario"><button type="button" class="m-button secondary">Me interesa</button></div><span class="leyenda">variant=secondary</span></div>
+      <div class="celda"><div class="escenario"><button type="button" class="m-button ghost"><svg class="icono" aria-hidden="true"><use href="#i-bookmark"/></svg>Guardar</button></div><span class="leyenda">variant=ghost · con ícono</span></div>
+    </div>
+    <div class="tabla"><table>
+      <thead><tr><th>Variante</th><th>Para qué</th></tr></thead>
+      <tbody>
+        <tr><td><code>primary</code></td><td>La acción principal. <strong>Una sola por vista.</strong> En móvil ocupa todo el ancho.</td></tr>
+        <tr><td><code>secondary</code></td><td>Acciones alternativas. Lleva borde.</td></tr>
+        <tr><td><code>ghost</code></td><td>Acciones de poco peso, sin borde ni fondo en reposo.</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section class="seccion" id="estados">
+    <h2><span class="num">05</span>Estados</h2>
+    <div class="matriz" style="--columnas: 3">
+      <span class="eje"></span><span class="eje">default</span><span class="eje">hover</span><span class="eje">disabled</span>
+      <span class="eje">primary</span>
+      <div class="escenario"><button type="button" class="m-button primary">Me interesa</button></div>
+      <div class="escenario"><button type="button" class="m-button primary hover">Me interesa</button></div>
+      <div class="escenario"><button type="button" class="m-button primary disabled" disabled>Me interesa</button></div>
+      <span class="eje">secondary</span>
+      <div class="escenario"><button type="button" class="m-button secondary">Me interesa</button></div>
+      <div class="escenario"><button type="button" class="m-button secondary hover">Me interesa</button></div>
+      <div class="escenario"><button type="button" class="m-button secondary disabled" disabled>Me interesa</button></div>
+      <span class="eje">ghost</span>
+      <div class="escenario"><button type="button" class="m-button ghost">Me interesa</button></div>
+      <div class="escenario"><button type="button" class="m-button ghost hover">Me interesa</button></div>
+      <div class="escenario"><button type="button" class="m-button ghost disabled" disabled>Me interesa</button></div>
+    </div>
+    <div class="tabla"><table>
+      <thead><tr><th>Variante</th><th>Estado</th><th>Cuándo se ve</th><th>Colores</th></tr></thead>
+      <tbody>
+        <tr><td><code>primary</code></td><td><code>default</code></td><td>En reposo.</td><td><div class="apilado">
+          <span class="token" data-token="button/background/primary" data-ref="color/action/default"></span>
+          <span class="token" data-token="button/text/primary" data-ref="color/text/on-action"></span>
+          <span class="token" data-token="button/icon/primary" data-ref="color/icon/on-action"></span></div></td></tr>
+        <tr><td><code>primary</code></td><td><code>hover</code></td><td>Con el cursor encima.</td><td><div class="apilado">
+          <span class="token" data-token="button/background/primary-hover" data-ref="color/action/hover"></span>
+          <span class="token" data-token="button/text/primary" data-ref="color/text/on-action"></span></div></td></tr>
+        <tr><td><code>primary</code></td><td><code>disabled</code></td><td>Falta algo para continuar.</td><td><div class="apilado">
+          <span class="token" data-token="button/background/disabled" data-ref="color/action/disabled"></span>
+          <span class="token" data-token="button/text/disabled" data-ref="color/text/disabled"></span>
+          <span class="token" data-token="button/icon/disabled" data-ref="color/icon/disabled"></span></div></td></tr>
+        <tr><td><code>secondary</code></td><td><code>default</code></td><td>En reposo.</td><td><div class="apilado">
+          <span class="token" data-token="button/background/secondary" data-ref="color/surface/default"></span>
+          <span class="token" data-token="button/border/secondary" data-ref="color/border/strong"></span>
+          <span class="token" data-token="button/text/default" data-ref="color/text/primary"></span>
+          <span class="token" data-token="button/icon/default" data-ref="color/icon/default"></span></div></td></tr>
+        <tr><td><code>secondary</code></td><td><code>hover</code></td><td>Con el cursor encima.</td><td><div class="apilado">
+          <span class="token" data-token="button/background/hover" data-ref="color/surface/hover"></span>
+          <span class="token" data-token="button/border/secondary" data-ref="color/border/strong"></span>
+          <span class="token" data-token="button/text/default" data-ref="color/text/primary"></span></div></td></tr>
+        <tr><td><code>secondary</code></td><td><code>disabled</code></td><td>Falta algo para continuar. En Figma no lleva borde.</td><td><div class="apilado">
+          <span class="token" data-token="button/background/disabled" data-ref="color/action/disabled"></span>
+          <span class="token" data-token="button/text/disabled" data-ref="color/text/disabled"></span></div></td></tr>
+        <tr><td><code>ghost</code></td><td><code>default</code></td><td>En reposo. Sin fondo ni borde.</td><td><div class="apilado">
+          <span class="token" data-token="button/text/default" data-ref="color/text/primary"></span>
+          <span class="token" data-token="button/icon/default" data-ref="color/icon/default"></span></div></td></tr>
+        <tr><td><code>ghost</code></td><td><code>hover</code></td><td>Con el cursor encima.</td><td><div class="apilado">
+          <span class="token" data-token="button/background/hover" data-ref="color/surface/hover"></span>
+          <span class="token" data-token="button/text/default" data-ref="color/text/primary"></span></div></td></tr>
+        <tr><td><code>ghost</code></td><td><code>disabled</code></td><td>Falta algo para continuar. Sin fondo.</td><td><div class="apilado">
+          <span class="token" data-token="button/text/disabled" data-ref="color/text/disabled"></span></div></td></tr>
+      </tbody>
+    </table></div>
+    <span class="pendiente"><strong>⚠️ Por confirmar</strong> · No hay estado <code>pressed</code> ni <code>focus</code> en Figma. En código, <code>pressed</code> usa <code>color/action/pressed</code> y el foco es un anillo <code>color/border/focus</code>, pero ninguno tiene token <code>button/*</code>.</span>
+  </section>
+
+  <section class="seccion anatomia" id="anatomia">
+    <h2><span class="num">06</span>Anatomía</h2>
+    <div class="escenario">
+      <span class="m-button secondary" data-parte="1" data-lado="izquierda"><svg class="icono" data-parte="2" aria-hidden="true"><use href="#i-bookmark"/></svg><span data-parte="3">Guardar</span></span>
+    </div>
+    <div class="tabla"><table>
+      <thead><tr><th>#</th><th>Parte</th><th>Capa en Figma</th><th>Obligatoria</th><th>Tokens</th></tr></thead>
+      <tbody>
+        <tr><td><span class="num-parte">1</span></td><td>Contenedor</td><td>el componente</td><td>Sí</td><td><div class="apilado">
+          <span>Fondo y borde según la tabla de estados</span>
+          <span><code>button/padding-x</code> → <code>space/inset/lg</code> (16)</span>
+          <span><code>button/padding-y</code> → <code>space/inset/md</code> (12)</span>
+          <span><code>button/radius</code> → <code>radius/control</code> (4)</span>
+          <span><code>button/border-width</code> → <code>border-width/default</code> (1)</span>
+          <span><code>button/gap</code> → <code>space/inline/xs</code> (4)</span></div></td></tr>
+        <tr><td><span class="num-parte">2</span></td><td>Ícono</td><td><code>Ícono</code> (instancia de Icon)</td><td>No: se muestra con <code>Mostrar ícono</code></td><td><div class="apilado">
+          <span><code>button/icon-size</code> → <code>icon/size/md</code> (20)</span>
+          <span>Color según la tabla de estados</span></div></td></tr>
+        <tr><td><span class="num-parte">3</span></td><td>Etiqueta</td><td><code>Etiqueta</code> (texto)</td><td>Sí</td><td><div class="apilado">
+          <span>Estilo <code>label/default</code> (Inter 600, 16/20)</span>
+          <span>Color según la tabla de estados</span></div></td></tr>
+      </tbody>
+    </table></div>
+    <p>El ícono va antes del texto.</p>
+  </section>
+
+  <section class="seccion" id="propiedades">
+    <h2><span class="num">07</span>Propiedades en Figma</h2>
+    <div class="tabla"><table>
+      <thead><tr><th>Propiedad</th><th>Tipo</th><th>Valores</th><th>Por defecto</th><th>Nota</th></tr></thead>
+      <tbody>
+        <tr><td><code>variant</code></td><td>Variante</td><td><code>primary</code>, <code>secondary</code>, <code>ghost</code></td><td><code>primary</code></td><td></td></tr>
+        <tr><td><code>state</code></td><td>Variante</td><td><code>default</code>, <code>hover</code>, <code>disabled</code></td><td><code>default</code></td><td></td></tr>
+        <tr><td><code>Etiqueta</code></td><td>Texto</td><td>—</td><td>“Me interesa”</td><td>Un verbo concreto, en una línea.</td></tr>
+        <tr><td><code>Mostrar ícono</code></td><td>Booleano</td><td>sí / no</td><td>no</td><td></td></tr>
+        <tr><td><code>Ícono</code></td><td>Cambio de instancia</td><td>íconos del set Icon</td><td><code>calendar</code></td><td>Solo se ve con <code>Mostrar ícono</code>.</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section class="seccion" id="reglas">
+    <h2><span class="num">08</span>Reglas de uso</h2>
+    <ul>
+      <li><strong>Siempre lleva texto.</strong> El ícono es opcional y va antes del texto.</li>
+      <li><strong>Un solo <code>primary</code> por vista.</strong> Las demás acciones son <code>secondary</code> o <code>ghost</code>.</li>
+      <li><strong>Orden:</strong> el principal primero y el secundario debajo. Apilados, en Card, van separados por <code>card/actions-gap</code> (8).</li>
+      <li><strong>En móvil, el <code>primary</code> ocupa todo el ancho.</strong></li>
+      <li>Etiqueta en <code>label/default</code>, en una línea, con un verbo concreto (“Me interesa”, “Preparar entrevista”). Si no entra, se acorta el texto: no se achica la tipografía ni se agranda el botón. En portugués de Brasil el texto puede ser un 20–30&nbsp;% más largo.</li>
+      <li><code>disabled</code> solo cuando falta algo para continuar, y la pantalla dice qué falta.</li>
+      <li>Solo tokens <code>button/*</code>. Nunca un hex ni un primitivo.</li>
+    </ul>
+  </section>
+
+  <section class="seccion" id="accesibilidad">
+    <h2><span class="num">09</span>Accesibilidad</h2>
+    <ul>
+      <li><strong>Área táctil:</strong> 44&nbsp;px de alto en las tres variantes. En código, el borde del <code>secondary</code> no suma altura (<code>box-sizing: border-box</code> o un borde con <code>box-shadow: inset</code>).</li>
+      <li><strong>Contraste</strong> (Light / Dark): texto del <code>primary</code> 11.38 / 11.38 (9.43 en <code>hover</code>); texto de <code>secondary</code> y <code>ghost</code> 13.58 / 16.70 (12.13 / 9.70 en <code>hover</code>); borde del <code>secondary</code> 3.74 / 4.70. <code>disabled</code> está exento por WCAG.</li>
+      <li><strong>Nunca solo color:</strong> el texto dice la acción; el ícono acompaña.</li>
+      <li><strong>Nombre accesible:</strong> como siempre lleva texto, la etiqueta es el nombre del botón.</li>
+    </ul>
+    <span class="pendiente"><strong>⚠️ Por confirmar</strong> · Estado <code>focus</code> en Figma y su token. Hoy el anillo de foco solo está definido como <code>color/border/focus</code> para código.</span>
+    <span class="pendiente"><strong>⚠️ Por confirmar</strong> · Si el ícono es decorativo en código (oculto para lectores de pantalla) en todos los casos.</span>
+  </section>
+
+  <section class="seccion" id="relacionados">
+    <h2><span class="num">10</span>Relacionados</h2>
+    <ul>
+      <li><strong>Icon</strong>: el ícono opcional sale del set Icon, a 20&nbsp;px.</li>
+      <li><strong>Card</strong>: apila “Me interesa” y “Guardar” o “Ahora no”; en <code>list</code> no lleva <code>primary</code>.</li>
+      <li><strong>Chip</strong>: <code>kind: filter</code> es lo que se usa para filtrar, no un botón.</li>
+      <li><strong>Banner</strong>: su acción es un enlace subrayado (“Reintentar”), no un botón, y su cierre <code>x</code> es la única acción de solo ícono.</li>
+    </ul>
+  </section>
+
+</main>
+<script>
+/* Fijo. Conmutador Light/Dark, muestras de color y números de la anatomía. */
+(function () {
+  var raiz = document.documentElement;
+  var varCss = function (n) { return '--' + n.replace(/\//g, '-'); };
+  var aHex = function (rgb) {
+    var m = rgb.match(/[\d.]+/g); if (!m) return '';
+    var h = m.slice(0, 3).map(function (x) { return ('0' + Math.round(+x).toString(16)).slice(-2); }).join('');
+    var a = m[3] !== undefined && +m[3] < 1 ? ('0' + Math.round(+m[3] * 255).toString(16)).slice(-2) : '';
+    return '#' + h + a;
+  };
+
+  // Tokens de color: <span class="token" data-token="button/background/primary" data-ref="color/action/default"></span>
+  var tokens = document.querySelectorAll('.token[data-token]');
+  tokens.forEach(function (el) {
+    var n = el.dataset.token;
+    el.innerHTML = '<span class="muestra" title="Light | Dark"><i data-theme="light"></i><i data-theme="dark"></i></span>' +
+      '<code></code>' + (el.dataset.ref ? '<span class="ref"></span>' : '') + '<span class="hex"></span>';
+    el.querySelector('code').textContent = n;
+    if (el.dataset.ref) el.querySelector('.ref').textContent = '→ ' + el.dataset.ref;
+    el.querySelectorAll('.muestra i').forEach(function (i) { i.style.background = 'var(' + varCss(n) + ')'; });
+    var i0 = el.querySelector('.muestra i');
+    if (!getComputedStyle(i0).getPropertyValue(varCss(n)).trim()) {
+      el.classList.add('falta');
+      el.querySelector('.hex').textContent = '⚠️ token no encontrado';
+      return;
+    }
+    var l = aHex(getComputedStyle(el.querySelectorAll('.muestra i')[0]).backgroundColor);
+    var d = aHex(getComputedStyle(el.querySelectorAll('.muestra i')[1]).backgroundColor);
+    el.querySelector('.hex').textContent = 'L ' + l + ' · D ' + d;
+  });
+
+  // Anatomía: cada parte lleva data-parte="1" y, si hace falta, data-lado="arriba|abajo|izquierda|derecha".
+  function marcas() {
+    document.querySelectorAll('.anatomia .escenario').forEach(function (esc) {
+      esc.querySelectorAll('.marca, .guia').forEach(function (m) { m.remove(); });
+      var cs = getComputedStyle(esc);
+      var tam = parseFloat(cs.getPropertyValue('--icon-size-lg')) || 0;
+      var sep = parseFloat(cs.getPropertyValue('--space-stack-md')) || 0;
+      var linea = parseFloat(cs.getPropertyValue('--border-width-default')) || 0;
+      var r0 = esc.getBoundingClientRect();
+      esc.querySelectorAll('[data-parte]').forEach(function (p) {
+        var r = p.getBoundingClientRect();
+        var x0 = r.left - r0.left - esc.clientLeft, y0 = r.top - r0.top - esc.clientTop;
+        var lado = p.dataset.lado || 'arriba';
+        var m = document.createElement('span'); m.className = 'marca'; m.textContent = p.dataset.parte;
+        var g = document.createElement('span'); g.className = 'guia';
+        var cx = x0 + r.width / 2, cy = y0 + r.height / 2;
+        if (lado === 'arriba' || lado === 'abajo') {
+          var top = lado === 'arriba' ? y0 - sep - tam : y0 + r.height + sep;
+          m.style.left = (cx - tam / 2) + 'px'; m.style.top = top + 'px';
+          g.style.left = (cx - linea / 2) + 'px'; g.style.width = linea + 'px'; g.style.height = sep + 'px';
+          g.style.top = (lado === 'arriba' ? y0 - sep : y0 + r.height) + 'px';
+        } else {
+          var left = lado === 'izquierda' ? x0 - sep - tam : x0 + r.width + sep;
+          m.style.top = (cy - tam / 2) + 'px'; m.style.left = left + 'px';
+          g.style.top = (cy - linea / 2) + 'px'; g.style.height = linea + 'px'; g.style.width = sep + 'px';
+          g.style.left = (lado === 'izquierda' ? x0 - sep : x0 + r.width) + 'px';
+        }
+        esc.appendChild(g); esc.appendChild(m);
+      });
+    });
+  }
+
+  function tema(t) {
+    raiz.dataset.theme = t;
+    try { localStorage.setItem('ficha-monty-tema', t); } catch (e) {}
+    document.querySelectorAll('[data-poner-tema]').forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.ponerTema === t)); });
+  }
+  var inicial = null;
+  try { inicial = localStorage.getItem('ficha-monty-tema'); } catch (e) {}
+  if (!inicial) inicial = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  tema(inicial);
+  document.querySelectorAll('[data-poner-tema]').forEach(function (b) { b.addEventListener('click', function () { tema(b.dataset.ponerTema); }); });
+
+  marcas();
+  addEventListener('resize', marcas);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(marcas);
+})();
+</script>
+</body>
+</html>
