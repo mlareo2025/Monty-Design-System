@@ -5,8 +5,8 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Plus+Jakarta+Sans:wght@700&display=swap">
 <style>
 /* ===== Tokens de Monty, generados desde design_tokens.json (incluyen los de Card, AiBlock y Chip match) ===== */
-/* Generado desde design_tokens.json. Light + Mobile por defecto. */
-:root, .m-light {
+/* Tokens de Monty generados desde design_tokens.json (codeSyntax WEB). Light + Mobile por defecto. */
+:root {
   --color-text-primary: #2e2e2e;
   --color-text-secondary: #6c6c6c;
   --color-text-disabled: #aeaeae;
@@ -55,19 +55,19 @@
   --color-icon-warning: #865403;
   --color-icon-error: #a63131;
   --color-icon-info: #3454c5;
-  --type-display-family: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+  --type-display-family: "Plus Jakarta Sans", system-ui, sans-serif;
   --type-display-weight: 700;
   --type-display-size: 32px;
   --type-display-line-height: 40px;
-  --type-heading-lg-family: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+  --type-heading-lg-family: "Plus Jakarta Sans", system-ui, sans-serif;
   --type-heading-lg-weight: 700;
   --type-heading-lg-size: 24px;
   --type-heading-lg-line-height: 32px;
-  --type-heading-md-family: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+  --type-heading-md-family: "Plus Jakarta Sans", system-ui, sans-serif;
   --type-heading-md-weight: 700;
   --type-heading-md-size: 20px;
   --type-heading-md-line-height: 28px;
-  --type-heading-sm-family: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+  --type-heading-sm-family: "Plus Jakarta Sans", system-ui, sans-serif;
   --type-heading-sm-weight: 700;
   --type-heading-sm-size: 16px;
   --type-heading-sm-line-height: 24px;
@@ -122,128 +122,6 @@
   --size-avatar-sm: 32px;
   --size-avatar-md: 40px;
   --size-avatar-lg: 64px;
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-  --color-text-primary: #f9f9f9;
-  --color-text-secondary: #aeaeae;
-  --color-text-disabled: #6c6c6c;
-  --color-text-on-action: #2e2e2e;
-  --color-text-on-action-subtle: #def765;
-  --color-text-on-brand: #2e2e2e;
-  --color-text-link: #abc3fe;
-  --color-surface-default: #191919;
-  --color-surface-subtle: #2e2e2e;
-  --color-surface-sunken: #0c0c0c;
-  --color-surface-hover: #414141;
-  --color-surface-brand: #def765;
-  --color-action-default: #def765;
-  --color-action-hover: #cde24e;
-  --color-action-pressed: #b3c33d;
-  --color-action-disabled: #414141;
-  --color-action-subtle: #2f3106;
-  --color-border-default: #414141;
-  --color-border-strong: #848484;
-  --color-border-focus: #86a7fe;
-  --color-ai-surface: #23184e;
-  --color-ai-text: #bfbbfe;
-  --color-ai-border: #a59cff;
-  --color-feedback-success-text: #92d8a0;
-  --color-feedback-success-surface: #032d11;
-  --color-feedback-success-border: #65c27c;
-  --color-feedback-warning-text: #f0b877;
-  --color-feedback-warning-surface: #351e01;
-  --color-feedback-warning-border: #e19a3d;
-  --color-feedback-error-text: #feaba4;
-  --color-feedback-error-surface: #421110;
-  --color-feedback-error-border: #fd8079;
-  --color-feedback-info-text: #abc3fe;
-  --color-feedback-info-surface: #111f4f;
-  --color-feedback-info-border: #86a7fe;
-  --color-shadow-soft: #00000066;
-  --color-shadow-strong: #000000a3;
-  --color-overlay-scrim: #000000a3;
-  --color-icon-default: #f9f9f9;
-  --color-icon-secondary: #aeaeae;
-  --color-icon-disabled: #6c6c6c;
-  --color-icon-on-action: #2e2e2e;
-  --color-icon-on-action-subtle: #def765;
-  --color-icon-ai: #bfbbfe;
-  --color-icon-success: #92d8a0;
-  --color-icon-warning: #f0b877;
-  --color-icon-error: #feaba4;
-  --color-icon-info: #abc3fe;
-    color-scheme: dark;
-  }
-}
-:root[data-theme="dark"], .m-dark {
-  --color-text-primary: #f9f9f9;
-  --color-text-secondary: #aeaeae;
-  --color-text-disabled: #6c6c6c;
-  --color-text-on-action: #2e2e2e;
-  --color-text-on-action-subtle: #def765;
-  --color-text-on-brand: #2e2e2e;
-  --color-text-link: #abc3fe;
-  --color-surface-default: #191919;
-  --color-surface-subtle: #2e2e2e;
-  --color-surface-sunken: #0c0c0c;
-  --color-surface-hover: #414141;
-  --color-surface-brand: #def765;
-  --color-action-default: #def765;
-  --color-action-hover: #cde24e;
-  --color-action-pressed: #b3c33d;
-  --color-action-disabled: #414141;
-  --color-action-subtle: #2f3106;
-  --color-border-default: #414141;
-  --color-border-strong: #848484;
-  --color-border-focus: #86a7fe;
-  --color-ai-surface: #23184e;
-  --color-ai-text: #bfbbfe;
-  --color-ai-border: #a59cff;
-  --color-feedback-success-text: #92d8a0;
-  --color-feedback-success-surface: #032d11;
-  --color-feedback-success-border: #65c27c;
-  --color-feedback-warning-text: #f0b877;
-  --color-feedback-warning-surface: #351e01;
-  --color-feedback-warning-border: #e19a3d;
-  --color-feedback-error-text: #feaba4;
-  --color-feedback-error-surface: #421110;
-  --color-feedback-error-border: #fd8079;
-  --color-feedback-info-text: #abc3fe;
-  --color-feedback-info-surface: #111f4f;
-  --color-feedback-info-border: #86a7fe;
-  --color-shadow-soft: #00000066;
-  --color-shadow-strong: #000000a3;
-  --color-overlay-scrim: #000000a3;
-  --color-icon-default: #f9f9f9;
-  --color-icon-secondary: #aeaeae;
-  --color-icon-disabled: #6c6c6c;
-  --color-icon-on-action: #2e2e2e;
-  --color-icon-on-action-subtle: #def765;
-  --color-icon-ai: #bfbbfe;
-  --color-icon-success: #92d8a0;
-  --color-icon-warning: #f0b877;
-  --color-icon-error: #feaba4;
-  --color-icon-info: #abc3fe;
-  color-scheme: dark;
-}
-:root .m-light { color-scheme: light; }
-.m-web {
-  --type-display-size: 48px;
-  --type-display-line-height: 56px;
-  --type-heading-lg-size: 32px;
-  --type-heading-lg-line-height: 40px;
-  --type-heading-md-size: 24px;
-  --type-heading-md-line-height: 32px;
-  --space-section: 64px;
-  --layout-page-margin: 32px;
-  --layout-grid-columns: 12;
-  --layout-grid-gutter: 24px;
-  --layout-content-max-width: 720px;
-  --layout-content-max-width-wide: 1440px;
-}
-/* Componentes: se declaran en cada raíz de modo para que resuelvan con el modo de ese contenedor. */
-:root, .m-light, .m-dark, .m-web {
   --button-background-primary: var(--color-action-default);
   --button-background-primary-hover: var(--color-action-hover);
   --button-background-secondary: var(--color-surface-default);
@@ -369,6 +247,66 @@
   --ai-block-padding: var(--space-inset-md);
   --ai-block-gap: var(--space-stack-sm);
 }
+@media (prefers-color-scheme: dark) {
+  :root {
+  --color-text-primary: #f9f9f9;
+  --color-text-secondary: #aeaeae;
+  --color-text-disabled: #6c6c6c;
+  --color-text-on-action-subtle: #def765;
+  --color-text-link: #abc3fe;
+  --color-surface-default: #191919;
+  --color-surface-subtle: #2e2e2e;
+  --color-surface-sunken: #0c0c0c;
+  --color-surface-hover: #414141;
+  --color-action-disabled: #414141;
+  --color-action-subtle: #2f3106;
+  --color-border-default: #414141;
+  --color-border-focus: #86a7fe;
+  --color-ai-surface: #23184e;
+  --color-ai-text: #bfbbfe;
+  --color-ai-border: #a59cff;
+  --color-feedback-success-text: #92d8a0;
+  --color-feedback-success-surface: #032d11;
+  --color-feedback-success-border: #65c27c;
+  --color-feedback-warning-text: #f0b877;
+  --color-feedback-warning-surface: #351e01;
+  --color-feedback-warning-border: #e19a3d;
+  --color-feedback-error-text: #feaba4;
+  --color-feedback-error-surface: #421110;
+  --color-feedback-error-border: #fd8079;
+  --color-feedback-info-text: #abc3fe;
+  --color-feedback-info-surface: #111f4f;
+  --color-feedback-info-border: #86a7fe;
+  --color-shadow-soft: #00000066;
+  --color-shadow-strong: #000000a3;
+  --color-overlay-scrim: #000000a3;
+  --color-icon-default: #f9f9f9;
+  --color-icon-secondary: #aeaeae;
+  --color-icon-disabled: #6c6c6c;
+  --color-icon-on-action-subtle: #def765;
+  --color-icon-ai: #bfbbfe;
+  --color-icon-success: #92d8a0;
+  --color-icon-warning: #f0b877;
+  --color-icon-error: #feaba4;
+  --color-icon-info: #abc3fe;
+  }
+}
+@media (min-width: 768px) {
+  :root {
+  --type-display-size: 48px;
+  --type-display-line-height: 56px;
+  --type-heading-lg-size: 32px;
+  --type-heading-lg-line-height: 40px;
+  --type-heading-md-size: 24px;
+  --type-heading-md-line-height: 32px;
+  --space-section: 64px;
+  --layout-page-margin: 32px;
+  --layout-grid-columns: 12;
+  --layout-grid-gutter: 24px;
+  --layout-content-max-width: 720px;
+  --layout-content-max-width-wide: 1440px;
+  }
+}
 
 
 /* ===== Página de revisión (no es parte del componente) ===== */
@@ -452,6 +390,8 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .
 .btn--primary { background: var(--button-background-primary); color: var(--button-text-primary); }
 .btn--primary .icon { color: var(--button-icon-primary); }
 .btn--primary:hover { background: var(--button-background-primary-hover); }
+.btn--secondary { background: var(--button-background-secondary); color: var(--button-text-default); border-color: var(--button-border-secondary); }
+.btn--secondary:hover { background: var(--button-background-hover); }
 .btn--ghost { background: var(--button-background-secondary); color: var(--button-text-default); }
 .btn--ghost .icon { color: var(--button-icon-default); }
 .btn--ghost:hover { background: var(--button-background-hover); }
@@ -615,6 +555,77 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .
   </article>
 </template>
 
+
+<template id="card-nubank-list">
+  <article class="card" aria-label="Diseñadora de producto senior en Nubank, 92 % de match">
+    <div class="card__header">
+      <div class="card__who">
+        <div class="avatar avatar--company" role="img" aria-label="Nubank">N</div>
+        <div class="card__titles">
+          <h3 class="card__title">Diseñadora de producto senior</h3>
+          <p class="card__company">Nubank</p>
+        </div>
+      </div>
+      <span class="chip chip--match"><svg class="icon" aria-hidden="true"><use href="#i-sparkles"/></svg>92&nbsp;% de match</span>
+    </div>
+    <div class="card__facts">
+      <ul class="card__meta">
+        <li><svg class="icon" aria-hidden="true"><use href="#i-map-pin"/></svg>Ciudad de México</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-briefcase"/></svg>Tiempo completo</li>
+      </ul>
+      <p class="card__salary">$&nbsp;45.000&nbsp;MXN <span>/&nbsp;mes</span></p>
+      <div class="card__chips"><span class="chip chip--tag">Remoto</span><span class="chip chip--tag">Senior</span><span class="chip chip--tag">Figma</span></div>
+    </div>
+    <section class="ai-block" aria-label="Por qué Monty te la recomienda">
+      <p class="ai-block__label"><svg class="icon" aria-hidden="true"><use href="#i-sparkles"/></svg>Por qué Monty te la recomienda</p>
+      <ul class="ai-block__list">
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Pediste trabajo remoto y Nubank lo&nbsp;ofrece.</span></li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Tus 4&nbsp;años con Figma cubren lo que&nbsp;piden.</span></li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>El salario está dentro de tu&nbsp;rango.</span></li>
+      </ul>
+    </section>
+    <div class="card__actions">
+      <button class="btn btn--secondary" type="button">Me interesa</button>
+      <button class="btn btn--ghost" type="button">Ahora no</button>
+    </div>
+  </article>
+</template>
+
+<template id="card-meli-list">
+  <article class="card" aria-label="Product designer de pagos en Mercado Libre, 85 % de match">
+    <div class="card__header">
+      <div class="card__who">
+        <div class="avatar avatar--company" role="img" aria-label="Mercado Libre">M</div>
+        <div class="card__titles">
+          <h3 class="card__title">Product designer, pagos</h3>
+          <p class="card__company">Mercado Libre</p>
+        </div>
+      </div>
+      <span class="chip chip--match"><svg class="icon" aria-hidden="true"><use href="#i-sparkles"/></svg>85&nbsp;% de match</span>
+    </div>
+    <div class="card__facts">
+      <ul class="card__meta">
+        <li><svg class="icon" aria-hidden="true"><use href="#i-map-pin"/></svg>Bogotá</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-briefcase"/></svg>Tiempo completo</li>
+      </ul>
+      <p class="card__salary">$&nbsp;9.800.000&nbsp;COP <span>/&nbsp;mes</span></p>
+      <div class="card__chips"><span class="chip chip--tag">Híbrido</span><span class="chip chip--tag">Semi-senior</span></div>
+    </div>
+    <section class="ai-block" aria-label="Por qué Monty te la recomienda">
+      <p class="ai-block__label"><svg class="icon" aria-hidden="true"><use href="#i-sparkles"/></svg>Por qué Monty te la recomienda</p>
+      <ul class="ai-block__list">
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Ya diseñaste flujos de pago en&nbsp;Rappi.</span></li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Quieres crecer en fintech, y este equipo lanza un producto&nbsp;nuevo.</span></li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Bogotá está entre tus ciudades&nbsp;preferidas.</span></li>
+      </ul>
+    </section>
+    <div class="card__actions">
+      <button class="btn btn--secondary" type="button">Me interesa</button>
+      <button class="btn btn--ghost" type="button">Ahora no</button>
+    </div>
+  </article>
+</template>
+
 <main class="page">
   <header class="intro">
     <span class="eyebrow">Monty DS · Alineada con Figma</span>
@@ -633,12 +644,12 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .
   </section>
 
   <section class="section" aria-labelledby="h-web">
-    <h2 id="h-web">Web</h2>
-    <p class="muted">Lista de matches en la grilla de 12 columnas. Cada tarjeta ocupa 6. En pantallas angostas, este marco se desplaza de lado.</p>
+    <h2 id="h-web">Web · lista</h2>
+    <p class="muted">Lista de matches en la grilla de 12 columnas. Cada tarjeta ocupa 6 y usa <code>context: list</code>: “Me interesa” en <code>secondary</code> y “Ahora no” en <code>ghost</code>, sin ningún botón principal en la vista. En pantallas angostas, este marco se desplaza de lado.</p>
     <div class="frame-wrap"><span class="frame-label">Web · Light · 1040 px</span>
-      <div class="scroller"><div class="frame frame--web m-light m-web"><div class="web-grid" data-cards="card-nubank card-meli"></div></div></div></div>
+      <div class="scroller"><div class="frame frame--web m-light m-web"><div class="web-grid" data-cards="card-nubank-list card-meli-list"></div></div></div></div>
     <div class="frame-wrap"><span class="frame-label">Web · Dark · 1040 px</span>
-      <div class="scroller"><div class="frame frame--web m-dark m-web"><div class="web-grid" data-cards="card-nubank card-meli"></div></div></div></div>
+      <div class="scroller"><div class="frame frame--web m-dark m-web"><div class="web-grid" data-cards="card-nubank-list card-meli-list"></div></div></div></div>
   </section>
 
   <section class="section" aria-labelledby="h-tokens">
@@ -706,7 +717,8 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .
     <ol class="decisions">
       <li><strong>Botones apilados:</strong> 8 px entre ellos (<code>card/actions-gap</code> → <code>space/stack/sm</code>). Es un token de la tarjeta, no un token general.</li>
       <li><strong>Tokens extra:</strong> <code>ai-block/border-width</code>, <code>ai-block/icon-size</code> y <code>ai-block/icon-gap</code>, más los de espaciado y color propios de <code>card/*</code>.</li>
-      <li><strong>“Guardar”</strong> ocupa todo el ancho en móvil y se ajusta al texto en Web.</li>
+      <li><strong>Dos contextos:</strong> <code>featured</code> (un match solo, con “Me interesa” en <code>primary</code> y “Guardar”) y <code>list</code> (varios matches, con “Me interesa” en <code>secondary</code> y “Ahora no”, sin <code>primary</code>). Así una lista no tiene varias acciones principales.</li>
+      <li><strong>Los botones</strong> ocupan todo el ancho en móvil y se ajustan al texto en Web.</li>
       <li><strong>Las razones</strong> llevan un <code>check</code> en <code>icon/ai</code> en lugar de viñetas.</li>
       <li><strong>Cifras tabulares:</strong> activas en esta maqueta. En Figma hay que activarlas a mano en Detalles de texto › Números › Tabular.</li>
       <li><strong>Íconos y logos:</strong> aquí son trazos de referencia y la inicial de la empresa. En Figma son instancias reales de Icon y de Avatar.</li>

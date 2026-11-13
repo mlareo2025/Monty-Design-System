@@ -56,10 +56,13 @@ Ejemplo: "Falla. En el caso 3 usó #9E9E98 para el texto, un valor suelto. Corre
 
 Tiene que salir solo con componentes y tokens del sistema.
 
-**Pendiente de decidir antes de correrla.** La Card ya trae su propio botón `primary` ("Me interesa") y un `ghost` "Guardar". Dos Cards en la misma vista son dos acciones principales, y la regla 7 de la Skill pide una sola por vista. Además, el pedido usa "Ahora no" y la Card dice "Guardar". Hay que elegir qué se espera:
+**Decidido.** La Card tiene la propiedad `context`. Para una lista de matches se usa `context: list`: "Me interesa" va en `secondary` y "Ahora no" en `ghost`, sin ningún `primary`. La Card `featured` (un match solo) mantiene el `primary` y "Guardar".
 
-- que la Skill señale el choque y proponga una alternativa (por ejemplo, una Card sin botón principal dentro de una lista, con una sola acción principal para la vista), o
-- que se apruebe una variante de Card para listas y se pruebe con ella.
+Qué tiene que pasar:
+- Dos Cards `context: list`, cada una con su AiBlock y su chip `match`.
+- "Me interesa" en `secondary` y "Ahora no" en `ghost`. Ningún botón `primary` en la vista.
+- Solo instancias de componentes y variables del sistema, sin valores sueltos.
+- Light y Dark, Mobile y Web.
 
 Esta prueba escribe en Figma, así que se corre solo con permiso.
 

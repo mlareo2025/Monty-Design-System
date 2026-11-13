@@ -16,6 +16,8 @@ Datos sacados de `design_tokens.json` (`component.*`) y de la página **Componen
 | Chip | `kind`: tag, filter, match · `state`: default, hover, selected (hover y selected solo en filter) |
 | Avatar | `type`: person, company · `content`: initial, image · `size`: sm, md, lg |
 | Banner | `type`: success, warning, error, info |
+| Card | `kind`: match · `context`: featured, list · `Puesto`, `Empresa`, `Ubicación`, `Jornada`, `Monto` (texto) |
+| AiBlock | `Etiqueta`, `Razón 1`, `Razón 2`, `Razón 3` (texto) |
 
 ---
 
@@ -251,9 +253,13 @@ Contraste (L / D): texto 12.63 / 15.20, etiqueta 6.32 / 8.96, ícono 6.32 / 8.96
 
 ## Card
 
-Tarjeta de match: una oferta que Monty eligió para la persona, con el porqué. Hoy solo existe `kind: match`. **Plana:** superficie y borde, sin sombra. No es clicable entera: las acciones son los botones.
+Tarjeta de match: una oferta que Monty eligió para la persona, con el porqué. Hoy solo existe `kind: match`, con dos contextos (`context`): `featured` y `list`. **Plana:** superficie y borde, sin sombra. No es clicable entera: las acciones son los botones.
 
 Estructura: cabecera (Avatar `company` `md`, puesto en `heading/sm`, empresa en `body/compact` y el chip `match`), metadatos con íconos (`map-pin`, `briefcase`), salario en `data`, chips `tag`, un AiBlock y los botones apilados: "Me interesa" (`primary`) arriba y "Guardar" (`ghost`, con `bookmark`) debajo. Los dos botones ocupan todo el ancho.
+
+**Contexto (`context`)**
+- **`featured`:** un match solo (detalle o destacado). El botón principal "Me interesa" (`primary`) arriba y "Guardar" (`ghost`, con `bookmark`) debajo.
+- **`list`:** varios matches en una lista. "Me interesa" pasa a `secondary` y "Ahora no" (`ghost`, sin ícono) descarta el match. **No lleva `primary`**, para que una vista con varias Cards no tenga varias acciones principales (regla 7 de la Skill).
 
 Propiedades en Figma: `Puesto`, `Empresa`, `Ubicación`, `Jornada` y `Monto` (texto). En móvil mide 390 px; en Web ocupa 6 de las 12 columnas.
 

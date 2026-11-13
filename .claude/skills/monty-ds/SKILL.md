@@ -45,6 +45,7 @@ No la uses para decisiones de marca nuevas (logo, paleta o tono de una campaña)
    - Hay una sola acción principal (`primary`) por vista. Las demás son `secondary` o `ghost`.
    - Orden: primero la acción principal y debajo la secundaria.
    - En móvil, el botón principal ocupa todo el ancho.
+   - En una lista de matches se usa Card `context: list`, que no trae botón `primary`. La Card `featured` (un match solo) sí lo trae.
 8. **Formularios:**
    - El label siempre está visible, encima del campo. El placeholder es solo un ejemplo y nunca reemplaza al label.
    - Los campos obligatorios se marcan con asterisco (`*`).
