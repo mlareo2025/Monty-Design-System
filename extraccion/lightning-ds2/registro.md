@@ -11,4 +11,6 @@
 | 9 | use_figma (lectura) | variantes de Button e Input | variables usadas y valores sueltos | no |
 | 10 | use_figma (lectura) | sin nodo | hex de Neutral y Electric Blue | no |
 
+| 11 | use_figma (lectura) ×6 | 86 páginas de componentes | resumen por componente en 6 lotes de 8 a 15 páginas | no |
+
 Total de lecturas que cuentan para el límite: 3 de 200.
