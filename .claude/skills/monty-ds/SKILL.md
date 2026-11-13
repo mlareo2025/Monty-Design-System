@@ -102,6 +102,7 @@ No la uses para decisiones de marca nuevas (logo, paleta o tono de una campaña)
     - [ ] ¿Algún texto largo que se podría decir más corto? ¿Algún mensaje negativo?
     - [ ] ¿El porqué de la IA está explicado?
     - [ ] ¿Funciona en Light y Dark y en Mobile y Web?
+    - [ ] Si entregas código: ¿lo abriste en un navegador y probaste cada estado? Un filtro seleccionado tiene que mostrar su `check`, y los controles de 44 px miden 44 px con el borde incluido.
 11. **Reporta** qué tokens y componentes usaste, qué propuestas quedaron pendientes y qué no se pudo verificar.
 
 ## Cómo revisar una pantalla o un componente

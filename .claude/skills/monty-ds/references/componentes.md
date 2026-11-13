@@ -135,6 +135,7 @@ Hay tres tipos, que se definen con `kind`:
 - Ícono opcional de 16 px antes del texto.
 - La selección nunca se marca solo con color: lleva `check`.
 - Entre chips va `space/inline/sm`.
+- En código, el borde no suma altura: el filtro mide 44 px con borde incluido (con `box-sizing: border-box` y una altura mínima en tokens, o un borde interno con `box-shadow: inset`). Lo mismo vale para Button e Input.
 - Para cualquier otro chip de IA no hay variante. Propónla.
 
 **Tokens**
