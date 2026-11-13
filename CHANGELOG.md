@@ -30,7 +30,7 @@ Todavía no hay versiones numeradas. Los cambios van bajo "Sin publicar" y se fe
   - La regla 7 aclara que en una lista de matches se usa Card `context: list`, que no trae `primary`.
   - El chequeo final pide probar el código en un navegador: un filtro seleccionado muestra su `check` y los controles de 44 px miden 44 px con el borde incluido.
 - **`references/componentes.md`**: documenta Card, AiBlock y Chip `match`. Chip suma una nota sobre cómo el borde no suma altura en código. Se quita de "Lo que todavía no existe" lo que ya existe.
-- **`CLAUDE.md`**: el estado conocido pasa a 332 tokens y 142 comprobaciones de contraste, y la colección Component a 124 tokens.
+- **`CLAUDE.md`**: el estado conocido pasa a 333 tokens y 142 comprobaciones de contraste, y la colección Component a 124 tokens.
 - **`design_tokens.json`**: 333 tokens (antes 301). Sube de 332 porque se sincronizó `semantic.color.surface.muted`, que existía en Figma y no estaba en el JSON.
 
 ### Deprecado
