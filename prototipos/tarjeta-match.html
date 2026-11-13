@@ -1,0 +1,709 @@
+<title>Tarjeta de match Monty</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Plus+Jakarta+Sans:wght@700&display=swap">
+<style>
+/* ===== Tokens de Monty (generados desde design_tokens.json, rama claude/stoic-archimedes-30g48h) ===== */
+/* Generado desde design_tokens.json. Light + Mobile por defecto. */
+:root, .m-light {
+  --color-text-primary: #2e2e2e;
+  --color-text-secondary: #6c6c6c;
+  --color-text-disabled: #aeaeae;
+  --color-text-on-action: #2e2e2e;
+  --color-text-on-action-subtle: #4e5210;
+  --color-text-on-brand: #2e2e2e;
+  --color-text-link: #3454c5;
+  --color-surface-default: #ffffff;
+  --color-surface-subtle: #f9f9f9;
+  --color-surface-sunken: #f2f2f2;
+  --color-surface-hover: #f2f2f2;
+  --color-surface-brand: #def765;
+  --color-action-default: #def765;
+  --color-action-hover: #cde24e;
+  --color-action-pressed: #b3c33d;
+  --color-action-disabled: #e6e6e6;
+  --color-action-subtle: #f8ffdc;
+  --color-border-default: #e6e6e6;
+  --color-border-strong: #848484;
+  --color-border-focus: #3d63f5;
+  --color-ai-surface: #f6f6fe;
+  --color-ai-text: #5e44c3;
+  --color-ai-border: #7a5af8;
+  --color-feedback-success-text: #057434;
+  --color-feedback-success-surface: #effaf0;
+  --color-feedback-success-border: #158f44;
+  --color-feedback-warning-text: #865403;
+  --color-feedback-warning-surface: #fff5ea;
+  --color-feedback-warning-border: #a46805;
+  --color-feedback-error-text: #a63131;
+  --color-feedback-error-surface: #fef4f3;
+  --color-feedback-error-border: #c84341;
+  --color-feedback-info-text: #3454c5;
+  --color-feedback-info-surface: #f4f7fe;
+  --color-feedback-info-border: #3d63f5;
+  --color-shadow-soft: #00000014;
+  --color-shadow-strong: #00000029;
+  --color-overlay-scrim: #0000007a;
+  --color-icon-default: #2e2e2e;
+  --color-icon-secondary: #6c6c6c;
+  --color-icon-disabled: #aeaeae;
+  --color-icon-on-action: #2e2e2e;
+  --color-icon-on-action-subtle: #4e5210;
+  --color-icon-ai: #5e44c3;
+  --color-icon-success: #057434;
+  --color-icon-warning: #865403;
+  --color-icon-error: #a63131;
+  --color-icon-info: #3454c5;
+  --type-display-family: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+  --type-display-weight: 700;
+  --type-display-size: 32px;
+  --type-display-line-height: 40px;
+  --type-heading-lg-family: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+  --type-heading-lg-weight: 700;
+  --type-heading-lg-size: 24px;
+  --type-heading-lg-line-height: 32px;
+  --type-heading-md-family: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+  --type-heading-md-weight: 700;
+  --type-heading-md-size: 20px;
+  --type-heading-md-line-height: 28px;
+  --type-heading-sm-family: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+  --type-heading-sm-weight: 700;
+  --type-heading-sm-size: 16px;
+  --type-heading-sm-line-height: 24px;
+  --type-body-default-family: "Inter", system-ui, sans-serif;
+  --type-body-default-weight: 400;
+  --type-body-default-size: 16px;
+  --type-body-default-line-height: 24px;
+  --type-body-compact-family: "Inter", system-ui, sans-serif;
+  --type-body-compact-weight: 400;
+  --type-body-compact-size: 14px;
+  --type-body-compact-line-height: 20px;
+  --type-label-default-family: "Inter", system-ui, sans-serif;
+  --type-label-default-weight: 600;
+  --type-label-default-size: 16px;
+  --type-label-default-line-height: 20px;
+  --type-label-sm-family: "Inter", system-ui, sans-serif;
+  --type-label-sm-weight: 600;
+  --type-label-sm-size: 14px;
+  --type-label-sm-line-height: 20px;
+  --type-data-family: "Inter", system-ui, sans-serif;
+  --type-data-weight: 600;
+  --type-data-size: 20px;
+  --type-data-line-height: 28px;
+  --space-inset-xs: 4px;
+  --space-inset-sm: 8px;
+  --space-inset-md: 12px;
+  --space-inset-lg: 16px;
+  --space-inset-xl: 24px;
+  --space-stack-xs: 4px;
+  --space-stack-sm: 8px;
+  --space-stack-md: 16px;
+  --space-stack-lg: 24px;
+  --space-inline-xs: 4px;
+  --space-inline-sm: 8px;
+  --space-inline-md: 16px;
+  --space-section: 32px;
+  --radius-control: 4px;
+  --radius-nested: 4px;
+  --radius-card: 8px;
+  --radius-surface: 12px;
+  --radius-pill: 999px;
+  --layout-page-margin: 16px;
+  --layout-grid-columns: 4;
+  --layout-grid-gutter: 16px;
+  --layout-content-max-width: 430px;
+  --layout-content-max-width-wide: 430px;
+  --border-width-default: 1px;
+  --border-width-strong: 2px;
+  --icon-size-sm: 16px;
+  --icon-size-md: 20px;
+  --icon-size-lg: 24px;
+  --size-avatar-sm: 32px;
+  --size-avatar-md: 40px;
+  --size-avatar-lg: 64px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+  --color-text-primary: #f9f9f9;
+  --color-text-secondary: #aeaeae;
+  --color-text-disabled: #6c6c6c;
+  --color-text-on-action: #2e2e2e;
+  --color-text-on-action-subtle: #def765;
+  --color-text-on-brand: #2e2e2e;
+  --color-text-link: #abc3fe;
+  --color-surface-default: #191919;
+  --color-surface-subtle: #2e2e2e;
+  --color-surface-sunken: #0c0c0c;
+  --color-surface-hover: #414141;
+  --color-surface-brand: #def765;
+  --color-action-default: #def765;
+  --color-action-hover: #cde24e;
+  --color-action-pressed: #b3c33d;
+  --color-action-disabled: #414141;
+  --color-action-subtle: #2f3106;
+  --color-border-default: #414141;
+  --color-border-strong: #848484;
+  --color-border-focus: #86a7fe;
+  --color-ai-surface: #23184e;
+  --color-ai-text: #bfbbfe;
+  --color-ai-border: #a59cff;
+  --color-feedback-success-text: #92d8a0;
+  --color-feedback-success-surface: #032d11;
+  --color-feedback-success-border: #65c27c;
+  --color-feedback-warning-text: #f0b877;
+  --color-feedback-warning-surface: #351e01;
+  --color-feedback-warning-border: #e19a3d;
+  --color-feedback-error-text: #feaba4;
+  --color-feedback-error-surface: #421110;
+  --color-feedback-error-border: #fd8079;
+  --color-feedback-info-text: #abc3fe;
+  --color-feedback-info-surface: #111f4f;
+  --color-feedback-info-border: #86a7fe;
+  --color-shadow-soft: #00000066;
+  --color-shadow-strong: #000000a3;
+  --color-overlay-scrim: #000000a3;
+  --color-icon-default: #f9f9f9;
+  --color-icon-secondary: #aeaeae;
+  --color-icon-disabled: #6c6c6c;
+  --color-icon-on-action: #2e2e2e;
+  --color-icon-on-action-subtle: #def765;
+  --color-icon-ai: #bfbbfe;
+  --color-icon-success: #92d8a0;
+  --color-icon-warning: #f0b877;
+  --color-icon-error: #feaba4;
+  --color-icon-info: #abc3fe;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"], .m-dark {
+  --color-text-primary: #f9f9f9;
+  --color-text-secondary: #aeaeae;
+  --color-text-disabled: #6c6c6c;
+  --color-text-on-action: #2e2e2e;
+  --color-text-on-action-subtle: #def765;
+  --color-text-on-brand: #2e2e2e;
+  --color-text-link: #abc3fe;
+  --color-surface-default: #191919;
+  --color-surface-subtle: #2e2e2e;
+  --color-surface-sunken: #0c0c0c;
+  --color-surface-hover: #414141;
+  --color-surface-brand: #def765;
+  --color-action-default: #def765;
+  --color-action-hover: #cde24e;
+  --color-action-pressed: #b3c33d;
+  --color-action-disabled: #414141;
+  --color-action-subtle: #2f3106;
+  --color-border-default: #414141;
+  --color-border-strong: #848484;
+  --color-border-focus: #86a7fe;
+  --color-ai-surface: #23184e;
+  --color-ai-text: #bfbbfe;
+  --color-ai-border: #a59cff;
+  --color-feedback-success-text: #92d8a0;
+  --color-feedback-success-surface: #032d11;
+  --color-feedback-success-border: #65c27c;
+  --color-feedback-warning-text: #f0b877;
+  --color-feedback-warning-surface: #351e01;
+  --color-feedback-warning-border: #e19a3d;
+  --color-feedback-error-text: #feaba4;
+  --color-feedback-error-surface: #421110;
+  --color-feedback-error-border: #fd8079;
+  --color-feedback-info-text: #abc3fe;
+  --color-feedback-info-surface: #111f4f;
+  --color-feedback-info-border: #86a7fe;
+  --color-shadow-soft: #00000066;
+  --color-shadow-strong: #000000a3;
+  --color-overlay-scrim: #000000a3;
+  --color-icon-default: #f9f9f9;
+  --color-icon-secondary: #aeaeae;
+  --color-icon-disabled: #6c6c6c;
+  --color-icon-on-action: #2e2e2e;
+  --color-icon-on-action-subtle: #def765;
+  --color-icon-ai: #bfbbfe;
+  --color-icon-success: #92d8a0;
+  --color-icon-warning: #f0b877;
+  --color-icon-error: #feaba4;
+  --color-icon-info: #abc3fe;
+  color-scheme: dark;
+}
+:root .m-light { color-scheme: light; }
+.m-web {
+  --type-display-size: 48px;
+  --type-display-line-height: 56px;
+  --type-heading-lg-size: 32px;
+  --type-heading-lg-line-height: 40px;
+  --type-heading-md-size: 24px;
+  --type-heading-md-line-height: 32px;
+  --space-section: 64px;
+  --layout-page-margin: 32px;
+  --layout-grid-columns: 12;
+  --layout-grid-gutter: 24px;
+  --layout-content-max-width: 720px;
+  --layout-content-max-width-wide: 1440px;
+}
+/* Componentes: se declaran en cada raíz de modo para que resuelvan con el modo de ese contenedor. */
+:root, .m-light, .m-dark, .m-web {
+  --button-background-primary: var(--color-action-default);
+  --button-background-primary-hover: var(--color-action-hover);
+  --button-background-secondary: var(--color-surface-default);
+  --button-background-hover: var(--color-surface-hover);
+  --button-background-disabled: var(--color-action-disabled);
+  --button-border-secondary: var(--color-border-strong);
+  --button-text-primary: var(--color-text-on-action);
+  --button-text-default: var(--color-text-primary);
+  --button-text-disabled: var(--color-text-disabled);
+  --button-radius: var(--radius-control);
+  --button-padding-x: var(--space-inset-lg);
+  --button-padding-y: var(--space-inset-md);
+  --button-gap: var(--space-inline-xs);
+  --button-border-width: var(--border-width-default);
+  --button-icon-primary: var(--color-icon-on-action);
+  --button-icon-default: var(--color-icon-default);
+  --button-icon-disabled: var(--color-icon-disabled);
+  --button-icon-size: var(--icon-size-md);
+  --input-background: var(--color-surface-default);
+  --input-background-disabled: var(--color-surface-sunken);
+  --input-border: var(--color-border-strong);
+  --input-border-focus: var(--color-border-focus);
+  --input-border-error: var(--color-feedback-error-border);
+  --input-border-disabled: var(--color-border-default);
+  --input-label: var(--color-text-primary);
+  --input-text: var(--color-text-primary);
+  --input-text-disabled: var(--color-text-disabled);
+  --input-help: var(--color-text-secondary);
+  --input-help-error: var(--color-feedback-error-text);
+  --input-radius: var(--radius-control);
+  --input-padding-x: var(--space-inset-md);
+  --input-padding-y: var(--space-inset-md);
+  --input-gap: var(--space-stack-sm);
+  --input-border-width: var(--border-width-default);
+  --input-border-width-focus: var(--border-width-strong);
+  --input-icon: var(--color-icon-secondary);
+  --input-icon-disabled: var(--color-icon-disabled);
+  --input-icon-error: var(--color-icon-error);
+  --input-icon-size: var(--icon-size-md);
+  --input-icon-gap: var(--space-inline-sm);
+  --input-message-gap: var(--space-inline-xs);
+  --icon-color: var(--color-icon-default);
+  /* --icon-size-sm: mismo nombre que su semántico en Figma; se omite para no crear un ciclo */
+  /* --icon-size-md: mismo nombre que su semántico en Figma; se omite para no crear un ciclo */
+  /* --icon-size-lg: mismo nombre que su semántico en Figma; se omite para no crear un ciclo */
+  --chip-background-tag: var(--color-surface-sunken);
+  --chip-background-filter: var(--color-surface-default);
+  --chip-background-filter-hover: var(--color-surface-hover);
+  --chip-background-selected: var(--color-action-subtle);
+  --chip-border-filter: var(--color-border-strong);
+  --chip-text-default: var(--color-text-primary);
+  --chip-text-selected: var(--color-text-on-action-subtle);
+  --chip-icon-default: var(--color-icon-secondary);
+  --chip-icon-selected: var(--color-icon-on-action-subtle);
+  --chip-radius: var(--radius-pill);
+  --chip-padding-x: var(--space-inset-md);
+  --chip-padding-y-tag: var(--space-inset-xs);
+  --chip-padding-y-filter: var(--space-inset-md);
+  --chip-gap: var(--space-inline-xs);
+  --chip-icon-size: var(--icon-size-sm);
+  --chip-border-width: var(--border-width-default);
+  --avatar-background-person: var(--color-action-subtle);
+  --avatar-background-company: var(--color-surface-sunken);
+  --avatar-text-person: var(--color-text-on-action-subtle);
+  --avatar-text-company: var(--color-text-primary);
+  --avatar-border: var(--color-border-default);
+  --avatar-radius-person: var(--radius-pill);
+  --avatar-radius-company: var(--radius-control);
+  --avatar-size-sm: var(--size-avatar-sm);
+  --avatar-size-md: var(--size-avatar-md);
+  --avatar-size-lg: var(--size-avatar-lg);
+  --avatar-border-width: var(--border-width-default);
+  --banner-background-success: var(--color-feedback-success-surface);
+  --banner-background-warning: var(--color-feedback-warning-surface);
+  --banner-background-error: var(--color-feedback-error-surface);
+  --banner-background-info: var(--color-feedback-info-surface);
+  --banner-border-success: var(--color-feedback-success-border);
+  --banner-border-warning: var(--color-feedback-warning-border);
+  --banner-border-error: var(--color-feedback-error-border);
+  --banner-border-info: var(--color-feedback-info-border);
+  --banner-icon-success: var(--color-icon-success);
+  --banner-icon-warning: var(--color-icon-warning);
+  --banner-icon-error: var(--color-icon-error);
+  --banner-icon-info: var(--color-icon-info);
+  --banner-text: var(--color-text-primary);
+  --banner-link: var(--color-text-link);
+  --banner-close: var(--color-icon-secondary);
+  --banner-radius: var(--radius-card);
+  --banner-border-width: var(--border-width-default);
+  --banner-padding: var(--space-inset-lg);
+  --banner-gap: var(--space-inline-sm);
+  --banner-text-gap: var(--space-stack-xs);
+  --banner-icon-size: var(--icon-size-md);
+}
+
+
+/* ===== Tokens PROPUESTOS (todavía no existen en Figma ni en design_tokens.json) =====
+   Todos apuntan a un semántico existente. Se declaran en cada raíz de modo para que resuelvan con ese modo. */
+:root, .m-light, .m-dark, .m-web {
+  /* Card */
+  --card-background: var(--color-surface-default);
+  --card-border: var(--color-border-default);
+  --card-border-width: var(--border-width-default);
+  --card-radius: var(--radius-card);
+  --card-padding: var(--space-inset-lg);
+  --card-gap: var(--space-stack-md);
+  --card-header-gap: var(--space-stack-xs);
+  /* AiBlock */
+  --ai-block-background: var(--color-ai-surface);
+  --ai-block-border: var(--color-ai-border);
+  --ai-block-border-width: var(--border-width-default);
+  --ai-block-label: var(--color-ai-text);
+  --ai-block-text: var(--color-text-primary);
+  --ai-block-icon: var(--color-icon-ai);
+  --ai-block-icon-size: var(--icon-size-sm);
+  --ai-block-radius: var(--radius-nested);
+  --ai-block-padding: var(--space-inset-md);
+  --ai-block-gap: var(--space-stack-sm);
+  /* Chip kind=match */
+  --chip-background-match: var(--color-ai-surface);
+  --chip-text-match: var(--color-ai-text);
+  --chip-icon-match: var(--color-icon-ai);
+}
+
+/* ===== Página de revisión (no es parte del componente) ===== */
+* { box-sizing: border-box; }
+body {
+  background: var(--color-surface-subtle);
+  color: var(--color-text-primary);
+  font-family: var(--type-body-default-family);
+  font-size: var(--type-body-default-size);
+  line-height: var(--type-body-default-line-height);
+}
+.page {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding-block: 40px 64px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: flex; flex-direction: column; gap: var(--space-section);
+}
+.page h1, .page h2 {
+  font-family: var(--type-heading-lg-family); font-weight: var(--type-heading-lg-weight);
+  margin: 0; text-wrap: balance;
+}
+.page h1 { font-size: var(--type-heading-lg-size); line-height: var(--type-heading-lg-line-height); }
+.page h2 { font-size: var(--type-heading-md-size); line-height: var(--type-heading-md-line-height); }
+.page p { margin: 0; text-wrap: pretty; max-width: 68ch; }
+.intro { display: flex; flex-direction: column; gap: var(--space-stack-sm); }
+.eyebrow {
+  font-family: var(--type-label-sm-family); font-weight: var(--type-label-sm-weight);
+  font-size: var(--type-label-sm-size); line-height: var(--type-label-sm-line-height);
+  color: var(--color-text-secondary); letter-spacing: .04em; text-transform: uppercase;
+}
+.muted { color: var(--color-text-secondary); }
+.section { display: flex; flex-direction: column; gap: var(--space-stack-md); min-width: 0; }
+.frames { display: flex; flex-wrap: wrap; gap: var(--space-stack-lg); align-items: flex-start; }
+.frame-wrap { display: flex; flex-direction: column; gap: var(--space-stack-sm); min-width: 0; max-width: 100%; }
+.frame-label {
+  font-family: var(--type-label-sm-family); font-weight: var(--type-label-sm-weight);
+  font-size: var(--type-label-sm-size); line-height: var(--type-label-sm-line-height);
+  color: var(--color-text-secondary);
+}
+.scroller { overflow-x: auto; width: fit-content; max-width: 100%; border-radius: var(--radius-surface); border: var(--border-width-default) solid var(--color-border-default); }
+.frame {
+  background: var(--color-surface-default);
+  color: var(--color-text-primary);
+  padding: var(--space-section) var(--layout-page-margin);
+}
+.frame--mobile { width: 390px; max-width: 100%; }
+.frame--web { width: 1040px; }
+.web-grid {
+  display: grid; grid-template-columns: repeat(var(--layout-grid-columns), minmax(0, 1fr));
+  column-gap: var(--layout-grid-gutter); row-gap: var(--space-stack-lg);
+}
+.web-grid > * { grid-column: span 6; }
+
+table { border-collapse: collapse; width: 100%; font-size: var(--type-body-compact-size); line-height: var(--type-body-compact-line-height); }
+.table-wrap { overflow-x: auto; background: var(--color-surface-default); border: var(--border-width-default) solid var(--color-border-default); border-radius: var(--radius-card); }
+th, td { text-align: left; padding: var(--space-inset-sm) var(--space-inset-md); border-bottom: var(--border-width-default) solid var(--color-border-default); vertical-align: top; }
+tr:last-child td { border-bottom: 0; }
+th { font-weight: var(--type-label-sm-weight); color: var(--color-text-secondary); white-space: nowrap; }
+td.num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .92em; }
+.group-row td { background: var(--color-surface-subtle); font-weight: var(--type-label-sm-weight); }
+.decisions { margin: 0; padding-left: 1.25em; display: flex; flex-direction: column; gap: var(--space-stack-sm); max-width: 72ch; }
+
+/* ===== Componentes existentes (Button, Chip tag, Avatar company, Icon) ===== */
+.icon { width: var(--icon-size-md); height: var(--icon-size-md); flex: none; color: var(--icon-color);
+  fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: var(--button-gap);
+  padding: var(--button-padding-y) var(--button-padding-x);
+  border-radius: var(--button-radius);
+  border: var(--button-border-width) solid transparent;
+  font-family: var(--type-label-default-family); font-weight: var(--type-label-default-weight);
+  font-size: var(--type-label-default-size); line-height: var(--type-label-default-line-height);
+  white-space: nowrap; cursor: pointer;
+}
+.btn .icon { width: var(--button-icon-size); height: var(--button-icon-size); }
+.btn:focus-visible { outline: var(--border-width-strong) solid var(--color-border-focus); outline-offset: 2px; }
+.btn--primary { background: var(--button-background-primary); color: var(--button-text-primary); }
+.btn--primary .icon { color: var(--button-icon-primary); }
+.btn--primary:hover { background: var(--button-background-primary-hover); }
+.btn--ghost { background: var(--button-background-secondary); color: var(--button-text-default); }
+.btn--ghost .icon { color: var(--button-icon-default); }
+.btn--ghost:hover { background: var(--button-background-hover); }
+
+.chip {
+  display: inline-flex; align-items: center; gap: var(--chip-gap);
+  padding: var(--chip-padding-y-tag) var(--chip-padding-x);
+  border-radius: var(--chip-radius);
+  font-family: var(--type-label-sm-family); font-weight: var(--type-label-sm-weight);
+  font-size: var(--type-label-sm-size); line-height: var(--type-label-sm-line-height);
+  white-space: nowrap;
+}
+.chip .icon { width: var(--chip-icon-size); height: var(--chip-icon-size); }
+.chip--tag { background: var(--chip-background-tag); color: var(--chip-text-default); }
+/* PROPUESTO: Chip kind=match */
+.chip--match { background: var(--chip-background-match); color: var(--chip-text-match); font-variant-numeric: tabular-nums; }
+.chip--match .icon { color: var(--chip-icon-match); }
+
+.avatar {
+  width: var(--avatar-size-md); height: var(--avatar-size-md); flex: none;
+  display: grid; place-items: center;
+  font-family: var(--type-label-default-family); font-weight: var(--type-label-default-weight);
+  font-size: var(--type-label-default-size);
+}
+.avatar--company {
+  background: var(--avatar-background-company); color: var(--avatar-text-company);
+  border: var(--avatar-border-width) solid var(--avatar-border); border-radius: var(--avatar-radius-company);
+}
+
+/* ===== PROPUESTO: Card kind=match ===== */
+.card {
+  background: var(--card-background);
+  border: var(--card-border-width) solid var(--card-border);
+  border-radius: var(--card-radius);
+  padding: var(--card-padding);
+  display: flex; flex-direction: column; gap: var(--card-gap);
+  min-width: 0;
+}
+.card__header { display: flex; align-items: flex-start; gap: var(--space-inline-sm); flex-wrap: wrap; }
+.card__who { display: flex; gap: var(--space-inline-sm); align-items: flex-start; flex: 1 1 200px; min-width: 0; }
+.card__titles { display: flex; flex-direction: column; gap: var(--card-header-gap); min-width: 0; }
+.card__title {
+  margin: 0; font-family: var(--type-heading-sm-family); font-weight: var(--type-heading-sm-weight);
+  font-size: var(--type-heading-sm-size); line-height: var(--type-heading-sm-line-height); text-wrap: balance;
+}
+.card__company { margin: 0; color: var(--color-text-secondary);
+  font-size: var(--type-body-compact-size); line-height: var(--type-body-compact-line-height); }
+.card__facts { display: flex; flex-direction: column; gap: var(--space-stack-sm); }
+.card__meta { display: flex; flex-wrap: wrap; column-gap: var(--space-inline-md); row-gap: var(--space-stack-xs);
+  margin: 0; padding: 0; list-style: none; color: var(--color-text-secondary);
+  font-size: var(--type-body-compact-size); line-height: var(--type-body-compact-line-height); }
+.card__meta li { display: inline-flex; align-items: center; gap: var(--space-inline-xs); white-space: nowrap; }
+.card__meta .icon { width: var(--icon-size-sm); height: var(--icon-size-sm); color: var(--color-icon-secondary); }
+.card__salary { margin: 0; font-family: var(--type-data-family); font-weight: var(--type-data-weight);
+  font-size: var(--type-data-size); line-height: var(--type-data-line-height); font-variant-numeric: tabular-nums; }
+.card__salary span { font-family: var(--type-body-compact-family); font-weight: var(--type-body-compact-weight);
+  font-size: var(--type-body-compact-size); color: var(--color-text-secondary); }
+.card__chips { display: flex; flex-wrap: wrap; gap: var(--space-inline-sm); }
+.card__actions { display: flex; flex-direction: column; align-items: stretch; gap: var(--space-stack-sm); }
+.m-web .card__actions { align-items: flex-start; }
+
+/* ===== PROPUESTO: AiBlock ===== */
+.ai-block {
+  background: var(--ai-block-background);
+  border: var(--ai-block-border-width) solid var(--ai-block-border);
+  border-radius: var(--ai-block-radius);
+  padding: var(--ai-block-padding);
+  display: flex; flex-direction: column; gap: var(--ai-block-gap);
+  color: var(--ai-block-text);
+}
+.ai-block__label {
+  display: flex; align-items: center; gap: var(--space-inline-xs); margin: 0;
+  color: var(--ai-block-label);
+  font-family: var(--type-label-sm-family); font-weight: var(--type-label-sm-weight);
+  font-size: var(--type-label-sm-size); line-height: var(--type-label-sm-line-height);
+}
+.ai-block__label .icon, .ai-block__list .icon { width: var(--ai-block-icon-size); height: var(--ai-block-icon-size); color: var(--ai-block-icon); }
+.ai-block__list { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: var(--ai-block-gap); }
+.ai-block__list li { display: flex; gap: var(--space-inline-sm); align-items: flex-start; text-wrap: pretty; }
+.ai-block__list .icon { margin-top: 4px; }
+
+@media (prefers-reduced-motion: no-preference) { .btn { transition: background-color .12s ease; } }
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-sparkles" viewBox="0 0 24 24"><path d="M16 18a2 2 0 0 1 2 2a2 2 0 0 1 2 -2a2 2 0 0 1 -2 -2a2 2 0 0 1 -2 2zm0 -12a2 2 0 0 1 2 2a2 2 0 0 1 2 -2a2 2 0 0 1 -2 -2a2 2 0 0 1 -2 2zm-7 12a6 6 0 0 1 6 -6a6 6 0 0 1 -6 -6a6 6 0 0 1 -6 6a6 6 0 0 1 6 6z"/></symbol>
+  <symbol id="i-map-pin" viewBox="0 0 24 24"><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"/><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"/></symbol>
+  <symbol id="i-briefcase" viewBox="0 0 24 24"><path d="M3 9a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9"/><path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2"/><path d="M12 12v.01"/><path d="M3 13a20 20 0 0 0 18 0"/></symbol>
+  <symbol id="i-bookmark" viewBox="0 0 24 24"><path d="M18 7v14l-6 -4l-6 4v-14a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12l5 5l10 -10"/></symbol>
+</svg>
+
+<template id="card-nubank">
+  <article class="card" aria-label="Diseñadora de producto senior en Nubank, 92 % de match">
+    <div class="card__header">
+      <div class="card__who">
+        <div class="avatar avatar--company" role="img" aria-label="Nubank">N</div>
+        <div class="card__titles">
+          <h3 class="card__title">Diseñadora de producto senior</h3>
+          <p class="card__company">Nubank</p>
+        </div>
+      </div>
+      <span class="chip chip--match"><svg class="icon" aria-hidden="true"><use href="#i-sparkles"/></svg>92&nbsp;% de match</span>
+    </div>
+    <div class="card__facts">
+      <ul class="card__meta">
+        <li><svg class="icon" aria-hidden="true"><use href="#i-map-pin"/></svg>Ciudad de México</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-briefcase"/></svg>Tiempo completo</li>
+      </ul>
+      <p class="card__salary">$&nbsp;45.000&nbsp;MXN <span>/&nbsp;mes</span></p>
+      <div class="card__chips"><span class="chip chip--tag">Remoto</span><span class="chip chip--tag">Senior</span><span class="chip chip--tag">Figma</span></div>
+    </div>
+    <section class="ai-block" aria-label="Por qué Monty te la recomienda">
+      <p class="ai-block__label"><svg class="icon" aria-hidden="true"><use href="#i-sparkles"/></svg>Por qué Monty te la recomienda</p>
+      <ul class="ai-block__list">
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Pediste trabajo remoto y Nubank lo&nbsp;ofrece.</span></li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Tus 4&nbsp;años con Figma cubren lo que&nbsp;piden.</span></li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>El salario está dentro de tu&nbsp;rango.</span></li>
+      </ul>
+    </section>
+    <div class="card__actions">
+      <button class="btn btn--primary" type="button">Me interesa</button>
+      <button class="btn btn--ghost" type="button"><svg class="icon" aria-hidden="true"><use href="#i-bookmark"/></svg>Guardar</button>
+    </div>
+  </article>
+</template>
+
+<template id="card-meli">
+  <article class="card" aria-label="Product designer de pagos en Mercado Libre, 85 % de match">
+    <div class="card__header">
+      <div class="card__who">
+        <div class="avatar avatar--company" role="img" aria-label="Mercado Libre">M</div>
+        <div class="card__titles">
+          <h3 class="card__title">Product designer, pagos</h3>
+          <p class="card__company">Mercado Libre</p>
+        </div>
+      </div>
+      <span class="chip chip--match"><svg class="icon" aria-hidden="true"><use href="#i-sparkles"/></svg>85&nbsp;% de match</span>
+    </div>
+    <div class="card__facts">
+      <ul class="card__meta">
+        <li><svg class="icon" aria-hidden="true"><use href="#i-map-pin"/></svg>Bogotá</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-briefcase"/></svg>Tiempo completo</li>
+      </ul>
+      <p class="card__salary">$&nbsp;9.800.000&nbsp;COP <span>/&nbsp;mes</span></p>
+      <div class="card__chips"><span class="chip chip--tag">Híbrido</span><span class="chip chip--tag">Semi-senior</span></div>
+    </div>
+    <section class="ai-block" aria-label="Por qué Monty te la recomienda">
+      <p class="ai-block__label"><svg class="icon" aria-hidden="true"><use href="#i-sparkles"/></svg>Por qué Monty te la recomienda</p>
+      <ul class="ai-block__list">
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Ya diseñaste flujos de pago en&nbsp;Rappi.</span></li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Quieres crecer en fintech, y este equipo lanza un producto&nbsp;nuevo.</span></li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Bogotá está entre tus ciudades&nbsp;preferidas.</span></li>
+      </ul>
+    </section>
+    <div class="card__actions">
+      <button class="btn btn--primary" type="button">Me interesa</button>
+      <button class="btn btn--ghost" type="button"><svg class="icon" aria-hidden="true"><use href="#i-bookmark"/></svg>Guardar</button>
+    </div>
+  </article>
+</template>
+
+<main class="page">
+  <header class="intro">
+    <span class="eyebrow">Monty DS · Propuesta para aprobar</span>
+    <h1>Tarjeta de match</h1>
+    <p class="muted">Una oferta que Monty eligió para la persona, con el porqué de la recomendación. Usa tres piezas nuevas: <strong>Card</strong>, <strong>AiBlock</strong> y la variante <strong>Chip <code>kind: match</code></strong>. Todo lo demás sale de los componentes y tokens que ya existen. Cuando la apruebes, la pasamos a Figma.</p>
+  </header>
+
+  <section class="section" aria-labelledby="h-mobile">
+    <h2 id="h-mobile">Mobile</h2>
+    <div class="frames">
+      <div class="frame-wrap"><span class="frame-label">Mobile · Light · 390 px</span>
+        <div class="scroller"><div class="frame frame--mobile m-light" data-card="card-nubank"></div></div></div>
+      <div class="frame-wrap"><span class="frame-label">Mobile · Dark · 390 px</span>
+        <div class="scroller"><div class="frame frame--mobile m-dark" data-card="card-nubank"></div></div></div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="h-web">
+    <h2 id="h-web">Web</h2>
+    <p class="muted">Lista de matches en la grilla de 12 columnas. Cada tarjeta ocupa 6. En pantallas angostas, este marco se desplaza de lado.</p>
+    <div class="frame-wrap"><span class="frame-label">Web · Light · 1040 px</span>
+      <div class="scroller"><div class="frame frame--web m-light m-web"><div class="web-grid" data-cards="card-nubank card-meli"></div></div></div></div>
+    <div class="frame-wrap"><span class="frame-label">Web · Dark · 1040 px</span>
+      <div class="scroller"><div class="frame frame--web m-dark m-web"><div class="web-grid" data-cards="card-nubank card-meli"></div></div></div></div>
+  </section>
+
+  <section class="section" aria-labelledby="h-tokens">
+    <h2 id="h-tokens">Tokens nuevos</h2>
+    <p class="muted">Todos son de nivel <code>component</code> y apuntan a un semántico que ya existe. Light y Dark los resuelve el semántico.</p>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Token</th><th>→ Semántico</th><th>Uso</th></tr></thead>
+      <tbody>
+        <tr class="group-row"><td colspan="3">Card</td></tr>
+        <tr><td><code>card/background</code></td><td><code>color/surface/default</code></td><td>Fondo. Plana, sin sombra.</td></tr>
+        <tr><td><code>card/border</code></td><td><code>color/border/default</code></td><td>Contorno.</td></tr>
+        <tr><td><code>card/border-width</code></td><td><code>border-width/default</code> (1)</td><td>Grosor del contorno.</td></tr>
+        <tr><td><code>card/radius</code></td><td><code>radius/card</code> (8)</td><td>Esquinas.</td></tr>
+        <tr><td><code>card/padding</code></td><td><code>space/inset/lg</code> (16)</td><td>Relleno.</td></tr>
+        <tr><td><code>card/gap</code></td><td><code>space/stack/md</code> (16)</td><td>Entre bloques: cabecera, datos, porqué y acciones.</td></tr>
+        <tr><td><code>card/header-gap</code></td><td><code>space/stack/xs</code> (4)</td><td>Entre el puesto y la empresa.</td></tr>
+        <tr class="group-row"><td colspan="3">AiBlock</td></tr>
+        <tr><td><code>ai-block/background</code></td><td><code>color/ai/surface</code></td><td>Fondo.</td></tr>
+        <tr><td><code>ai-block/border</code></td><td><code>color/ai/border</code></td><td>Borde.</td></tr>
+        <tr><td><code>ai-block/border-width</code> <em>· nuevo</em></td><td><code>border-width/default</code> (1)</td><td>Grosor del borde.</td></tr>
+        <tr><td><code>ai-block/label</code></td><td><code>color/ai/text</code></td><td>Etiqueta, en <code>label/sm</code>.</td></tr>
+        <tr><td><code>ai-block/text</code></td><td><code>color/text/primary</code></td><td>Razones, en <code>body/default</code>.</td></tr>
+        <tr><td><code>ai-block/icon</code></td><td><code>color/icon/ai</code></td><td><code>sparkles</code> de la etiqueta y <code>check</code> de cada razón.</td></tr>
+        <tr><td><code>ai-block/icon-size</code> <em>· nuevo</em></td><td><code>icon/size/sm</code> (16)</td><td>Tamaño de los íconos.</td></tr>
+        <tr><td><code>ai-block/radius</code></td><td><code>radius/nested</code> (4)</td><td>Esquinas.</td></tr>
+        <tr><td><code>ai-block/padding</code></td><td><code>space/inset/md</code> (12)</td><td>Relleno.</td></tr>
+        <tr><td><code>ai-block/gap</code></td><td><code>space/stack/sm</code> (8)</td><td>Entre la etiqueta y las razones, y entre razones.</td></tr>
+        <tr class="group-row"><td colspan="3">Chip · <code>kind: match</code></td></tr>
+        <tr><td><code>chip/background/match</code></td><td><code>color/ai/surface</code></td><td>Fondo del badge. Mide 28 px, igual que <code>tag</code>.</td></tr>
+        <tr><td><code>chip/text/match</code></td><td><code>color/ai/text</code></td><td>Porcentaje, con cifras tabulares.</td></tr>
+        <tr><td><code>chip/icon/match</code></td><td><code>color/icon/ai</code></td><td><code>sparkles</code>.</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section class="section" aria-labelledby="h-contrast">
+    <h2 id="h-contrast">Contraste</h2>
+    <p class="muted">Calculado con la fórmula WCAG del validador. Los tres primeros son pares nuevos para <code>validador.config.json</code>. Los otros ya están en la configuración.</p>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Par</th><th>Mínimo</th><th>Light</th><th>Dark</th></tr></thead>
+      <tbody>
+        <tr><td><code>text/primary</code> sobre <code>ai/surface</code> <em>· nuevo</em></td><td class="num">4.5</td><td class="num">12.63</td><td class="num">15.20</td></tr>
+        <tr><td><code>icon/ai</code> sobre <code>ai/surface</code> <em>· nuevo</em></td><td class="num">3</td><td class="num">6.32</td><td class="num">8.96</td></tr>
+        <tr><td><code>ai/border</code> sobre <code>surface/default</code> <em>· nuevo</em></td><td class="num">3</td><td class="num">4.52</td><td class="num">7.37</td></tr>
+        <tr><td><code>ai/text</code> sobre <code>ai/surface</code> (etiqueta y badge)</td><td class="num">4.5</td><td class="num">6.32</td><td class="num">8.96</td></tr>
+        <tr><td><code>text/secondary</code> sobre <code>surface/default</code> (empresa y datos)</td><td class="num">4.5</td><td class="num">5.25</td><td class="num">7.92</td></tr>
+        <tr><td><code>icon/secondary</code> sobre <code>surface/default</code></td><td class="num">3</td><td class="num">5.25</td><td class="num">7.92</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section class="section" aria-labelledby="h-decide">
+    <h2 id="h-decide">Para decidir antes de Figma</h2>
+    <ol class="decisions">
+      <li><strong>Separación entre botones apilados.</strong> Ningún token la define todavía. Usé <code>space/stack/sm</code> (8 px) como propuesta.</li>
+      <li><strong>Dos tokens que no estaban en la propuesta:</strong> <code>ai-block/border-width</code> e <code>ai-block/icon-size</code>. Hacen falta para no usar semánticos sueltos dentro del componente.</li>
+      <li><strong>Ancho de “Guardar” en móvil.</strong> La regla pide ancho completo solo para el principal. Aquí los dos ocupan todo el ancho para que el área táctil sea clara. En Web, los dos se ajustan al texto.</li>
+      <li><strong>Las razones llevan un <code>check</code></strong> en <code>icon/ai</code> en lugar de viñetas.</li>
+      <li><strong>Íconos:</strong> son trazos de referencia con los mismos nombres de la librería Icon. Al pasar a Figma se usan las instancias reales.</li>
+      <li><strong>Logo de la empresa:</strong> Avatar <code>company</code> con inicial, porque el prototipo no tiene los logos.</li>
+    </ol>
+  </section>
+</main>
+
+<script>
+  document.querySelectorAll("[data-card]").forEach((el) => {
+    el.appendChild(document.getElementById(el.dataset.card).content.cloneNode(true));
+  });
+  document.querySelectorAll("[data-cards]").forEach((el) => {
+    el.dataset.cards.split(" ").forEach((id) => el.appendChild(document.getElementById(id).content.cloneNode(true)));
+  });
+</script>
