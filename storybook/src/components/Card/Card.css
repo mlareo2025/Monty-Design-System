@@ -1,0 +1,57 @@
+/* Medidas y tokens: docs/handoff/card.md. Plana: superficie y borde, sin sombra. */
+.m-card {
+  width: 100%; /* Llena el ancho en móvil (decisión del 2026-11-13); en Web, el contenedor le da 6 de 12 columnas. */
+  display: flex;
+  flex-direction: column;
+  gap: var(--card-gap);
+  padding: var(--card-padding);
+  border-radius: var(--card-radius);
+  background: var(--card-background);
+  /* Borde por dentro, como en Figma: no suma al relleno. */
+  box-shadow: inset 0 0 0 var(--card-border-width) var(--card-border);
+}
+.m-card p, .m-card ul { margin: 0; padding: 0; }
+.m-card ul { list-style: none; }
+
+/* Cabecera: si no entra en una fila, el chip match baja debajo del avatar y los títulos. */
+.m-card__cabecera { display: flex; flex-wrap: wrap; align-items: flex-start; gap: var(--card-avatar-gap); }
+.m-card__empresa-y-puesto {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--card-avatar-gap);
+  flex: 1 1 200px; /* Ancho mínimo de 200 px de Figma. Sin token. */
+  min-width: 0;
+}
+.m-card__titulos { display: flex; flex-direction: column; gap: var(--card-header-gap); min-width: 0; }
+.m-card__puesto {
+  margin: 0;
+  color: var(--card-text-primary);
+  font-family: var(--type-heading-sm-family); font-weight: var(--type-heading-sm-weight);
+  font-size: var(--type-heading-sm-size); line-height: var(--type-heading-sm-line-height);
+  text-wrap: balance;
+}
+.m-card__empresa, .m-card__metadato, .m-card__unidad {
+  color: var(--card-text-secondary);
+  font-family: var(--type-body-compact-family); font-weight: var(--type-body-compact-weight);
+  font-size: var(--type-body-compact-size); line-height: var(--type-body-compact-line-height);
+}
+
+.m-card__datos { display: flex; flex-direction: column; gap: var(--card-facts-gap); }
+/* En Figma, el gap entre filas de metadatos usa card/meta-icon-gap (docs/handoff/card.md, ⚠️ 3). */
+.m-card__metadatos { display: flex; flex-wrap: wrap; column-gap: var(--card-meta-gap); row-gap: var(--card-meta-icon-gap); }
+.m-card__metadato { display: inline-flex; align-items: center; gap: var(--card-meta-icon-gap); }
+.m-card__metadato .m-icon { width: var(--card-icon-size); height: var(--card-icon-size); color: var(--card-icon); }
+
+.m-card__salario { display: flex; align-items: baseline; gap: var(--card-meta-icon-gap); white-space: nowrap; }
+.m-card__monto {
+  color: var(--card-text-primary);
+  font-family: var(--type-data-family); font-weight: var(--type-data-weight);
+  font-size: var(--type-data-size); line-height: var(--type-data-line-height);
+  font-variant-numeric: tabular-nums; /* data usa cifras tabulares (monty-ds). */
+}
+
+.m-card__chips { display: flex; flex-wrap: wrap; gap: var(--card-chips-gap); }
+
+/* Botones apilados y a todo el ancho. */
+.m-card__acciones { display: flex; flex-direction: column; gap: var(--card-actions-gap); }
+.m-card__acciones .m-button { width: 100%; }

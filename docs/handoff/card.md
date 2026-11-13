@@ -42,7 +42,7 @@
 
 | Medida | Valor | Token |
 | --- | --- | --- |
-| Ancho de la Card | 390 px en móvil · 6 de 12 columnas en Web | sin token (390 px) · ⚠️ 1 |
+| Ancho de la Card | Móvil: llena el ancho de contenido (pantalla − 2 × `semantic.layout.page.margin`). Web: 6 de 12 columnas | Decidido el 2026-11-13. Figma todavía dice 390 px fijos · ⚠️ 1 |
 | Alto de la Card | hug: 532 px con los textos de ejemplo | — |
 | Relleno | 16 px en los cuatro lados | `component.card.padding` |
 | Entre bloques (cabecera, datos, AiBlock, acciones) | 16 px | `component.card.gap` |
@@ -237,11 +237,11 @@ Contrastes calculados con los valores de `design_tokens.json`.
 
 | Plataforma | Ancho de la Card | Fuente |
 | --- | --- | --- |
-| Mobile | 390 px fijo en Figma. | Descripción del componente en Figma |
+| Mobile | Llena el ancho de contenido: pantalla − 2 × `semantic.layout.page.margin` (16 px). | Decisión de María, 2026-11-13. En Figma sigue en 390 px fijos (⚠️ 1) |
 | Web | 6 de las 12 columnas. Con `semantic.layout.grid.gutter` Web 24 px: ancho = 6 columnas + 5 gutters. | Descripción del componente en Figma |
 
 - Los tokens de Card no cambian entre Mobile y Web: todas las medidas valen igual.
-- ⚠️ 1: en móvil, ¿la Card ocupa el ancho de contenido (pantalla − 2 × `semantic.layout.page.margin` 16 px) o queda en 390 px? En una pantalla de 360 px, 390 px no entra (ver Edge cases).
+- ⚠️ 1: actualizar el componente en Figma: ancho fill en lugar de 390 px fijos, y la descripción («En móvil mide 390 px»).
 
 ## 8. Edge cases
 
@@ -249,9 +249,9 @@ Con: padding 16 + 16, borde por dentro (no suma), cabecera en una fila si su anc
 
 | Caso | Entrada | Qué pasa hoy (calculado) | Decisión |
 | --- | --- | --- | --- |
-| Pantalla 360 px | Contenido 360 − 32 = 328 px | Una Card de 390 px fijos se sale 62 px. Si llena el ancho (328): contenido 296 < 352, el chip match baja a una segunda fila, debajo del avatar. | ⚠️ 1 |
-| Pantalla 390 px | Contenido 358 px | 390 fijo se sale 32 px. Si llena (358): contenido 326 < 352, el chip baja. | ⚠️ 1 |
-| Pantalla 430 px | Contenido 398 px | 390 fijo entra. Si llena (398): contenido 366 ≥ 352, una fila. | ⚠️ 1 |
+| Pantalla 360 px | Contenido 360 − 32 = 328 px | La Card mide 328 px: contenido 296 < 352, el chip match baja a una segunda fila, debajo del avatar. | Llena el ancho (decidido) |
+| Pantalla 390 px | Contenido 358 px | La Card mide 358 px: contenido 326 < 352, el chip baja. | Llena el ancho (decidido) |
+| Pantalla 430 px | Contenido 398 px | La Card mide 398 px: contenido 366 ≥ 352, una fila. | Llena el ancho (decidido) |
 | Web 1024 px | Margen 32 · 12 columnas · gutter 24 → contenido 960; columna (960 − 11 × 24) / 12 = 58 px; 6 columnas = 6 × 58 + 5 × 24 = 468 px | Contenido de la Card 436 ≥ 352: cabecera en una fila; `Títulos` mide 436 − 40 − 8 − 8 − 144 = 236 px. | Figma |
 | Puesto largo | "Diseñadora de producto senior" × 2 (58 caracteres) | `Puesto` crece en alto (alto automático, sin truncado). Con 156 px de ancho pasa de 2 a 4 líneas aprox. | Figma. ⚠️ 12: ¿hay un máximo de líneas? |
 | Puesto en portugués | "Designer de produto sênior com foco em pesquisa" | Igual: salta de línea, no se corta. | Figma |
@@ -279,7 +279,7 @@ Va en listas de matches (`list`) o sola en un detalle (`featured`). Entre Cards 
 ## Pendientes
 
 **Diseño (Figma)**
-1. Ancho de la Card en móvil: 390 px fijos o el ancho de contenido. Hoy 390 px no entra en pantallas de 360 y 390 px.
+1. Actualizar Figma con la decisión del 2026-11-13: la Card llena el ancho en móvil (hoy es 390 px fijos y la descripción lo dice).
 2. Ancho mínimo de 200 px de `Empresa y puesto` sin token.
 3. El gap entre filas de `Metadatos` usa `card/meta-icon-gap` (4 px), el token de ícono ↔ texto. ¿Es a propósito?
 4. Estado `focus` de Button (token candidato `color/border/focus`).

@@ -1,0 +1,14 @@
+/* Solo para las stories: una pantalla con la grilla de layout/*. */
+.m-pagina {
+  display: grid;
+  grid-template-columns: repeat(var(--layout-grid-columns), minmax(0, 1fr));
+  column-gap: var(--layout-grid-gutter);
+  row-gap: var(--space-stack-lg); /* Entre tarjetas de una lista. */
+  padding: var(--space-section) var(--layout-page-margin);
+  max-width: var(--layout-content-max-width-wide);
+  margin-inline: auto;
+}
+/* Móvil: la Card llena el ancho. */
+.m-pagina > * { grid-column: 1 / -1; }
+/* Web: 6 de las 12 columnas (descripción del componente en Figma). */
+[data-platform='web'] .m-pagina > * { grid-column: span 6; }

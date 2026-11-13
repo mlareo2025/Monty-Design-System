@@ -84,8 +84,9 @@ Metadatos, salario y chips van en el bloque `Datos`, separados por `card/facts-g
 - **Siempre explica el porqué** con un AiBlock de 2 o 3 razones concretas.
 - **Botones apilados y a todo el ancho:** el de más peso arriba. En `list`, nunca un `primary`.
 - La cifra y su unidad no se separan: "$ 45.000 MXN / mes".
-- En móvil mide 390 px; en Web ocupa 6 de las 12 columnas.
+- En móvil llena el ancho de contenido; en Web ocupa 6 de las 12 columnas.
 - Solo tokens `card/*` y los de los componentes que contiene.
+- ⚠️ Por confirmar: en Figma la Card todavía mide 390 px fijos y la descripción lo dice. Hay que actualizarla con esta decisión (2026-11-13).
 
 ## 9. Accesibilidad
 
