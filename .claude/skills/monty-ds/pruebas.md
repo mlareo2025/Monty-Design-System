@@ -66,4 +66,17 @@ Qué tiene que pasar:
 
 Esta prueba escribe en Figma, así que se corre solo con permiso.
 
-Resultado:
+Resultado: **Pasa.** Corrida el 13 de noviembre de 2026 en un agente nuevo, que armó 4 frames en una página nueva "Pruebas" de Figma (`63:2`): Mobile y Web, en Light y Dark.
+
+Revisado en Figma, no solo en el reporte:
+- Los 4 frames usan 2 instancias de `Card kind=match, context=list` y ningún componente suelto aparte de las instancias (AiBlock, Chip, Avatar, Icon y Button, sin desacoplar). Cero botones `primary`: "Me interesa" en `secondary` y "Ahora no" en `ghost`.
+- Cada frame tiene el modo explícito que le toca (Light o Dark, Mobile o Web). Sin colores sueltos. Padding, separaciones y fondo enlazados a variables, y el título y el subtítulo con estilos de texto del sistema.
+- Se vieron las capturas de Mobile Light y de Web Dark.
+
+Defecto encontrado y corregido (era de la Card, no de la Skill): en la variante `context=list`, los textos de Puesto, Empresa, Ubicación, Jornada y Monto habían perdido la conexión con sus propiedades al clonar la variante. Se reconectaron y se comprobó. Los frames de la prueba tienen esos cuatro textos sobrescritos a mano en la instancia, y no se tocaron.
+
+Pendiente, sin cambios hechos:
+- En Web, la grilla de 12 columnas no está dibujada: cada Card ocupa casi la mitad del ancho, no exactamente 6 columnas.
+- Las propiedades de texto de los componentes anidados (chip match, tags, avatar) no están expuestas en la Card.
+- No se midió contraste ni área táctil en estos frames; se apoya en los tokens ya validados.
+- No se probó portugués de Brasil ni textos más largos.
