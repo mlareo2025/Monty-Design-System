@@ -5,8 +5,8 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Plus+Jakarta+Sans:wght@700&display=swap">
 <style>
 /* ===== Tokens de Monty, generados desde design_tokens.json (incluyen los de Card, AiBlock y Chip match) ===== */
-/* Tokens de Monty generados desde design_tokens.json (codeSyntax WEB). Light + Mobile por defecto. */
-:root {
+/* Generado desde design_tokens.json. Light + Mobile por defecto. */
+:root, .m-light {
   --color-text-primary: #2e2e2e;
   --color-text-secondary: #6c6c6c;
   --color-text-disabled: #aeaeae;
@@ -55,19 +55,19 @@
   --color-icon-warning: #865403;
   --color-icon-error: #a63131;
   --color-icon-info: #3454c5;
-  --type-display-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  --type-display-family: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
   --type-display-weight: 700;
   --type-display-size: 32px;
   --type-display-line-height: 40px;
-  --type-heading-lg-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  --type-heading-lg-family: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
   --type-heading-lg-weight: 700;
   --type-heading-lg-size: 24px;
   --type-heading-lg-line-height: 32px;
-  --type-heading-md-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  --type-heading-md-family: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
   --type-heading-md-weight: 700;
   --type-heading-md-size: 20px;
   --type-heading-md-line-height: 28px;
-  --type-heading-sm-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  --type-heading-sm-family: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
   --type-heading-sm-weight: 700;
   --type-heading-sm-size: 16px;
   --type-heading-sm-line-height: 24px;
@@ -122,6 +122,128 @@
   --size-avatar-sm: 32px;
   --size-avatar-md: 40px;
   --size-avatar-lg: 64px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+  --color-text-primary: #f9f9f9;
+  --color-text-secondary: #aeaeae;
+  --color-text-disabled: #6c6c6c;
+  --color-text-on-action: #2e2e2e;
+  --color-text-on-action-subtle: #def765;
+  --color-text-on-brand: #2e2e2e;
+  --color-text-link: #abc3fe;
+  --color-surface-default: #191919;
+  --color-surface-subtle: #2e2e2e;
+  --color-surface-sunken: #0c0c0c;
+  --color-surface-hover: #414141;
+  --color-surface-brand: #def765;
+  --color-action-default: #def765;
+  --color-action-hover: #cde24e;
+  --color-action-pressed: #b3c33d;
+  --color-action-disabled: #414141;
+  --color-action-subtle: #2f3106;
+  --color-border-default: #414141;
+  --color-border-strong: #848484;
+  --color-border-focus: #86a7fe;
+  --color-ai-surface: #23184e;
+  --color-ai-text: #bfbbfe;
+  --color-ai-border: #a59cff;
+  --color-feedback-success-text: #92d8a0;
+  --color-feedback-success-surface: #032d11;
+  --color-feedback-success-border: #65c27c;
+  --color-feedback-warning-text: #f0b877;
+  --color-feedback-warning-surface: #351e01;
+  --color-feedback-warning-border: #e19a3d;
+  --color-feedback-error-text: #feaba4;
+  --color-feedback-error-surface: #421110;
+  --color-feedback-error-border: #fd8079;
+  --color-feedback-info-text: #abc3fe;
+  --color-feedback-info-surface: #111f4f;
+  --color-feedback-info-border: #86a7fe;
+  --color-shadow-soft: #00000066;
+  --color-shadow-strong: #000000a3;
+  --color-overlay-scrim: #000000a3;
+  --color-icon-default: #f9f9f9;
+  --color-icon-secondary: #aeaeae;
+  --color-icon-disabled: #6c6c6c;
+  --color-icon-on-action: #2e2e2e;
+  --color-icon-on-action-subtle: #def765;
+  --color-icon-ai: #bfbbfe;
+  --color-icon-success: #92d8a0;
+  --color-icon-warning: #f0b877;
+  --color-icon-error: #feaba4;
+  --color-icon-info: #abc3fe;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"], .m-dark {
+  --color-text-primary: #f9f9f9;
+  --color-text-secondary: #aeaeae;
+  --color-text-disabled: #6c6c6c;
+  --color-text-on-action: #2e2e2e;
+  --color-text-on-action-subtle: #def765;
+  --color-text-on-brand: #2e2e2e;
+  --color-text-link: #abc3fe;
+  --color-surface-default: #191919;
+  --color-surface-subtle: #2e2e2e;
+  --color-surface-sunken: #0c0c0c;
+  --color-surface-hover: #414141;
+  --color-surface-brand: #def765;
+  --color-action-default: #def765;
+  --color-action-hover: #cde24e;
+  --color-action-pressed: #b3c33d;
+  --color-action-disabled: #414141;
+  --color-action-subtle: #2f3106;
+  --color-border-default: #414141;
+  --color-border-strong: #848484;
+  --color-border-focus: #86a7fe;
+  --color-ai-surface: #23184e;
+  --color-ai-text: #bfbbfe;
+  --color-ai-border: #a59cff;
+  --color-feedback-success-text: #92d8a0;
+  --color-feedback-success-surface: #032d11;
+  --color-feedback-success-border: #65c27c;
+  --color-feedback-warning-text: #f0b877;
+  --color-feedback-warning-surface: #351e01;
+  --color-feedback-warning-border: #e19a3d;
+  --color-feedback-error-text: #feaba4;
+  --color-feedback-error-surface: #421110;
+  --color-feedback-error-border: #fd8079;
+  --color-feedback-info-text: #abc3fe;
+  --color-feedback-info-surface: #111f4f;
+  --color-feedback-info-border: #86a7fe;
+  --color-shadow-soft: #00000066;
+  --color-shadow-strong: #000000a3;
+  --color-overlay-scrim: #000000a3;
+  --color-icon-default: #f9f9f9;
+  --color-icon-secondary: #aeaeae;
+  --color-icon-disabled: #6c6c6c;
+  --color-icon-on-action: #2e2e2e;
+  --color-icon-on-action-subtle: #def765;
+  --color-icon-ai: #bfbbfe;
+  --color-icon-success: #92d8a0;
+  --color-icon-warning: #f0b877;
+  --color-icon-error: #feaba4;
+  --color-icon-info: #abc3fe;
+  color-scheme: dark;
+}
+:root .m-light { color-scheme: light; }
+.m-web {
+  --type-display-size: 48px;
+  --type-display-line-height: 56px;
+  --type-heading-lg-size: 32px;
+  --type-heading-lg-line-height: 40px;
+  --type-heading-md-size: 24px;
+  --type-heading-md-line-height: 32px;
+  --space-section: 64px;
+  --layout-page-margin: 32px;
+  --layout-grid-columns: 12;
+  --layout-grid-gutter: 24px;
+  --layout-content-max-width: 720px;
+  --layout-content-max-width-wide: 1440px;
+}
+/* Componentes: se declaran en cada raíz de modo para que resuelvan con el modo de ese contenedor. */
+:root, .m-light, .m-dark, .m-web {
   --button-background-primary: var(--color-action-default);
   --button-background-primary-hover: var(--color-action-hover);
   --button-background-secondary: var(--color-surface-default);
@@ -247,70 +369,11 @@
   --ai-block-padding: var(--space-inset-md);
   --ai-block-gap: var(--space-stack-sm);
 }
-@media (prefers-color-scheme: dark) {
-  :root {
-  --color-text-primary: #f9f9f9;
-  --color-text-secondary: #aeaeae;
-  --color-text-disabled: #6c6c6c;
-  --color-text-on-action-subtle: #def765;
-  --color-text-link: #abc3fe;
-  --color-surface-default: #191919;
-  --color-surface-subtle: #2e2e2e;
-  --color-surface-sunken: #0c0c0c;
-  --color-surface-hover: #414141;
-  --color-action-disabled: #414141;
-  --color-action-subtle: #2f3106;
-  --color-border-default: #414141;
-  --color-border-focus: #86a7fe;
-  --color-ai-surface: #23184e;
-  --color-ai-text: #bfbbfe;
-  --color-ai-border: #a59cff;
-  --color-feedback-success-text: #92d8a0;
-  --color-feedback-success-surface: #032d11;
-  --color-feedback-success-border: #65c27c;
-  --color-feedback-warning-text: #f0b877;
-  --color-feedback-warning-surface: #351e01;
-  --color-feedback-warning-border: #e19a3d;
-  --color-feedback-error-text: #feaba4;
-  --color-feedback-error-surface: #421110;
-  --color-feedback-error-border: #fd8079;
-  --color-feedback-info-text: #abc3fe;
-  --color-feedback-info-surface: #111f4f;
-  --color-feedback-info-border: #86a7fe;
-  --color-shadow-soft: #00000066;
-  --color-shadow-strong: #000000a3;
-  --color-overlay-scrim: #000000a3;
-  --color-icon-default: #f9f9f9;
-  --color-icon-secondary: #aeaeae;
-  --color-icon-disabled: #6c6c6c;
-  --color-icon-on-action-subtle: #def765;
-  --color-icon-ai: #bfbbfe;
-  --color-icon-success: #92d8a0;
-  --color-icon-warning: #f0b877;
-  --color-icon-error: #feaba4;
-  --color-icon-info: #abc3fe;
-  }
-}
-@media (min-width: 768px) {
-  :root {
-  --type-display-size: 48px;
-  --type-display-line-height: 56px;
-  --type-heading-lg-size: 32px;
-  --type-heading-lg-line-height: 40px;
-  --type-heading-md-size: 24px;
-  --type-heading-md-line-height: 32px;
-  --space-section: 64px;
-  --layout-page-margin: 32px;
-  --layout-grid-columns: 12;
-  --layout-grid-gutter: 24px;
-  --layout-content-max-width: 720px;
-  --layout-content-max-width-wide: 1440px;
-  }
-}
 
 
 /* ===== Página de revisión (no es parte del componente) ===== */
 * { box-sizing: border-box; }
+[hidden] { display: none !important; }
 body {
   background: var(--color-surface-subtle);
   color: var(--color-text-primary);
