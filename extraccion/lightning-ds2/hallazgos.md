@@ -11,7 +11,7 @@ Extraído el 2026-11-13 desde https://www.figma.com/design/n8hvJVXpUs5VuYuThGnbT
 
 ## Hallazgos de la lectura de los 84 componentes restantes
 - Valores de color sueltos (fills fijos) en Icon (#107cad, #084968, #90d0fe, #5867e8), Map (#ffffff, #666666), Color Picker, Card (#5867e8), Notification (#5867e8), Global Header (#00a1e0), Activity Timeline (#9747ff) y Illustration (#c2e8ff). Varios son de ilustración o muestra; no se confirmó cuáles son intencionales.
-- Casi todos los componentes tienen `itemSpacing` o `paddingTop` sin variable (valores 2, 4, 8, 10). `itemSpacing=10` se repite en más de 40 páginas y no existe un token de 10px (la escala salta de 8 a 12).
+- Casi todos los componentes tienen `itemSpacing` o `paddingTop` sin variable (valores 2, 4, 8, 10). `itemSpacing=10` aparece en muchas páginas (no lo conté) y no existe un token de 10px (la escala salta de 8 a 12).
 - Radios sueltos: 12 (Accordion, Drop Zone, File Selector, Expandable Section, Empty State), 20 (App Launcher, Prompt, List Builder), 100 (Checkbox Button, Slider, Split View) y 24 (Checkbox Toggle). Solo el 12 y el 20 existen como variable, y no se usan.
 - Hay componentes que usan la capa `neutral-base`/`brand-base` directamente (Alert, Brand Band, Setup Assistant, Prompt, Progress Indicator, Map, Toast) en lugar de la capa semántica.
 - Los estados no son uniformes: Button Group solo tiene default/disabled; Checkbox y Radio no tienen hover ni focus; Select, Counter, Textarea Gen AI y Rich Text Editor no tienen hover; Tabs, Scoped Tabs y Menu no tienen estados.
