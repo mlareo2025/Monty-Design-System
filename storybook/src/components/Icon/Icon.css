@@ -1,0 +1,14 @@
+.m-icon {
+  flex: none;
+  display: block;
+  color: var(--icon-color); /* Dentro de otro componente, ese componente pisa el color con su token. */
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2; /* Trazo de Figma, en unidades de la grilla de 24. Sin token. */
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.m-icon--sm { width: var(--icon-size-sm-component); height: var(--icon-size-sm-component); }
+.m-icon--md { width: var(--icon-size-md-component); height: var(--icon-size-md-component); }
+.m-icon--lg { width: var(--icon-size-lg-component); height: var(--icon-size-lg-component); }
+

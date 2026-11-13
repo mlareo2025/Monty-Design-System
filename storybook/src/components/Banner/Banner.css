@@ -1,0 +1,55 @@
+.m-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--banner-gap);
+  width: 100%;
+  padding: var(--banner-padding);
+  border-radius: var(--banner-radius);
+  /* Borde por dentro, como en Figma: no suma al relleno. */
+  box-shadow: inset 0 0 0 var(--banner-border-width) var(--m-banner-borde);
+  color: var(--banner-text);
+}
+.m-banner .m-icon { width: var(--banner-icon-size); height: var(--banner-icon-size); }
+.m-banner--success { background: var(--banner-background-success); --m-banner-borde: var(--banner-border-success); }
+.m-banner--warning { background: var(--banner-background-warning); --m-banner-borde: var(--banner-border-warning); }
+.m-banner--error   { background: var(--banner-background-error);   --m-banner-borde: var(--banner-border-error); }
+.m-banner--info    { background: var(--banner-background-info);    --m-banner-borde: var(--banner-border-info); }
+.m-banner--success .m-banner__icono { color: var(--banner-icon-success); }
+.m-banner--warning .m-banner__icono { color: var(--banner-icon-warning); }
+.m-banner--error   .m-banner__icono { color: var(--banner-icon-error); }
+.m-banner--info    .m-banner__icono { color: var(--banner-icon-info); }
+
+.m-banner__contenido { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: var(--banner-text-gap); align-items: flex-start; }
+.m-banner__titulo, .m-banner__mensaje { margin: 0; }
+/* Estilos de texto tomados del componente en Figma: título label/default, mensaje y acción body/default. */
+.m-banner__titulo {
+  font-family: var(--type-label-default-family); font-weight: var(--type-label-default-weight);
+  font-size: var(--type-label-default-size); line-height: var(--type-label-default-line-height);
+}
+.m-banner__mensaje, .m-banner__accion {
+  font-family: var(--type-body-default-family); font-weight: var(--type-body-default-weight);
+  font-size: var(--type-body-default-size); line-height: var(--type-body-default-line-height);
+}
+.m-banner__accion {
+  margin: 0; padding: 0; border: 0; background: none; cursor: pointer;
+  color: var(--banner-link);
+  text-decoration: underline;
+}
+
+/* Cerrar: se ve de 20 px, pero el área táctil es de 44 × 44 (20 + 12 + 12).
+   El relleno se compensa con un margen negativo para no mover el layout. */
+.m-banner__cerrar {
+  flex: none;
+  display: flex;
+  padding: var(--space-inset-md);
+  margin: calc(-1 * var(--space-inset-md));
+  border: 0;
+  background: none;
+  border-radius: var(--radius-control);
+  cursor: pointer;
+}
+.m-banner__cerrar .m-icon { color: var(--banner-close); }
+.m-banner__accion:focus-visible, .m-banner__cerrar:focus-visible {
+  outline: var(--border-width-strong) solid var(--color-border-focus);
+  outline-offset: var(--border-width-strong);
+}

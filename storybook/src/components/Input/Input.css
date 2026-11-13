@@ -1,0 +1,64 @@
+.m-input {
+  display: flex;
+  flex-direction: column;
+  gap: var(--input-gap);
+  width: 100%;
+}
+.m-input__label {
+  color: var(--input-label);
+  font-family: var(--type-label-sm-family);
+  font-weight: var(--type-label-sm-weight);
+  font-size: var(--type-label-sm-size);
+  line-height: var(--type-label-sm-line-height);
+}
+/* 48 px: 12 + 24 + 12. El borde va por dentro (box-shadow), como en Figma, y no suma alto. */
+.m-input__campo {
+  display: flex;
+  align-items: center;
+  gap: var(--input-icon-gap);
+  padding: var(--input-padding-y) var(--input-padding-x);
+  border-radius: var(--input-radius);
+  background: var(--input-background);
+  box-shadow: inset 0 0 0 var(--input-border-width) var(--input-border);
+}
+.m-input__campo .m-icon { width: var(--input-icon-size); height: var(--input-icon-size); color: var(--input-icon); }
+.m-input__valor {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none; /* El foco lo muestra el borde del campo. */
+  background: transparent;
+  color: var(--input-text);
+  font-family: var(--type-body-default-family);
+  font-weight: var(--type-body-default-weight);
+  font-size: var(--type-body-default-size);
+  line-height: var(--type-body-default-line-height);
+}
+.m-input__ayuda, .m-input__mensaje {
+  margin: 0;
+  font-family: var(--type-body-default-family);
+  font-weight: var(--type-body-default-weight);
+  font-size: var(--type-body-default-size);
+  line-height: var(--type-body-default-line-height);
+}
+.m-input__ayuda { color: var(--input-help); }
+.m-input__mensaje { display: flex; align-items: flex-start; gap: var(--input-message-gap); color: var(--input-help-error); }
+.m-input__mensaje .m-icon { width: var(--input-icon-size); height: var(--input-icon-size); color: var(--input-icon-error); margin-block: calc((var(--type-body-default-line-height) - var(--input-icon-size)) / 2); }
+
+/* focus: borde de 2 px en border/focus. */
+.m-input--focus .m-input__campo,
+.m-input:not(.m-input--error):not(.m-input--disabled) .m-input__campo:focus-within {
+  box-shadow: inset 0 0 0 var(--input-border-width-focus) var(--input-border-focus);
+}
+/* error: borde de 2 px (en Figma usa input/border-width-focus) y el mensaje reemplaza a la ayuda. */
+.m-input--error .m-input__campo { box-shadow: inset 0 0 0 var(--input-border-width-focus) var(--input-border-error); }
+
+/* disabled */
+.m-input--disabled .m-input__label,
+.m-input--disabled .m-input__valor,
+.m-input--disabled .m-input__ayuda { color: var(--input-text-disabled); }
+.m-input--disabled .m-input__campo { background: var(--input-background-disabled); box-shadow: inset 0 0 0 var(--input-border-width) var(--input-border-disabled); }
+.m-input--disabled .m-input__campo .m-icon { color: var(--input-icon-disabled); }
+.m-input--disabled .m-input__valor { cursor: not-allowed; }

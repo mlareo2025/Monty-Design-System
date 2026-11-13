@@ -1,0 +1,18 @@
+/* Base de la página de Storybook. Solo tokens. */
+html,
+body {
+  background: var(--color-surface-default);
+  color: var(--color-text-primary);
+}
+body {
+  margin: 0;
+  font-family: var(--type-body-default-family), sans-serif;
+  font-weight: var(--type-body-default-weight);
+  font-size: var(--type-body-default-size);
+  line-height: var(--type-body-default-line-height);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}

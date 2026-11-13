@@ -1,0 +1,37 @@
+.m-avatar {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.m-avatar--image { object-fit: cover; }
+
+.m-avatar--person {
+  border-radius: var(--avatar-radius-person);
+  background: var(--avatar-background-person);
+  color: var(--avatar-text-person);
+}
+.m-avatar--company {
+  border-radius: var(--avatar-radius-company);
+  background: var(--avatar-background-company);
+  color: var(--avatar-text-company);
+  border: var(--avatar-border-width) solid var(--avatar-border);
+}
+
+/* Tamaño y estilo de la inicial, como en Figma: sm label/sm, md label/default, lg heading/md. */
+.m-avatar--sm {
+  width: var(--avatar-size-sm); height: var(--avatar-size-sm);
+  font-family: var(--type-label-sm-family); font-weight: var(--type-label-sm-weight);
+  font-size: var(--type-label-sm-size); line-height: var(--type-label-sm-line-height);
+}
+.m-avatar--md {
+  width: var(--avatar-size-md); height: var(--avatar-size-md);
+  font-family: var(--type-label-default-family); font-weight: var(--type-label-default-weight);
+  font-size: var(--type-label-default-size); line-height: var(--type-label-default-line-height);
+}
+.m-avatar--lg {
+  width: var(--avatar-size-lg); height: var(--avatar-size-lg);
+  font-family: var(--type-heading-md-family); font-weight: var(--type-heading-md-weight);
+  font-size: var(--type-heading-md-size); line-height: var(--type-heading-md-line-height);
+}

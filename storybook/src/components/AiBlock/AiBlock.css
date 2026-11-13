@@ -1,0 +1,35 @@
+.m-ai-block {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ai-block-gap);
+  padding: var(--ai-block-padding);
+  border-radius: var(--ai-block-radius);
+  background: var(--ai-block-background);
+  /* Borde por dentro, como en Figma. */
+  box-shadow: inset 0 0 0 var(--ai-block-border-width) var(--ai-block-border);
+}
+.m-ai-block .m-icon { width: var(--ai-block-icon-size); height: var(--ai-block-icon-size); color: var(--ai-block-icon); }
+.m-ai-block__etiqueta {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: var(--ai-block-icon-gap);
+  color: var(--ai-block-label);
+  font-family: var(--type-label-sm-family);
+  font-weight: var(--type-label-sm-weight);
+  font-size: var(--type-label-sm-size);
+  line-height: var(--type-label-sm-line-height);
+}
+.m-ai-block__razones { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: var(--ai-block-gap); }
+.m-ai-block__razon {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--ai-block-icon-gap);
+  color: var(--ai-block-text);
+  font-family: var(--type-body-default-family);
+  font-weight: var(--type-body-default-weight);
+  font-size: var(--type-body-default-size);
+  line-height: var(--type-body-default-line-height);
+}
+/* En Figma el check va en un marco de 16 × 24, centrado: así queda alineado con la primera línea (alto de línea 24). */
+.m-ai-block__check { flex: none; display: flex; align-items: center; height: var(--type-body-default-line-height); }

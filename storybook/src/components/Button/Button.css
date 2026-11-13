@@ -1,0 +1,41 @@
+/* 44 px de alto: 12 + 20 + 12. El borde del secondary va por dentro (box-shadow) y no suma alto. */
+.m-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--button-gap);
+  padding: var(--button-padding-y) var(--button-padding-x);
+  border: 0;
+  border-radius: var(--button-radius);
+  background: transparent;
+  color: var(--button-text-default);
+  font-family: var(--type-label-default-family);
+  font-weight: var(--type-label-default-weight);
+  font-size: var(--type-label-default-size);
+  line-height: var(--type-label-default-line-height);
+  white-space: nowrap; /* label/default va en una línea: si no entra, se acorta el texto. */
+  cursor: pointer;
+}
+.m-button .m-icon { width: var(--button-icon-size); height: var(--button-icon-size); color: var(--button-icon-default); }
+
+.m-button--primary { background: var(--button-background-primary); color: var(--button-text-primary); }
+.m-button--primary .m-icon { color: var(--button-icon-primary); }
+.m-button--primary:hover:enabled, .m-button--primary.m-button--hover { background: var(--button-background-primary-hover); }
+/* pressed no existe en Figma; monty-ds pide color/action/pressed en código. No hay token button/*. */
+.m-button--primary:active:enabled { background: var(--color-action-pressed); }
+
+.m-button--secondary {
+  background: var(--button-background-secondary);
+  box-shadow: inset 0 0 0 var(--button-border-width) var(--button-border-secondary);
+}
+.m-button--secondary:hover:enabled, .m-button--secondary.m-button--hover,
+.m-button--ghost:hover:enabled, .m-button--ghost.m-button--hover { background: var(--button-background-hover); }
+
+/* disabled: en Figma, primary y secondary con fondo disabled y sin borde; ghost sin fondo. */
+.m-button:disabled { cursor: not-allowed; color: var(--button-text-disabled); box-shadow: none; }
+.m-button:disabled .m-icon { color: var(--button-icon-disabled); }
+.m-button--primary:disabled, .m-button--secondary:disabled { background: var(--button-background-disabled); }
+.m-button--ghost:disabled { background: transparent; }
+
+/* focus no existe en Figma; monty-ds pide un anillo color/border/focus. No hay token button/*. */
+.m-button:focus-visible { outline: var(--border-width-strong) solid var(--color-border-focus); outline-offset: var(--border-width-strong); }
