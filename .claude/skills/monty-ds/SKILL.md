@@ -5,7 +5,7 @@ description: >-
   Usar siempre que se pida diseñar, armar o revisar una pantalla, un flujo,
   un componente, un botón, un formulario, una tarjeta o un banner de Monty,
   en Figma o en código, aunque no se nombre el design system. Define los
-  tokens (color, tipografía, espacio, radios y layout), los seis componentes
+  tokens (color, tipografía, espacio, radios y layout), los ocho componentes
   que existen (Button, Input, Icon, Chip, Avatar y Banner) y sus reglas:
   nunca inventar componentes ni valores; si falta algo, detenerse y
   proponer. También sirve para validar design_tokens.json con el validador.
@@ -20,7 +20,7 @@ Monty es un agente de búsqueda de empleo con IA. Tiene una app y una web para c
   - `references/color.md`: primitivos, semánticos Light y Dark, contraste.
   - `references/tipografia.md`: los 9 estilos de texto en Mobile y Web.
   - `references/spacing.md`: espacio, radios, elevación, layout y grilla.
-  - `references/componentes.md`: los 6 componentes, con variantes, estados y tokens.
+  - `references/componentes.md`: los 8 componentes, con variantes, estados y tokens.
 - **Validador:** `scripts/validar-tokens.mjs`, que se configura en `scripts/validador.config.json`.
 
 ## Cuándo usarla
@@ -38,7 +38,7 @@ No la uses para decisiones de marca nuevas (logo, paleta o tono de una campaña)
 4. **El nombre dice para qué sirve, no cómo se ve.** Antes de pensar en un token nuevo, revisa si ya existe uno con ese rol.
 
 ### Componentes
-5. **Solo existen seis:** Button, Input, Icon, Chip, Avatar y Banner. No inventes otros. Card, lista, barra inferior, pestañas, modal, bloque de IA, toast o select **no existen todavía**.
+5. **Solo existen ocho:** Button, Input, Icon, Chip, Avatar, Banner, Card (solo `kind: match`) y AiBlock. No inventes otros. Lista, barra inferior, pestañas, modal, toast o select **no existen todavía**.
 6. **Si hace falta un componente que no existe, detente y propón** (ver "Si falta algo"). No lo armes con tokens semánticos sueltos para salir del paso, aunque las páginas de Figma ya describan cómo se vería.
 7. **Botones:**
    - Siempre llevan texto. No hay botones de solo ícono.
@@ -58,7 +58,7 @@ No la uses para decisiones de marca nuevas (logo, paleta o tono de una campaña)
 13. **La lima no va como texto, enlace ni foco sobre blanco.** Los enlaces son azules y subrayados. El foco es azul (`border/focus`).
 
 ### Marca y contenido
-14. **Siempre se explica el porqué** de lo que decide Monty (un match, una recomendación, un orden). Va en un bloque de IA en violeta (`color/ai/*`), con ícono `sparkles` y etiqueta de texto. Como el bloque de IA todavía no es componente, proponlo antes de usarlo (regla 6).
+14. **Siempre se explica el porqué** de lo que decide Monty (un match, una recomendación, un orden). Va en el componente AiBlock (violeta `color/ai/*`, con ícono `sparkles` y etiqueta de texto).
 15. **El violeta (`color/ai/*`) es solo para lo que genera o decide Monty.**
 16. **Hay una sola superficie de marca (`surface/brand`) por vista,** y nunca es clicable.
 17. **Sin degradados.** Las tarjetas son planas: superficie y borde, sin sombra. La sombra (`elevation/*`) queda para lo que flota.
@@ -74,7 +74,7 @@ No la uses para decisiones de marca nuevas (logo, paleta o tono de una campaña)
 ## Paso a paso para armar una pantalla
 
 1. **Entiende el pedido.** Determina para quién es (candidato o empresa) y en qué plataforma se usa más. Igual vas a entregar Mobile y Web, y Light y Dark (regla 21).
-2. **Haz el inventario.** Lista qué piezas necesitas y compáralas con los seis componentes de `references/componentes.md`. Si alguna no existe, **detente aquí** y sigue "Si falta algo". No avances con un componente inventado.
+2. **Haz el inventario.** Lista qué piezas necesitas y compáralas con los ocho componentes de `references/componentes.md`. Si alguna no existe, **detente aquí** y sigue "Si falta algo". No avances con un componente inventado.
 3. **Arma el layout** con `references/spacing.md`:
    - Margen lateral `layout/page/margin` y grilla `layout/grid/*`.
    - Ancho máximo `layout/content/max-width` para lectura (detalle, perfil, conversación) o `max-width-wide` para listas y el panel.
@@ -93,7 +93,7 @@ No la uses para decisiones de marca nuevas (logo, paleta o tono de una campaña)
 8. **Escribe los textos reales:** concisos, amables y sin negativos, con cortes de línea correctos. Usa contenido realista de Monty (empresas, puestos, cifras de LATAM) y nunca lorem ipsum.
 9. **Revisa los modos:** cambia a Dark y a Web y comprueba contraste, anchos máximos y cortes de línea.
 10. **Haz el chequeo final**, antes de entregar:
-    - [ ] ¿Algún componente que no sea uno de los seis? ¿Alguna pieza armada a mano que debería ser un componente?
+    - [ ] ¿Algún componente que no sea uno de los ocho? ¿Alguna pieza armada a mano que debería ser un componente?
     - [ ] ¿Algún valor suelto o primitivo directo?
     - [ ] ¿Una sola acción principal y un solo `surface/brand`?
     - [ ] ¿Todos los botones con texto? ¿Labels visibles y asteriscos en los obligatorios?
@@ -136,7 +136,7 @@ node .claude/skills/monty-ds/scripts/validar-tokens.mjs design_tokens.json --jso
 ```
 
 - El script busca `validador.config.json` primero junto a los tokens y, si no está, junto al script. Por eso funciona desde aquí sin tocar nada.
-- Revisa cinco cosas: nombres, referencias entre niveles, modos, descripciones y contraste (69 pares en Light y Dark).
+- Revisa cinco cosas: nombres, referencias entre niveles, modos, descripciones y contraste (71 pares en Light y Dark).
 - Sale con 0 si todo está en verde y con 1 si hay errores.
 - Muestra la salida completa tal cual. No aflojes un par, un umbral ni una severidad para que pase. Si algo falla, di qué cambiar en Figma.
 - Cuando se apruebe un componente nuevo, se suman sus pares de contraste a la configuración.

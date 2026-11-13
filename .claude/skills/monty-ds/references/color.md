@@ -123,7 +123,7 @@ Hay cuatro tipos, cada uno con `text`, `surface` y `border`. **Un rechazo no es 
 | border/focus sobre surface/default | 3 | 4.88 | 7.51 |
 | icon/secondary sobre surface/default | 3 | 5.25 | 7.92 |
 
-Los pares de cada componente están en `references/componentes.md`. La lista completa (69 pares) está en `scripts/validador.config.json`.
+Los pares de cada componente están en `references/componentes.md`. La lista completa (71 pares) está en `scripts/validador.config.json`.
 
 ## Combinaciones fuera de la tabla
 

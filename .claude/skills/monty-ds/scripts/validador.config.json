@@ -386,6 +386,16 @@
       "foreground": "component.banner.icon.info",
       "background": "component.banner.background.info",
       "min": 3
+    },
+    {
+      "foreground": "semantic.color.text.primary",
+      "background": "semantic.color.ai.surface",
+      "min": 4.5
+    },
+    {
+      "foreground": "semantic.color.ai.border",
+      "background": "semantic.color.surface.default",
+      "min": 3
     }
   ]
 }

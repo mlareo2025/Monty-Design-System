@@ -4338,7 +4338,7 @@
               "WIDTH_HEIGHT"
             ],
             "codeSyntax": {
-              "WEB": "var(--icon-size-sm)"
+              "WEB": "var(--icon-size-sm-component)"
             }
           }
         }
@@ -4354,7 +4354,7 @@
               "WIDTH_HEIGHT"
             ],
             "codeSyntax": {
-              "WEB": "var(--icon-size-md)"
+              "WEB": "var(--icon-size-md-component)"
             }
           }
         }
@@ -4370,7 +4370,7 @@
               "WIDTH_HEIGHT"
             ],
             "codeSyntax": {
-              "WEB": "var(--icon-size-lg)"
+              "WEB": "var(--icon-size-lg-component)"
             }
           }
         }
@@ -4445,6 +4445,23 @@
               }
             }
           }
+        },
+        "match": {
+          "$type": "color",
+          "$value": "{semantic.color.ai.surface}",
+          "$description": "Fondo del chip match: el porcentaje de match que calcula Monty.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Component",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--chip-background-match)"
+              }
+            }
+          }
         }
       },
       "border": {
@@ -4497,6 +4514,22 @@
               }
             }
           }
+        },
+        "match": {
+          "$type": "color",
+          "$value": "{semantic.color.ai.text}",
+          "$description": "Texto del chip match (porcentaje, con cifras tabulares).",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Component",
+              "scopes": [
+                "TEXT_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--chip-text-match)"
+              }
+            }
+          }
         }
       },
       "icon": {
@@ -4528,6 +4561,22 @@
               ],
               "codeSyntax": {
                 "WEB": "var(--chip-icon-selected)"
+              }
+            }
+          }
+        },
+        "match": {
+          "$type": "color",
+          "$value": "{semantic.color.icon.ai}",
+          "$description": "Ícono sparkles del chip match.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Component",
+              "scopes": [
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--chip-icon-match)"
               }
             }
           }
@@ -5175,6 +5224,462 @@
             ],
             "codeSyntax": {
               "WEB": "var(--banner-icon-size)"
+            }
+          }
+        }
+      }
+    },
+    "card": {
+      "background": {
+        "$type": "color",
+        "$value": "{semantic.color.surface.default}",
+        "$description": "Fondo de la tarjeta. Plana: superficie y borde, sin sombra.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--card-background)"
+            }
+          }
+        }
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{semantic.color.border.default}",
+        "$description": "Contorno de la tarjeta.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "STROKE_COLOR"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--card-border)"
+            }
+          }
+        }
+      },
+      "border-width": {
+        "$type": "dimension",
+        "$value": "{semantic.border-width.default}",
+        "$description": "Grosor del contorno de la tarjeta.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "STROKE_FLOAT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--card-border-width)"
+            }
+          }
+        }
+      },
+      "radius": {
+        "$type": "dimension",
+        "$value": "{semantic.radius.card}",
+        "$description": "Esquinas de la tarjeta.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "CORNER_RADIUS"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--card-radius)"
+            }
+          }
+        }
+      },
+      "padding": {
+        "$type": "dimension",
+        "$value": "{semantic.space.inset.lg}",
+        "$description": "Relleno de la tarjeta.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "GAP"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--card-padding)"
+            }
+          }
+        }
+      },
+      "gap": {
+        "$type": "dimension",
+        "$value": "{semantic.space.stack.md}",
+        "$description": "Separación entre los bloques de la tarjeta: cabecera, datos, porqué y acciones.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "GAP"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--card-gap)"
+            }
+          }
+        }
+      },
+      "header-gap": {
+        "$type": "dimension",
+        "$value": "{semantic.space.stack.xs}",
+        "$description": "Separación entre el puesto y la empresa.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "GAP"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--card-header-gap)"
+            }
+          }
+        }
+      },
+      "avatar-gap": {
+        "$type": "dimension",
+        "$value": "{semantic.space.inline.sm}",
+        "$description": "Separación entre el avatar y los títulos, y entre los títulos y el badge.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "GAP"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--card-avatar-gap)"
+            }
+          }
+        }
+      },
+      "facts-gap": {
+        "$type": "dimension",
+        "$value": "{semantic.space.stack.sm}",
+        "$description": "Separación entre metadatos, salario y chips.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "GAP"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--card-facts-gap)"
+            }
+          }
+        }
+      },
+      "meta-gap": {
+        "$type": "dimension",
+        "$value": "{semantic.space.inline.md}",
+        "$description": "Separación entre metadatos de una misma fila (ubicación y jornada).",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "GAP"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--card-meta-gap)"
+            }
+          }
+        }
+      },
+      "meta-icon-gap": {
+        "$type": "dimension",
+        "$value": "{semantic.space.inline.xs}",
+        "$description": "Separación entre el ícono de un metadato y su texto.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "GAP"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--card-meta-icon-gap)"
+            }
+          }
+        }
+      },
+      "chips-gap": {
+        "$type": "dimension",
+        "$value": "{semantic.space.inline.sm}",
+        "$description": "Separación entre los chips de la tarjeta.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "GAP"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--card-chips-gap)"
+            }
+          }
+        }
+      },
+      "actions-gap": {
+        "$type": "dimension",
+        "$value": "{semantic.space.stack.sm}",
+        "$description": "Separación entre los botones apilados: el principal arriba y el secundario debajo.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "GAP"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--card-actions-gap)"
+            }
+          }
+        }
+      },
+      "text": {
+        "primary": {
+          "$type": "color",
+          "$value": "{semantic.color.text.primary}",
+          "$description": "Puesto y salario de la tarjeta.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Component",
+              "scopes": [
+                "TEXT_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--card-text-primary)"
+              }
+            }
+          }
+        },
+        "secondary": {
+          "$type": "color",
+          "$value": "{semantic.color.text.secondary}",
+          "$description": "Empresa, metadatos y unidad del salario.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "Component",
+              "scopes": [
+                "TEXT_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--card-text-secondary)"
+              }
+            }
+          }
+        }
+      },
+      "icon": {
+        "$type": "color",
+        "$value": "{semantic.color.icon.secondary}",
+        "$description": "Íconos de metadatos de la tarjeta (ubicación, jornada).",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "STROKE_COLOR"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--card-icon)"
+            }
+          }
+        }
+      },
+      "icon-size": {
+        "$type": "dimension",
+        "$value": "{semantic.icon.size.sm}",
+        "$description": "Tamaño de los íconos de metadatos (16 px).",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "WIDTH_HEIGHT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--card-icon-size)"
+            }
+          }
+        }
+      }
+    },
+    "ai-block": {
+      "background": {
+        "$type": "color",
+        "$value": "{semantic.color.ai.surface}",
+        "$description": "Fondo del bloque de IA: el porqué de una decisión de Monty.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ai-block-background)"
+            }
+          }
+        }
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{semantic.color.ai.border}",
+        "$description": "Borde que delimita el bloque de IA.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "STROKE_COLOR"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ai-block-border)"
+            }
+          }
+        }
+      },
+      "border-width": {
+        "$type": "dimension",
+        "$value": "{semantic.border-width.default}",
+        "$description": "Grosor del borde del bloque de IA.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "STROKE_FLOAT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ai-block-border-width)"
+            }
+          }
+        }
+      },
+      "label": {
+        "$type": "color",
+        "$value": "{semantic.color.ai.text}",
+        "$description": "Etiqueta del bloque de IA (label/sm), siempre junto al ícono sparkles.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "TEXT_FILL"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ai-block-label)"
+            }
+          }
+        }
+      },
+      "text": {
+        "$type": "color",
+        "$value": "{semantic.color.text.primary}",
+        "$description": "Razones del bloque de IA (body/default).",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "TEXT_FILL"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ai-block-text)"
+            }
+          }
+        }
+      },
+      "icon": {
+        "$type": "color",
+        "$value": "{semantic.color.icon.ai}",
+        "$description": "Ícono sparkles de la etiqueta y check de cada razón.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "STROKE_COLOR"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ai-block-icon)"
+            }
+          }
+        }
+      },
+      "icon-size": {
+        "$type": "dimension",
+        "$value": "{semantic.icon.size.sm}",
+        "$description": "Tamaño de los íconos del bloque de IA (16 px).",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "WIDTH_HEIGHT"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ai-block-icon-size)"
+            }
+          }
+        }
+      },
+      "icon-gap": {
+        "$type": "dimension",
+        "$value": "{semantic.space.inline.sm}",
+        "$description": "Separación entre un ícono y su texto dentro del bloque de IA.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "GAP"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ai-block-icon-gap)"
+            }
+          }
+        }
+      },
+      "radius": {
+        "$type": "dimension",
+        "$value": "{semantic.radius.nested}",
+        "$description": "Esquinas del bloque de IA, anidado dentro de una tarjeta.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "CORNER_RADIUS"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ai-block-radius)"
+            }
+          }
+        }
+      },
+      "padding": {
+        "$type": "dimension",
+        "$value": "{semantic.space.inset.md}",
+        "$description": "Relleno del bloque de IA.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "GAP"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ai-block-padding)"
+            }
+          }
+        }
+      },
+      "gap": {
+        "$type": "dimension",
+        "$value": "{semantic.space.stack.sm}",
+        "$description": "Separación entre la etiqueta y las razones, y entre razones.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "Component",
+            "scopes": [
+              "GAP"
+            ],
+            "codeSyntax": {
+              "WEB": "var(--ai-block-gap)"
             }
           }
         }

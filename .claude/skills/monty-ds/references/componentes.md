@@ -2,7 +2,7 @@
 
 Datos sacados de `design_tokens.json` (`component.*`) y de la página **Componentes** de Figma (component sets y la referencia en Light y Dark).
 
-**Solo existen estos seis.** Cualquier otra pieza (Card, lista, barra inferior, pestañas, modal, hoja inferior, toast, select, casilla, bloque de IA, badge de match) **no existe**. Hay que detenerse y proponerla, como explica la sección "Si falta un token o un componente" de `SKILL.md`.
+**Solo existen estos ocho:** Button, Input, Icon, Chip, Avatar, Banner, Card y AiBlock. Cualquier otra pieza (lista, barra inferior, pestañas, modal, hoja inferior, toast, select, casilla) **no existe**. Hay que detenerse y proponerla, como explica la sección "Si falta un token o un componente" de `SKILL.md`.
 
 - Los tokens `component` apuntan siempre a un semántico, así que los modos Light y Dark los resuelve el semántico. Los valores de las tablas son los de Light.
 - En código, `button/background/primary` se escribe `var(--button-background-primary)`.
@@ -13,7 +13,7 @@ Datos sacados de `design_tokens.json` (`component.*`) y de la página **Componen
 | Button | `variant`: primary, secondary, ghost · `state`: default, hover, disabled |
 | Input | `state`: default, focus, error, disabled |
 | Icon | `name`: 21 íconos (lista abajo) |
-| Chip | `kind`: tag, filter · `state`: default, hover, selected (hover y selected solo en filter) |
+| Chip | `kind`: tag, filter, match · `state`: default, hover, selected (hover y selected solo en filter) |
 | Avatar | `type`: person, company · `content`: initial, image · `size`: sm, md, lg |
 | Banner | `type`: success, warning, error, info |
 
@@ -123,27 +123,29 @@ Un ícono nunca es la única forma de comunicar algo: siempre va con texto.
 
 ## Chip
 
-Hay dos tipos, que se definen con `kind`:
+Hay tres tipos, que se definen con `kind`:
 - **`tag`:** informa y no se toca. Modalidad, seniority, habilidades: "Remoto", "Junior", "Figma". Mide 28 px de alto.
 - **`filter`:** se toca para filtrar y tiene los estados `default`, `hover` y `selected`. Mide 44 px de alto, que es el área táctil. El seleccionado lleva el ícono `check` y fondo `action/subtle`.
+- **`match`:** el porcentaje de match que calcula Monty ("92 % de match"). No se toca. Mide 28 px de alto, va en violeta de IA y **siempre lleva `sparkles` y texto**. Una sola por tarjeta.
 
 **Reglas de uso**
 - Texto en `label/sm`, en una línea y corto.
 - Ícono opcional de 16 px antes del texto.
 - La selección nunca se marca solo con color: lleva `check`.
 - Entre chips va `space/inline/sm`.
-- Para un badge de match o un chip de IA no hay variante. Propónla.
+- Para cualquier otro chip de IA no hay variante. Propónla.
 
 **Tokens**
 
 | Token | → Semántico | Uso |
 | --- | --- | --- |
 | `chip/background/tag` | `color/surface/sunken` | Fondo del tag. |
+| `chip/background/match` | `color/ai/surface` | Fondo del chip match. |
 | `chip/background/filter` · `filter-hover` | `color/surface/default` · `surface/hover` | Fondo del filtro. |
 | `chip/background/selected` | `color/action/subtle` | Filtro seleccionado. |
 | `chip/border/filter` | `color/border/strong` | Borde del filtro. |
-| `chip/text/default` · `selected` | `color/text/primary` · `text/on-action-subtle` | Texto. |
-| `chip/icon/default` · `selected` | `color/icon/secondary` · `icon/on-action-subtle` | Ícono. |
+| `chip/text/default` · `selected` · `match` | `color/text/primary` · `text/on-action-subtle` · `ai/text` | Texto. |
+| `chip/icon/default` · `selected` · `match` | `color/icon/secondary` · `icon/on-action-subtle` · `icon/ai` | Ícono. |
 | `chip/icon-size` | `icon/size/sm` (16) | Tamaño del ícono. |
 | `chip/radius` | `radius/pill` | Píldora. |
 | `chip/padding-x` | `space/inset/md` (12) | Relleno lateral. |
@@ -221,15 +223,71 @@ Contraste (L / D): texto ≥ 12.58 / 14.38, enlace ≥ 6.04 / 8.63, ícono ≥ 5
 
 ---
 
+## AiBlock
+
+El porqué de una decisión de Monty (un match, una recomendación, un orden). **Siempre lleva el ícono `sparkles` y una etiqueta de texto**: el violeta nunca va solo. Va anidado dentro de una tarjeta y no se toca.
+
+Propiedades en Figma: `Etiqueta` y `Razón 1`, `Razón 2` y `Razón 3` (texto). Entre dos y tres razones concretas, cada una en una frase corta. Cada razón lleva un `check`.
+
+**Tokens**
+
+| Token | → Semántico | Uso |
+| --- | --- | --- |
+| `ai-block/background` | `color/ai/surface` | Fondo. |
+| `ai-block/border` | `color/ai/border` | Borde. |
+| `ai-block/border-width` | `border-width/default` (1) | Grosor del borde. |
+| `ai-block/label` | `color/ai/text` | Etiqueta, en `label/sm`. |
+| `ai-block/text` | `color/text/primary` | Razones, en `body/default`. |
+| `ai-block/icon` | `color/icon/ai` | `sparkles` de la etiqueta y `check` de cada razón. |
+| `ai-block/icon-size` | `icon/size/sm` (16) | Tamaño de los íconos. |
+| `ai-block/icon-gap` | `space/inline/sm` (8) | Entre un ícono y su texto. |
+| `ai-block/radius` | `radius/nested` (4) | Esquinas. |
+| `ai-block/padding` | `space/inset/md` (12) | Relleno. |
+| `ai-block/gap` | `space/stack/sm` (8) | Entre la etiqueta y las razones, y entre razones. |
+
+Contraste (L / D): texto 12.63 / 15.20, etiqueta 6.32 / 8.96, ícono 6.32 / 8.96 y borde sobre `surface/default` 4.52 / 7.37.
+
+---
+
+## Card
+
+Tarjeta de match: una oferta que Monty eligió para la persona, con el porqué. Hoy solo existe `kind: match`. **Plana:** superficie y borde, sin sombra. No es clicable entera: las acciones son los botones.
+
+Estructura: cabecera (Avatar `company` `md`, puesto en `heading/sm`, empresa en `body/compact` y el chip `match`), metadatos con íconos (`map-pin`, `briefcase`), salario en `data`, chips `tag`, un AiBlock y los botones apilados: "Me interesa" (`primary`) arriba y "Guardar" (`ghost`, con `bookmark`) debajo. Los dos botones ocupan todo el ancho.
+
+Propiedades en Figma: `Puesto`, `Empresa`, `Ubicación`, `Jornada` y `Monto` (texto). En móvil mide 390 px; en Web ocupa 6 de las 12 columnas.
+
+**Tokens**
+
+| Token | → Semántico | Uso |
+| --- | --- | --- |
+| `card/background` | `color/surface/default` | Fondo. |
+| `card/border` · `border-width` | `color/border/default` · `border-width/default` (1) | Contorno. |
+| `card/radius` | `radius/card` (8) | Esquinas. |
+| `card/padding` | `space/inset/lg` (16) | Relleno. |
+| `card/gap` | `space/stack/md` (16) | Entre cabecera, datos, porqué y acciones. |
+| `card/header-gap` | `space/stack/xs` (4) | Entre puesto y empresa. |
+| `card/avatar-gap` | `space/inline/sm` (8) | Entre avatar, títulos y chip match. |
+| `card/facts-gap` | `space/stack/sm` (8) | Entre metadatos, salario y chips. |
+| `card/meta-gap` | `space/inline/md` (16) | Entre metadatos de una fila. |
+| `card/meta-icon-gap` | `space/inline/xs` (4) | Entre un ícono de metadato y su texto. |
+| `card/chips-gap` | `space/inline/sm` (8) | Entre chips. |
+| `card/actions-gap` | `space/stack/sm` (8) | Entre los botones apilados. |
+| `card/text/primary` · `secondary` | `color/text/primary` · `text/secondary` | Puesto y salario · empresa, metadatos y unidad. |
+| `card/icon` | `color/icon/secondary` | Íconos de metadatos. |
+| `card/icon-size` | `icon/size/sm` (16) | Tamaño de esos íconos. |
+
+La separación de 8 px entre botones apilados es una propuesta aprobada para esta tarjeta; sigue sin token general para otras pantallas.
+
+---
+
 ## Lo que todavía no existe
 
 Estas piezas aparecen en las descripciones de Figma, pero **no son componentes**. Antes de usarlas, propónlas:
 
 | Pieza | Pistas que ya hay en Figma |
 | --- | --- |
-| Card (tarjeta de match, de proceso o de candidato) | `radius/card`, `border/default`, sin sombra, `inset/lg`, `heading/sm` |
-| Bloque de IA (el porqué de Monty) | `color/ai/*`, `sparkles`, `radius/nested`, `inset/md` |
-| Badge de match | `color/ai/surface`, `radius/pill` |
+| Card de proceso o de candidato | Existe `Card` con `kind: match`. Las otras variantes se proponen. |
 | Barra inferior, botón flotante | `elevation/raised` |
 | Menú, popover, toast | `elevation/overlay` |
 | Modal, hoja inferior, panel lateral | `elevation/modal`, `radius/surface`, `inset/xl`, `color/overlay/scrim` |
