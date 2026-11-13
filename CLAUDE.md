@@ -9,9 +9,10 @@ Sistema de diseño de Monty: producto con app y web para candidatos (ofertas, ma
 | Archivo | Qué es |
 | --- | --- |
 | `design_tokens.json` | Tokens en formato DTCG. Se genera desde Figma. |
-| `validador/validar-tokens.mjs` | Validador (Node 18+, sin dependencias). No se modifica. |
-| `validador/validador.config.json` | Configuración del validador: niveles, modos, pares de contraste. |
-| `validador/README.md` | Documentación del validador. |
+| `.claude/skills/monty-ds/scripts/validar-tokens.mjs` | Validador (Node 18+, sin dependencias). No se modifica. |
+| `.claude/skills/monty-ds/scripts/validador.config.json` | Configuración del validador: niveles, modos, pares de contraste. |
+| `.claude/skills/monty-ds/scripts/README.md` | Documentación del validador. |
+| `.claude/skills/monty-ds/` | Skill `monty-ds`: reglas para diseñar, armar y revisar pantallas (`SKILL.md`) y datos en `references/`. |
 
 ## Arquitectura
 
@@ -55,11 +56,11 @@ No hay un conversor guardado en el repo: el que se usó era temporal.
 ## Comandos
 
 ```bash
-node validador/validar-tokens.mjs design_tokens.json          # lectura humana
-node validador/validar-tokens.mjs design_tokens.json --json   # datos, para que Claude los lea
+node .claude/skills/monty-ds/scripts/validar-tokens.mjs design_tokens.json          # lectura humana
+node .claude/skills/monty-ds/scripts/validar-tokens.mjs design_tokens.json --json   # datos, para que Claude los lea
 ```
 
-Sale con código 0 si está todo en verde y 1 si hay errores. Busca `validador.config.json` junto a los tokens y, si no está, junto al script (aquí está en `validador/`).
+Sale con código 0 si está todo en verde y 1 si hay errores. Busca `validador.config.json` junto a los tokens y, si no está, junto al script (aquí está en `.claude/skills/monty-ds/scripts/`).
 
 ## Reglas de trabajo
 
