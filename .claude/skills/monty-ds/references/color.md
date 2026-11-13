@@ -42,6 +42,7 @@ La lima `#DEF765` sobre blanco da 1.19:1, así que nunca se usa como texto, enla
 | --- | --- | --- | --- |
 | `color/surface/default` | neutral/0 `#FFFFFF` | neutral/950 `#191919` | Fondo de la página. |
 | `color/surface/subtle` | neutral/50 `#F9F9F9` | neutral/900 `#2E2E2E` | Tarjetas y secciones que se separan del fondo. |
+| `color/surface/muted` | neutral/50 `#F9F9F9` | neutral/900 `#2E2E2E` | **Deprecado.** Usar `color/surface/subtle`: tiene los mismos valores. No lo uses en pantallas nuevas. |
 | `color/surface/sunken` | neutral/100 `#F2F2F2` | neutral/1000 `#0C0C0C` | Zonas hundidas dentro de una tarjeta: avatares y pistas de progreso. |
 | `color/surface/hover` | neutral/100 `#F2F2F2` | neutral/800 `#414141` | Hover de filas, botones secundarios y ghost. |
 | `color/surface/brand` | lima/400 `#DEF765` | lima/400 `#DEF765` | Momentos de marca no clicables: bienvenida, celebraciones, mascota. Nunca una acción. Una por vista. |

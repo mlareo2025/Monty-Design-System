@@ -1519,6 +1519,27 @@
             }
           }
         },
+        "muted": {
+          "$type": "color",
+          "$value": "{primitive.color.neutral.50}",
+          "$description": "Deprecado: usar color/surface/subtle.",
+          "$deprecated": "Usar semantic.color.surface.subtle",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.neutral.900}"
+            },
+            "com.figma": {
+              "collection": "Semantic",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "codeSyntax": {
+                "WEB": "var(--color-surface-muted)"
+              }
+            }
+          }
+        },
         "sunken": {
           "$type": "color",
           "$value": "{primitive.color.neutral.100}",
