@@ -1,0 +1,1992 @@
+{
+  "primitive": {
+    "color": {
+      "yellow": {
+        "95": {
+          "$type": "color",
+          "$value": "#fbf3e0"
+        },
+        "90": {
+          "$type": "color",
+          "$value": "#f9e3b6"
+        },
+        "85": {
+          "$type": "color",
+          "$value": "#f8d462"
+        },
+        "80": {
+          "$type": "color",
+          "$value": "#fcc003"
+        },
+        "70": {
+          "$type": "color",
+          "$value": "#e4a201"
+        },
+        "65": {
+          "$type": "color",
+          "$value": "#da9401"
+        },
+        "60": {
+          "$type": "color",
+          "$value": "#ca8501"
+        },
+        "50": {
+          "$type": "color",
+          "$value": "#a96504"
+        },
+        "40": {
+          "$type": "color",
+          "$value": "#8c4b02"
+        },
+        "35": {
+          "$type": "color",
+          "$value": "#824308"
+        },
+        "30": {
+          "$type": "color",
+          "$value": "#6f3400"
+        },
+        "20": {
+          "$type": "color",
+          "$value": "#4f2100"
+        },
+        "15": {
+          "$type": "color",
+          "$value": "#371e03"
+        },
+        "10": {
+          "$type": "color",
+          "$value": "#281202"
+        },
+        "5": {
+          "$type": "color",
+          "$value": "#090200"
+        }
+      },
+      "teal": {
+        "95": {
+          "$type": "color",
+          "$value": "#def9f3"
+        },
+        "90": {
+          "$type": "color",
+          "$value": "#acf3e4"
+        },
+        "85": {
+          "$type": "color",
+          "$value": "#76ead9"
+        },
+        "80": {
+          "$type": "color",
+          "$value": "#04e1cb"
+        },
+        "70": {
+          "$type": "color",
+          "$value": "#01c3b3"
+        },
+        "65": {
+          "$type": "color",
+          "$value": "#03b4a7"
+        },
+        "60": {
+          "$type": "color",
+          "$value": "#06a59a"
+        },
+        "50": {
+          "$type": "color",
+          "$value": "#0b827c"
+        },
+        "40": {
+          "$type": "color",
+          "$value": "#056764"
+        },
+        "35": {
+          "$type": "color",
+          "$value": "#035a58"
+        },
+        "30": {
+          "$type": "color",
+          "$value": "#024d4c"
+        },
+        "20": {
+          "$type": "color",
+          "$value": "#023434"
+        },
+        "15": {
+          "$type": "color",
+          "$value": "#072825"
+        },
+        "10": {
+          "$type": "color",
+          "$value": "#071b12"
+        },
+        "5": {
+          "$type": "color",
+          "$value": "#010502"
+        }
+      },
+      "cloud-blue": {
+        "95": {
+          "$type": "color",
+          "$value": "#eaf5fe"
+        },
+        "90": {
+          "$type": "color",
+          "$value": "#cfe9fe"
+        },
+        "85": {
+          "$type": "color",
+          "$value": "#aeddfe"
+        },
+        "80": {
+          "$type": "color",
+          "$value": "#90d0fe"
+        },
+        "70": {
+          "$type": "color",
+          "$value": "#1ab9ff"
+        },
+        "65": {
+          "$type": "color",
+          "$value": "#08abed"
+        },
+        "60": {
+          "$type": "color",
+          "$value": "#0d9dda"
+        },
+        "50": {
+          "$type": "color",
+          "$value": "#107cad"
+        },
+        "40": {
+          "$type": "color",
+          "$value": "#05628a"
+        },
+        "35": {
+          "$type": "color",
+          "$value": "#075579"
+        },
+        "30": {
+          "$type": "color",
+          "$value": "#084968"
+        },
+        "20": {
+          "$type": "color",
+          "$value": "#023248"
+        },
+        "15": {
+          "$type": "color",
+          "$value": "#0a2636"
+        },
+        "10": {
+          "$type": "color",
+          "$value": "#001a28"
+        },
+        "5": {
+          "$type": "color",
+          "$value": "#000409"
+        }
+      },
+      "green": {
+        "95": {
+          "$type": "color",
+          "$value": "#ebf7e6"
+        },
+        "90": {
+          "$type": "color",
+          "$value": "#cdefc4"
+        },
+        "85": {
+          "$type": "color",
+          "$value": "#aee4a9"
+        },
+        "80": {
+          "$type": "color",
+          "$value": "#91db8b"
+        },
+        "70": {
+          "$type": "color",
+          "$value": "#45c65a"
+        },
+        "65": {
+          "$type": "color",
+          "$value": "#41b658"
+        },
+        "60": {
+          "$type": "color",
+          "$value": "#3ba755"
+        },
+        "50": {
+          "$type": "color",
+          "$value": "#2e844a"
+        },
+        "40": {
+          "$type": "color",
+          "$value": "#22683e"
+        },
+        "35": {
+          "$type": "color",
+          "$value": "#1e5c39"
+        },
+        "30": {
+          "$type": "color",
+          "$value": "#194e31"
+        },
+        "20": {
+          "$type": "color",
+          "$value": "#143b25"
+        },
+        "15": {
+          "$type": "color",
+          "$value": "#0c2912"
+        },
+        "10": {
+          "$type": "color",
+          "$value": "#071b12"
+        },
+        "5": {
+          "$type": "color",
+          "$value": "#010502"
+        }
+      },
+      "hot-orange": {
+        "95": {
+          "$type": "color",
+          "$value": "#fef1ed"
+        },
+        "90": {
+          "$type": "color",
+          "$value": "#ffded5"
+        },
+        "85": {
+          "$type": "color",
+          "$value": "#feccbd"
+        },
+        "80": {
+          "$type": "color",
+          "$value": "#feb9a5"
+        },
+        "70": {
+          "$type": "color",
+          "$value": "#ff906e"
+        },
+        "65": {
+          "$type": "color",
+          "$value": "#ff784f"
+        },
+        "60": {
+          "$type": "color",
+          "$value": "#ff5d2d"
+        },
+        "50": {
+          "$type": "color",
+          "$value": "#d83a00"
+        },
+        "40": {
+          "$type": "color",
+          "$value": "#aa3001"
+        },
+        "35": {
+          "$type": "color",
+          "$value": "#942b00"
+        },
+        "30": {
+          "$type": "color",
+          "$value": "#7e2600"
+        },
+        "20": {
+          "$type": "color",
+          "$value": "#541d01"
+        },
+        "15": {
+          "$type": "color",
+          "$value": "#421604"
+        },
+        "10": {
+          "$type": "color",
+          "$value": "#281202"
+        },
+        "5": {
+          "$type": "color",
+          "$value": "#090200"
+        }
+      },
+      "indigo": {
+        "95": {
+          "$type": "color",
+          "$value": "#f1f3fb"
+        },
+        "90": {
+          "$type": "color",
+          "$value": "#e0e5f8"
+        },
+        "85": {
+          "$type": "color",
+          "$value": "#cfd4f7"
+        },
+        "80": {
+          "$type": "color",
+          "$value": "#bec7f6"
+        },
+        "70": {
+          "$type": "color",
+          "$value": "#9ea9f1"
+        },
+        "65": {
+          "$type": "color",
+          "$value": "#8e9bef"
+        },
+        "60": {
+          "$type": "color",
+          "$value": "#7f8ced"
+        },
+        "50": {
+          "$type": "color",
+          "$value": "#5867e8"
+        },
+        "40": {
+          "$type": "color",
+          "$value": "#3a49da"
+        },
+        "35": {
+          "$type": "color",
+          "$value": "#343bc8"
+        },
+        "30": {
+          "$type": "color",
+          "$value": "#2f2cb7"
+        },
+        "20": {
+          "$type": "color",
+          "$value": "#270c92"
+        },
+        "15": {
+          "$type": "color",
+          "$value": "#1f0974"
+        },
+        "10": {
+          "$type": "color",
+          "$value": "#17094e"
+        },
+        "5": {
+          "$type": "color",
+          "$value": "#060116"
+        }
+      },
+      "orange": {
+        "95": {
+          "$type": "color",
+          "$value": "#fff1ea"
+        },
+        "90": {
+          "$type": "color",
+          "$value": "#fedfd0"
+        },
+        "85": {
+          "$type": "color",
+          "$value": "#ffccad"
+        },
+        "80": {
+          "$type": "color",
+          "$value": "#ffba90"
+        },
+        "70": {
+          "$type": "color",
+          "$value": "#fe9339"
+        },
+        "65": {
+          "$type": "color",
+          "$value": "#f38303"
+        },
+        "60": {
+          "$type": "color",
+          "$value": "#dd7a01"
+        },
+        "50": {
+          "$type": "color",
+          "$value": "#a96404"
+        },
+        "40": {
+          "$type": "color",
+          "$value": "#825101"
+        },
+        "35": {
+          "$type": "color",
+          "$value": "#704801"
+        },
+        "30": {
+          "$type": "color",
+          "$value": "#5f3e02"
+        },
+        "20": {
+          "$type": "color",
+          "$value": "#3e2b02"
+        },
+        "15": {
+          "$type": "color",
+          "$value": "#2e2204"
+        },
+        "10": {
+          "$type": "color",
+          "$value": "#201600"
+        },
+        "5": {
+          "$type": "color",
+          "$value": "#060300"
+        }
+      },
+      "purple": {
+        "95": {
+          "$type": "color",
+          "$value": "#f6f2fb"
+        },
+        "90": {
+          "$type": "color",
+          "$value": "#ece1f9"
+        },
+        "85": {
+          "$type": "color",
+          "$value": "#e2d0f6"
+        },
+        "80": {
+          "$type": "color",
+          "$value": "#d7bff2"
+        },
+        "70": {
+          "$type": "color",
+          "$value": "#c29ef1"
+        },
+        "65": {
+          "$type": "color",
+          "$value": "#b78def"
+        },
+        "60": {
+          "$type": "color",
+          "$value": "#ad7bee"
+        },
+        "50": {
+          "$type": "color",
+          "$value": "#9050e9"
+        },
+        "40": {
+          "$type": "color",
+          "$value": "#7526e3"
+        },
+        "35": {
+          "$type": "color",
+          "$value": "#681dc9"
+        },
+        "30": {
+          "$type": "color",
+          "$value": "#5a1ba9"
+        },
+        "20": {
+          "$type": "color",
+          "$value": "#401075"
+        },
+        "15": {
+          "$type": "color",
+          "$value": "#300b60"
+        },
+        "10": {
+          "$type": "color",
+          "$value": "#240643"
+        },
+        "5": {
+          "$type": "color",
+          "$value": "#070114"
+        }
+      },
+      "red": {
+        "95": {
+          "$type": "color",
+          "$value": "#fef1ee"
+        },
+        "90": {
+          "$type": "color",
+          "$value": "#feded8"
+        },
+        "85": {
+          "$type": "color",
+          "$value": "#feccc3"
+        },
+        "80": {
+          "$type": "color",
+          "$value": "#feb8ab"
+        },
+        "70": {
+          "$type": "color",
+          "$value": "#fe8f7d"
+        },
+        "65": {
+          "$type": "color",
+          "$value": "#fe7765"
+        },
+        "60": {
+          "$type": "color",
+          "$value": "#fe5c4c"
+        },
+        "50": {
+          "$type": "color",
+          "$value": "#ea001e"
+        },
+        "40": {
+          "$type": "color",
+          "$value": "#ba0517"
+        },
+        "35": {
+          "$type": "color",
+          "$value": "#a40413"
+        },
+        "30": {
+          "$type": "color",
+          "$value": "#8e030f"
+        },
+        "20": {
+          "$type": "color",
+          "$value": "#640103"
+        },
+        "15": {
+          "$type": "color",
+          "$value": "#4a0c04"
+        },
+        "10": {
+          "$type": "color",
+          "$value": "#300c01"
+        },
+        "5": {
+          "$type": "color",
+          "$value": "#0c0200"
+        }
+      },
+      "violet": {
+        "95": {
+          "$type": "color",
+          "$value": "#f9f0ff"
+        },
+        "90": {
+          "$type": "color",
+          "$value": "#f2defe"
+        },
+        "85": {
+          "$type": "color",
+          "$value": "#eccdfe"
+        },
+        "80": {
+          "$type": "color",
+          "$value": "#e5b9fe"
+        },
+        "70": {
+          "$type": "color",
+          "$value": "#d892fe"
+        },
+        "65": {
+          "$type": "color",
+          "$value": "#d17dfe"
+        },
+        "60": {
+          "$type": "color",
+          "$value": "#cb65ff"
+        },
+        "50": {
+          "$type": "color",
+          "$value": "#ba01ff"
+        },
+        "40": {
+          "$type": "color",
+          "$value": "#9602c7"
+        },
+        "35": {
+          "$type": "color",
+          "$value": "#8402ad"
+        },
+        "30": {
+          "$type": "color",
+          "$value": "#730394"
+        },
+        "20": {
+          "$type": "color",
+          "$value": "#580276"
+        },
+        "15": {
+          "$type": "color",
+          "$value": "#3d0157"
+        },
+        "10": {
+          "$type": "color",
+          "$value": "#2e0039"
+        },
+        "5": {
+          "$type": "color",
+          "$value": "#060300"
+        }
+      },
+      "blue": {
+        "95": {
+          "$type": "color",
+          "$value": "#eef4ff"
+        },
+        "90": {
+          "$type": "color",
+          "$value": "#d8e6fe"
+        },
+        "85": {
+          "$type": "color",
+          "$value": "#c2d8ff"
+        },
+        "80": {
+          "$type": "color",
+          "$value": "#aacbff"
+        },
+        "70": {
+          "$type": "color",
+          "$value": "#78b0fd"
+        },
+        "65": {
+          "$type": "color",
+          "$value": "#57a3fd"
+        },
+        "60": {
+          "$type": "color",
+          "$value": "#1b96ff"
+        },
+        "50": {
+          "$type": "color",
+          "$value": "#0176d3"
+        },
+        "40": {
+          "$type": "color",
+          "$value": "#0b5cab"
+        },
+        "35": {
+          "$type": "color",
+          "$value": "#044f98"
+        },
+        "30": {
+          "$type": "color",
+          "$value": "#014486"
+        },
+        "20": {
+          "$type": "color",
+          "$value": "#032d60"
+        },
+        "15": {
+          "$type": "color",
+          "$value": "#03234d"
+        },
+        "10": {
+          "$type": "color",
+          "$value": "#001639"
+        },
+        "5": {
+          "$type": "color",
+          "$value": "#000310"
+        }
+      },
+      "neutral": {
+        "100": {
+          "$type": "color",
+          "$value": "#ffffff"
+        },
+        "95": {
+          "$type": "color",
+          "$value": "#f3f3f3"
+        },
+        "90": {
+          "$type": "color",
+          "$value": "#e5e5e5"
+        },
+        "85": {
+          "$type": "color",
+          "$value": "#d7d7d7"
+        },
+        "80": {
+          "$type": "color",
+          "$value": "#c9c9c9"
+        },
+        "70": {
+          "$type": "color",
+          "$value": "#aeaeae"
+        },
+        "65": {
+          "$type": "color",
+          "$value": "#a0a0a0"
+        },
+        "60": {
+          "$type": "color",
+          "$value": "#939393"
+        },
+        "50": {
+          "$type": "color",
+          "$value": "#757575"
+        },
+        "40": {
+          "$type": "color",
+          "$value": "#5c5c5c"
+        },
+        "35": {
+          "$type": "color",
+          "$value": "#515151"
+        },
+        "30": {
+          "$type": "color",
+          "$value": "#444444"
+        },
+        "20": {
+          "$type": "color",
+          "$value": "#2e2e2e"
+        },
+        "15": {
+          "$type": "color",
+          "$value": "#242424"
+        },
+        "10": {
+          "$type": "color",
+          "$value": "#181818"
+        },
+        "5": {
+          "$type": "color",
+          "$value": "#020202"
+        },
+        "0": {
+          "$type": "color",
+          "$value": "#000000"
+        }
+      },
+      "electric-blue": {
+        "95": {
+          "$type": "color",
+          "$value": "#edf4ff"
+        },
+        "90": {
+          "$type": "color",
+          "$value": "#d6e6ff"
+        },
+        "85": {
+          "$type": "color",
+          "$value": "#c2daff"
+        },
+        "80": {
+          "$type": "color",
+          "$value": "#a8cbff"
+        },
+        "70": {
+          "$type": "color",
+          "$value": "#7cb1fe"
+        },
+        "65": {
+          "$type": "color",
+          "$value": "#5f9ffe"
+        },
+        "60": {
+          "$type": "color",
+          "$value": "#4992fe"
+        },
+        "50": {
+          "$type": "color",
+          "$value": "#066afe"
+        },
+        "40": {
+          "$type": "color",
+          "$value": "#0250d9"
+        },
+        "35": {
+          "$type": "color",
+          "$value": "#003ecd"
+        },
+        "30": {
+          "$type": "color",
+          "$value": "#022ac0"
+        },
+        "20": {
+          "$type": "color",
+          "$value": "#002775"
+        },
+        "15": {
+          "$type": "color",
+          "$value": "#001e5b"
+        },
+        "10": {
+          "$type": "color",
+          "$value": "#001642"
+        },
+        "5": {
+          "$type": "color",
+          "$value": "#000314"
+        }
+      },
+      "pink": {
+        "95": {
+          "$type": "color",
+          "$value": "#fef0f3"
+        },
+        "90": {
+          "$type": "color",
+          "$value": "#fddde3"
+        },
+        "85": {
+          "$type": "color",
+          "$value": "#fec8d4"
+        },
+        "50": {
+          "$type": "color",
+          "$value": "#e3066a"
+        },
+        "40": {
+          "$type": "color",
+          "$value": "#b60554"
+        },
+        "20": {
+          "$type": "color",
+          "$value": "#61022a"
+        },
+        "15": {
+          "$type": "color",
+          "$value": "#4b0620"
+        },
+        "10": {
+          "$type": "color",
+          "$value": "#370114"
+        },
+        "5": {
+          "$type": "color",
+          "$value": "#0f0003"
+        }
+      }
+    },
+    "spacing": {
+      "0": {
+        "$type": "dimension",
+        "$value": "0px",
+        "$description": "Original en Figma: spacing/0"
+      },
+      "1": {
+        "$type": "dimension",
+        "$value": "4px",
+        "$description": "Original en Figma: spacing/1"
+      },
+      "2": {
+        "$type": "dimension",
+        "$value": "8px",
+        "$description": "Original en Figma: spacing/2"
+      },
+      "3": {
+        "$type": "dimension",
+        "$value": "12px",
+        "$description": "Original en Figma: spacing/3"
+      },
+      "4": {
+        "$type": "dimension",
+        "$value": "16px",
+        "$description": "Original en Figma: spacing/4"
+      },
+      "5": {
+        "$type": "dimension",
+        "$value": "24px",
+        "$description": "Original en Figma: spacing/5"
+      },
+      "6": {
+        "$type": "dimension",
+        "$value": "32px",
+        "$description": "Original en Figma: spacing/6"
+      },
+      "7": {
+        "$type": "dimension",
+        "$value": "40px",
+        "$description": "Original en Figma: spacing/7"
+      },
+      "8": {
+        "$type": "dimension",
+        "$value": "48px",
+        "$description": "Original en Figma: spacing/8"
+      },
+      "9": {
+        "$type": "dimension",
+        "$value": "56px",
+        "$description": "Original en Figma: spacing/9"
+      },
+      "10": {
+        "$type": "dimension",
+        "$value": "64px",
+        "$description": "Original en Figma: spacing/10"
+      },
+      "11": {
+        "$type": "dimension",
+        "$value": "72px",
+        "$description": "Original en Figma: spacing/11"
+      },
+      "12": {
+        "$type": "dimension",
+        "$value": "80px",
+        "$description": "Original en Figma: spacing/12"
+      }
+    },
+    "sizing": {
+      "1": {
+        "$type": "dimension",
+        "$value": "2px",
+        "$description": "Original en Figma: sizing/1"
+      },
+      "2": {
+        "$type": "dimension",
+        "$value": "4px",
+        "$description": "Original en Figma: sizing/2"
+      },
+      "3": {
+        "$type": "dimension",
+        "$value": "8px",
+        "$description": "Original en Figma: sizing/3"
+      },
+      "4": {
+        "$type": "dimension",
+        "$value": "12px",
+        "$description": "Original en Figma: sizing/4"
+      },
+      "5": {
+        "$type": "dimension",
+        "$value": "16px",
+        "$description": "Original en Figma: sizing/5"
+      },
+      "6": {
+        "$type": "dimension",
+        "$value": "20px",
+        "$description": "Original en Figma: sizing/6"
+      },
+      "7": {
+        "$type": "dimension",
+        "$value": "24px",
+        "$description": "Original en Figma: sizing/7"
+      },
+      "8": {
+        "$type": "dimension",
+        "$value": "28px",
+        "$description": "Original en Figma: sizing/8"
+      },
+      "9": {
+        "$type": "dimension",
+        "$value": "32px",
+        "$description": "Original en Figma: sizing/9"
+      },
+      "10": {
+        "$type": "dimension",
+        "$value": "48px",
+        "$description": "Original en Figma: sizing/10"
+      },
+      "11": {
+        "$type": "dimension",
+        "$value": "64px",
+        "$description": "Original en Figma: sizing/11"
+      },
+      "12": {
+        "$type": "dimension",
+        "$value": "80px",
+        "$description": "Original en Figma: sizing/12"
+      },
+      "13": {
+        "$type": "dimension",
+        "$value": "160px",
+        "$description": "Original en Figma: sizing/13"
+      },
+      "14": {
+        "$type": "dimension",
+        "$value": "240px",
+        "$description": "Original en Figma: sizing/14"
+      },
+      "15": {
+        "$type": "dimension",
+        "$value": "320px",
+        "$description": "Original en Figma: sizing/15"
+      },
+      "16": {
+        "$type": "dimension",
+        "$value": "480px",
+        "$description": "Original en Figma: sizing/16"
+      }
+    },
+    "sizing-border": {
+      "1": {
+        "$type": "dimension",
+        "$value": "1px",
+        "$description": "Original en Figma: sizing-border/1"
+      },
+      "2": {
+        "$type": "dimension",
+        "$value": "2px",
+        "$description": "Original en Figma: sizing-border/2"
+      },
+      "3": {
+        "$type": "dimension",
+        "$value": "3px",
+        "$description": "Original en Figma: sizing-border/3"
+      },
+      "4": {
+        "$type": "dimension",
+        "$value": "4px",
+        "$description": "Original en Figma: sizing-border/4"
+      }
+    },
+    "radius": {
+      "1": {
+        "$type": "dimension",
+        "$value": "4px",
+        "$description": "Original en Figma: radius-border/1"
+      },
+      "2": {
+        "$type": "dimension",
+        "$value": "8px",
+        "$description": "Original en Figma: radius-border/2"
+      },
+      "3": {
+        "$type": "dimension",
+        "$value": "12px",
+        "$description": "Original en Figma: radius-border/3"
+      },
+      "4": {
+        "$type": "dimension",
+        "$value": "20px",
+        "$description": "Original en Figma: radius-border/4"
+      },
+      "circle": {
+        "$type": "dimension",
+        "$value": "9999px",
+        "$description": "Original en Figma: radius-border/circle"
+      }
+    },
+    "font": {
+      "family": {
+        "base": {
+          "$type": "fontFamily",
+          "$value": "SF Pro",
+          "$description": "Original en Figma: font/family/base",
+          "$extensions": {
+            "platformModes": {
+              "dark": "SF Pro",
+              "windows-android": "Segoe UI"
+            }
+          }
+        },
+        "monospace": {
+          "$type": "fontFamily",
+          "$value": "SF Mono",
+          "$description": "Original en Figma: font/family/monospace",
+          "$extensions": {
+            "platformModes": {
+              "dark": "SF Mono",
+              "windows-android": "SF Mono"
+            }
+          }
+        },
+        "mobile": {
+          "$type": "fontFamily",
+          "$value": "SF Pro",
+          "$description": "Original en Figma: font/family/mobile",
+          "$extensions": {
+            "platformModes": {
+              "dark": "SF Pro",
+              "windows-android": "Roboto"
+            }
+          }
+        }
+      },
+      "size": {
+        "neg-2": {
+          "$type": "dimension",
+          "$value": "10px",
+          "$description": "Original en Figma: font/scale/neg-2"
+        },
+        "neg-1": {
+          "$type": "dimension",
+          "$value": "12px",
+          "$description": "Original en Figma: font/scale/neg-1"
+        },
+        "base": {
+          "$type": "dimension",
+          "$value": "13px",
+          "$description": "Original en Figma: font/scale/base"
+        },
+        "1": {
+          "$type": "dimension",
+          "$value": "14px",
+          "$description": "Original en Figma: font/scale/1"
+        },
+        "2": {
+          "$type": "dimension",
+          "$value": "16px",
+          "$description": "Original en Figma: font/scale/2"
+        },
+        "3": {
+          "$type": "dimension",
+          "$value": "20px",
+          "$description": "Original en Figma: font/scale/3"
+        },
+        "4": {
+          "$type": "dimension",
+          "$value": "24px",
+          "$description": "Original en Figma: font/scale/4"
+        },
+        "5": {
+          "$type": "dimension",
+          "$value": "28px",
+          "$description": "Original en Figma: font/scale/5"
+        },
+        "6": {
+          "$type": "dimension",
+          "$value": "32px",
+          "$description": "Original en Figma: font/scale/6"
+        },
+        "7": {
+          "$type": "dimension",
+          "$value": "40px",
+          "$description": "Original en Figma: font/scale/7"
+        },
+        "8": {
+          "$type": "dimension",
+          "$value": "48px",
+          "$description": "Original en Figma: font/scale/8"
+        }
+      },
+      "weight": {
+        "3": {
+          "$type": "fontWeight",
+          "$value": "Light",
+          "$description": "Original en Figma: font/weight/3"
+        },
+        "4": {
+          "$type": "fontWeight",
+          "$value": "Regular",
+          "$description": "Original en Figma: font/weight/4"
+        },
+        "6": {
+          "$type": "fontWeight",
+          "$value": "Semibold",
+          "$description": "Original en Figma: font/weight/6"
+        },
+        "7": {
+          "$type": "fontWeight",
+          "$value": "Bold",
+          "$description": "Original en Figma: font/weight/7"
+        }
+      }
+    }
+  },
+  "semantic": {
+    "color": {
+      "surface": {
+        "1": {
+          "$type": "color",
+          "$value": "{primitive.color.neutral.100}",
+          "$description": "Original en Figma: color/surface/1",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.neutral.15}"
+            }
+          }
+        },
+        "2": {
+          "$type": "color",
+          "$value": "{primitive.color.neutral.95}",
+          "$description": "Original en Figma: color/surface/2",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.neutral.10}"
+            }
+          }
+        },
+        "inverse-1": {
+          "$type": "color",
+          "$value": "{primitive.color.blue.20}",
+          "$description": "Original en Figma: color/surface/inverse-1 | dark SIN CONFIRMAR (alias a variable de librería no resuelta; valor provisional)",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.neutral.0}"
+            }
+          }
+        },
+        "inverse-2": {
+          "$type": "color",
+          "$value": "{primitive.color.blue.15}",
+          "$description": "Original en Figma: color/surface/inverse-2",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.blue.90}"
+            }
+          }
+        }
+      },
+      "on-surface": {
+        "1": {
+          "$type": "color",
+          "$value": "{primitive.color.neutral.40}",
+          "$description": "Original en Figma: color/on-surface/1",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.neutral.70}"
+            }
+          }
+        },
+        "2": {
+          "$type": "color",
+          "$value": "{primitive.color.neutral.20}",
+          "$description": "Original en Figma: color/on-surface/2",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.neutral.90}"
+            }
+          }
+        },
+        "3": {
+          "$type": "color",
+          "$value": "{primitive.color.electric-blue.15}",
+          "$description": "Original en Figma: color/on-surface/3",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.electric-blue.10}"
+            }
+          }
+        },
+        "inverse-1": {
+          "$type": "color",
+          "$value": "{primitive.color.neutral.100}",
+          "$description": "Original en Figma: color/on-surface/inverse-1",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.neutral.10}"
+            }
+          }
+        },
+        "inverse-2": {
+          "$type": "color",
+          "$value": "{primitive.color.electric-blue.80}",
+          "$description": "Original en Figma: color/on-surface/inverse-2",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.electric-blue.20}"
+            }
+          }
+        }
+      },
+      "accent": {
+        "1": {
+          "$type": "color",
+          "$value": "{primitive.color.electric-blue.50}",
+          "$description": "Original en Figma: color/accent/1",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.electric-blue.50}"
+            }
+          }
+        },
+        "2": {
+          "$type": "color",
+          "$value": "{primitive.color.electric-blue.40}",
+          "$description": "Original en Figma: color/accent/2",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.electric-blue.30}"
+            }
+          }
+        },
+        "3": {
+          "$type": "color",
+          "$value": "{primitive.color.electric-blue.30}",
+          "$description": "Original en Figma: color/accent/3",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.electric-blue.20}"
+            }
+          }
+        },
+        "container-1": {
+          "$type": "color",
+          "$value": "{primitive.color.electric-blue.50}",
+          "$description": "Original en Figma: color/accent/container-1",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.electric-blue.50}"
+            }
+          }
+        },
+        "container-2": {
+          "$type": "color",
+          "$value": "{primitive.color.electric-blue.40}",
+          "$description": "Original en Figma: color/accent/container-2",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.electric-blue.10}"
+            }
+          }
+        },
+        "container-3": {
+          "$type": "color",
+          "$value": "{primitive.color.electric-blue.30}",
+          "$description": "Original en Figma: color/accent/container-3",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.electric-blue.20}"
+            }
+          }
+        },
+        "on-accent-1": {
+          "$type": "color",
+          "$value": "{primitive.color.neutral.100}",
+          "$description": "Original en Figma: color/accent/on-accent-1",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.neutral.100}"
+            }
+          }
+        },
+        "on-accent-2": {
+          "$type": "color",
+          "$value": "{primitive.color.neutral.100}",
+          "$description": "Original en Figma: color/accent/on-accent-2",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.electric-blue.60}"
+            }
+          }
+        },
+        "on-accent-3": {
+          "$type": "color",
+          "$value": "{primitive.color.neutral.100}",
+          "$description": "Original en Figma: color/accent/on-accent-3",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.electric-blue.70}"
+            }
+          }
+        },
+        "border-accent-1": {
+          "$type": "color",
+          "$value": "{primitive.color.electric-blue.50}",
+          "$description": "Original en Figma: color/accent/border-accent-1",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.electric-blue.50}"
+            }
+          }
+        },
+        "border-accent-2": {
+          "$type": "color",
+          "$value": "{primitive.color.electric-blue.40}",
+          "$description": "Original en Figma: color/accent/border-accent-2",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.electric-blue.30}"
+            }
+          }
+        },
+        "border-accent-3": {
+          "$type": "color",
+          "$value": "{primitive.color.electric-blue.30}",
+          "$description": "Original en Figma: color/accent/border-accent-3",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.electric-blue.20}"
+            }
+          }
+        }
+      },
+      "container": {
+        "1": {
+          "$type": "color",
+          "$value": "{primitive.color.neutral.100}",
+          "$description": "Original en Figma: color/container/1",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.neutral.15}"
+            }
+          }
+        },
+        "2": {
+          "$type": "color",
+          "$value": "{primitive.color.neutral.95}",
+          "$description": "Original en Figma: color/container/2",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.neutral.10}"
+            }
+          }
+        },
+        "3": {
+          "$type": "color",
+          "$value": "{primitive.color.neutral.90}",
+          "$description": "Original en Figma: color/container/3",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.neutral.20}"
+            }
+          }
+        },
+        "inverse-1": {
+          "$type": "color",
+          "$value": "{primitive.color.blue.20}",
+          "$description": "Original en Figma: color/container/inverse-1 | dark SIN CONFIRMAR (alias a variable de librería no resuelta; valor provisional)",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.neutral.0}"
+            }
+          }
+        },
+        "inverse-2": {
+          "$type": "color",
+          "$value": "{primitive.color.blue.15}",
+          "$description": "Original en Figma: color/container/inverse-2",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.blue.90}"
+            }
+          }
+        }
+      },
+      "border": {
+        "1": {
+          "$type": "color",
+          "$value": "{primitive.color.neutral.80}",
+          "$description": "Original en Figma: color/border/1",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.neutral.30}"
+            }
+          }
+        },
+        "2": {
+          "$type": "color",
+          "$value": "{primitive.color.neutral.40}",
+          "$description": "Original en Figma: color/border/2",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.neutral.50}"
+            }
+          }
+        },
+        "inverse-1": {
+          "$type": "color",
+          "$value": "{primitive.color.neutral.95}",
+          "$description": "Original en Figma: color/border/inverse-1",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.neutral.10}"
+            }
+          }
+        },
+        "inverse-2": {
+          "$type": "color",
+          "$value": "{primitive.color.blue.20}",
+          "$description": "Original en Figma: color/border/inverse-2 | dark SIN CONFIRMAR (alias a variable de librería no resuelta; valor provisional)",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.neutral.0}"
+            }
+          }
+        }
+      },
+      "error": {
+        "1": {
+          "$type": "color",
+          "$value": "{primitive.color.pink.40}",
+          "$description": "Original en Figma: color/error/1",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.pink.70}"
+            }
+          }
+        },
+        "container-1": {
+          "$type": "color",
+          "$value": "{primitive.color.pink.90}",
+          "$description": "Original en Figma: color/error/container-1",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.pink.30}"
+            }
+          }
+        },
+        "container-2": {
+          "$type": "color",
+          "$value": "{primitive.color.pink.80}",
+          "$description": "Original en Figma: color/error/container-2",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.pink.40}"
+            }
+          }
+        },
+        "on-error-1": {
+          "$type": "color",
+          "$value": "{primitive.color.pink.40}",
+          "$description": "Original en Figma: color/error/on-error-1",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.pink.90}"
+            }
+          }
+        },
+        "on-error-2": {
+          "$type": "color",
+          "$value": "{primitive.color.pink.30}",
+          "$description": "Original en Figma: color/error/on-error-2",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.pink.95}"
+            }
+          }
+        },
+        "border-error-1": {
+          "$type": "color",
+          "$value": "{primitive.color.pink.40}",
+          "$description": "Original en Figma: color/error/border-error-1",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.pink.70}"
+            }
+          }
+        },
+        "border-error-2": {
+          "$type": "color",
+          "$value": "{primitive.color.pink.30}",
+          "$description": "Original en Figma: color/error/border-error-2",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.pink.80}"
+            }
+          }
+        }
+      },
+      "warning": {
+        "1": {
+          "$type": "color",
+          "$value": "{primitive.color.yellow.40}",
+          "$description": "Original en Figma: color/warning/1 | dark SIN CONFIRMAR (alias a variable de librería no resuelta; valor provisional)",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.neutral.0}"
+            }
+          }
+        },
+        "container-1": {
+          "$type": "color",
+          "$value": "{primitive.color.yellow.90}",
+          "$description": "Original en Figma: color/warning/container-1 | dark SIN CONFIRMAR (alias a variable de librería no resuelta; valor provisional)",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.neutral.0}"
+            }
+          }
+        },
+        "on-warning-1": {
+          "$type": "color",
+          "$value": "{primitive.color.yellow.40}",
+          "$description": "Original en Figma: color/warning/on-warning-1",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.yellow.90}"
+            }
+          }
+        },
+        "border-warning-1": {
+          "$type": "color",
+          "$value": "{primitive.color.yellow.40}",
+          "$description": "Original en Figma: color/warning/border-warning-1",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.yellow.70}"
+            }
+          }
+        }
+      },
+      "success": {
+        "1": {
+          "$type": "color",
+          "$value": "{primitive.color.teal.40}",
+          "$description": "Original en Figma: color/success/1 | dark SIN CONFIRMAR (alias a variable de librería no resuelta; valor provisional)",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.neutral.0}"
+            }
+          }
+        },
+        "container-1": {
+          "$type": "color",
+          "$value": "{primitive.color.teal.90}",
+          "$description": "Original en Figma: color/success/container-1",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.teal.30}"
+            }
+          }
+        },
+        "container-2": {
+          "$type": "color",
+          "$value": "{primitive.color.teal.80}",
+          "$description": "Original en Figma: color/success/container-2",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.teal.40}"
+            }
+          }
+        },
+        "on-success-1": {
+          "$type": "color",
+          "$value": "{primitive.color.teal.40}",
+          "$description": "Original en Figma: color/success/on-success-1",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.teal.90}"
+            }
+          }
+        },
+        "on-success-2": {
+          "$type": "color",
+          "$value": "{primitive.color.teal.30}",
+          "$description": "Original en Figma: color/success/on-success-2 | dark SIN CONFIRMAR (alias a variable de librería no resuelta; valor provisional)",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.neutral.0}"
+            }
+          }
+        },
+        "border-success-1": {
+          "$type": "color",
+          "$value": "{primitive.color.teal.40}",
+          "$description": "Original en Figma: color/success/border-success-1 | dark SIN CONFIRMAR (alias a variable de librería no resuelta; valor provisional)",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.neutral.0}"
+            }
+          }
+        },
+        "border-success-2": {
+          "$type": "color",
+          "$value": "{primitive.color.teal.30}",
+          "$description": "Original en Figma: color/success/border-success-2",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.teal.80}"
+            }
+          }
+        }
+      },
+      "info": {
+        "1": {
+          "$type": "color",
+          "$value": "{primitive.color.blue.40}",
+          "$description": "Original en Figma: color/info/1 | dark SIN CONFIRMAR (alias a variable de librería no resuelta; valor provisional)",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.neutral.0}"
+            }
+          }
+        },
+        "container-1": {
+          "$type": "color",
+          "$value": "{primitive.color.blue.90}",
+          "$description": "Original en Figma: color/info/container-1 | dark SIN CONFIRMAR (alias a variable de librería no resuelta; valor provisional)",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.neutral.0}"
+            }
+          }
+        },
+        "on-info-1": {
+          "$type": "color",
+          "$value": "{primitive.color.blue.40}",
+          "$description": "Original en Figma: color/info/on-info-1",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.blue.90}"
+            }
+          }
+        }
+      },
+      "disabled": {
+        "1": {
+          "$type": "color",
+          "$value": "{primitive.color.neutral.50}",
+          "$description": "Original en Figma: color/disabled/1",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.neutral.50}"
+            }
+          }
+        },
+        "disabled-container-1": {
+          "$type": "color",
+          "$value": "{primitive.color.neutral.90}",
+          "$description": "Original en Figma: color/disabled/disabled-container-1",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.neutral.20}"
+            }
+          }
+        },
+        "disabled-container-2": {
+          "$type": "color",
+          "$value": "{primitive.color.neutral.80}",
+          "$description": "Original en Figma: color/disabled/disabled-container-2",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.neutral.30}"
+            }
+          }
+        },
+        "on-disabled-1": {
+          "$type": "color",
+          "$value": "{primitive.color.neutral.50}",
+          "$description": "Original en Figma: color/disabled/on-disabled-1",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.neutral.50}"
+            }
+          }
+        },
+        "on-disabled-2": {
+          "$type": "color",
+          "$value": "{primitive.color.neutral.50}",
+          "$description": "Original en Figma: color/disabled/on-disabled-2",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.neutral.60}"
+            }
+          }
+        },
+        "border-disabled-1": {
+          "$type": "color",
+          "$value": "{primitive.color.neutral.50}",
+          "$description": "Original en Figma: color/disabled/border-disabled-1",
+          "$extensions": {
+            "modes": {
+              "dark": "{primitive.color.neutral.50}"
+            }
+          }
+        }
+      }
+    }
+  },
+  "component": {
+    "hooks": {
+      "list-item-drag": {
+        "$type": "color",
+        "$value": "#022ac0cc",
+        "$description": "Original en Figma: color/component+shared hooks/list-item-drag",
+        "$extensions": {
+          "modes": {
+            "dark": "#a8cbffcc"
+          }
+        }
+      },
+      "backdrop-background": {
+        "$type": "color",
+        "$value": "#2e2e2e",
+        "$description": "Original en Figma: color/component+shared hooks/backdrop-background",
+        "$extensions": {
+          "modes": {
+            "dark": "#020202"
+          }
+        }
+      },
+      "button-destructive-background": {
+        "$type": "color",
+        "$value": "#e3066a",
+        "$description": "Original en Figma: color/component+shared hooks/button-destructive-background",
+        "$extensions": {
+          "modes": {
+            "dark": "#e3066a"
+          }
+        }
+      },
+      "button-destructive-background-hover": {
+        "$type": "color",
+        "$value": "#b60554",
+        "$description": "Original en Figma: color/component+shared hooks/button-destructive-background-hover",
+        "$extensions": {
+          "modes": {
+            "dark": "#fddde3"
+          }
+        }
+      },
+      "button-destructive-text": {
+        "$type": "color",
+        "$value": "#ffffff",
+        "$description": "Original en Figma: color/component+shared hooks/button-destructive-text",
+        "$extensions": {
+          "modes": {
+            "dark": "#ffffff"
+          }
+        }
+      },
+      "button-destructive-text-hover": {
+        "$type": "color",
+        "$value": "#ffffff",
+        "$description": "Original en Figma: color/component+shared hooks/button-destructive-text-hover",
+        "$extensions": {
+          "modes": {
+            "dark": "#b60554"
+          }
+        }
+      },
+      "button-destructive-shadow-hover": {
+        "$type": "color",
+        "$value": "#61022a",
+        "$description": "Original en Figma: color/component+shared hooks/button-destructive-shadow-hover",
+        "$extensions": {
+          "modes": {
+            "dark": "#b60554"
+          }
+        }
+      },
+      "button-success-background": {
+        "$type": "color",
+        "$value": "#0b827c",
+        "$description": "Original en Figma: color/component+shared hooks/button-success-background",
+        "$extensions": {
+          "modes": {
+            "dark": "#0b827c"
+          }
+        }
+      },
+      "button-success-background-hover": {
+        "$type": "color",
+        "$value": "#056764",
+        "$description": "Original en Figma: color/component+shared hooks/button-success-background-hover",
+        "$extensions": {
+          "modes": {
+            "dark": "#acf3e4"
+          }
+        }
+      },
+      "button-success-text": {
+        "$type": "color",
+        "$value": "#ffffff",
+        "$description": "Original en Figma: color/component+shared hooks/button-success-text",
+        "$extensions": {
+          "modes": {
+            "dark": "#ffffff"
+          }
+        }
+      },
+      "button-success-text-hover": {
+        "$type": "color",
+        "$value": "#ffffff",
+        "$description": "Original en Figma: color/component+shared hooks/button-success-text-hover",
+        "$extensions": {
+          "modes": {
+            "dark": "#056764"
+          }
+        }
+      },
+      "button-success-shadow-hover": {
+        "$type": "color",
+        "$value": "#023434",
+        "$description": "Original en Figma: color/component+shared hooks/button-success-shadow-hover",
+        "$extensions": {
+          "modes": {
+            "dark": "#056764"
+          }
+        }
+      },
+      "button-bordered-shadow-hover": {
+        "$type": "color",
+        "$value": "#2e2e2e",
+        "$description": "Original en Figma: color/component+shared hooks/button-bordered-shadow-hover",
+        "$extensions": {
+          "modes": {
+            "dark": "#444444"
+          }
+        }
+      },
+      "button-brand-shadow-hover": {
+        "$type": "color",
+        "$value": "#002775",
+        "$description": "Original en Figma: color/component+shared hooks/button-brand-shadow-hover",
+        "$extensions": {
+          "modes": {
+            "dark": "#022ac0"
+          }
+        }
+      }
+    },
+    "shadow": {
+      "level-1-a": {
+        "$type": "color",
+        "$value": "#0000002e",
+        "$description": "Original en Figma: shadows/level 1/1+2",
+        "$extensions": {
+          "modes": {
+            "dark": "#0000005c"
+          }
+        }
+      },
+      "level-1-b": {
+        "$type": "color",
+        "$value": "#0000001a",
+        "$description": "Original en Figma: shadows/level 1/3",
+        "$extensions": {
+          "modes": {
+            "dark": "#00000033"
+          }
+        }
+      },
+      "level-2-a": {
+        "$type": "color",
+        "$value": "#00000029",
+        "$description": "Original en Figma: shadows/level 2/1+2",
+        "$extensions": {
+          "modes": {
+            "dark": "#00000052"
+          }
+        }
+      },
+      "level-2-b": {
+        "$type": "color",
+        "$value": "#00000017",
+        "$description": "Original en Figma: shadows/level 2/3",
+        "$extensions": {
+          "modes": {
+            "dark": "#0000002e"
+          }
+        }
+      },
+      "level-3-a": {
+        "$type": "color",
+        "$value": "#00000024",
+        "$description": "Original en Figma: shadows/level 3/1+2",
+        "$extensions": {
+          "modes": {
+            "dark": "#00000047"
+          }
+        }
+      },
+      "level-3-b": {
+        "$type": "color",
+        "$value": "#00000014",
+        "$description": "Original en Figma: shadows/level 3/3",
+        "$extensions": {
+          "modes": {
+            "dark": "#00000029"
+          }
+        }
+      },
+      "level-4-a": {
+        "$type": "color",
+        "$value": "#0000001f",
+        "$description": "Original en Figma: shadows/level 4/1+2",
+        "$extensions": {
+          "modes": {
+            "dark": "#0000003d"
+          }
+        }
+      },
+      "level-4-b": {
+        "$type": "color",
+        "$value": "#00000012",
+        "$description": "Original en Figma: shadows/level 4/3",
+        "$extensions": {
+          "modes": {
+            "dark": "#00000024"
+          }
+        }
+      }
+    }
+  }
+}

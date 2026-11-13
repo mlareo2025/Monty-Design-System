@@ -1,0 +1,29 @@
+{
+  "$comment": "Config del validador para el sistema extra\u00eddo (Lightning DS 2). Sin pares de contraste.",
+  "levels": [
+    "primitive",
+    "semantic",
+    "component"
+  ],
+  "allowedReferences": {
+    "primitive": [],
+    "semantic": [
+      "primitive"
+    ],
+    "component": [
+      "semantic"
+    ]
+  },
+  "modes": [
+    "default",
+    "dark"
+  ],
+  "requireModes": {
+    "level": "semantic",
+    "types": [
+      "color"
+    ]
+  },
+  "namePattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+  "contrastPairs": []
+}
